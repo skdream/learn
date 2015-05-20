@@ -42,7 +42,7 @@
 ## ECMAScript 6
 
 - [ECMAScript 6入门](http://es6.ruanyifeng.com/)
-- [ECMAScript 6 support in Mozilla] https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla
+- [ECMAScript 6 support in Mozilla] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla)
 - [Overview of ECMAScript 6 features](https://github.com/lukehoban/es6features)
 
 ## web自动化工具
