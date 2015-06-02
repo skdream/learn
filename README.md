@@ -10,6 +10,9 @@
 - [猜题](http://www.cbdio.com/H5/weixin/ )
 - [邀请函](http://www.cbdio.com/invitation/)
 
+## js游戏引擎
+- [phaser, free and fast 2D game framework for making HTML5 games](https://github.com/photonstorm/phaser)
+- [EaselJS,the Javascript library provides a full, hierarchical display list, a core interaction model, and helper classes to make working with the HTML5 Canvas element much easier](https://github.com/CreateJS/EaselJS)
 
 ## js模板引擎
 
@@ -44,9 +47,11 @@
 
 ## web自动化工具
 
-- [grunt avaScript 世界的构建工具](https://github.com/gruntjs/grunt) (http://www.gruntjs.net/)
+- [grunt, javaScript 世界的构建工具](https://github.com/gruntjs/grunt) (http://www.gruntjs.net/)
 - [gulp,  the streaming build system](http://gulpjs.com/)
-- [FIS-前端工具框架](https://github.com/fex-team/fis) (http://fis.baidu.com/) 
+- [FIS-前端工具框架](https://github.com/fex-team/fis) (http://fis.baidu.com/)
+
+- [node-browserify,browser-side require() the node.js way](https://github.com/substack/node-browserify)
 
 ## 我关注的github项目
 	
