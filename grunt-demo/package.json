@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "src": "0528wxoldback",
+  "dest": "pkg",
   "author": "jiyongjia",
   "repository": {
     "type": "git",
@@ -19,8 +21,13 @@
     "grunt-contrib-htmlmin": "^0.4.0",
     "grunt-contrib-imagemin": "^0.9.4",
     "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
-    "imagemin-mozjpeg": "^5.1.0"
+    "grunt-img": "^0.1.8",
+    "grunt-replace": "^0.9.2",
+    "imagemin-mozjpeg": "^5.1.0",
+    "replace": "^0.3.0"
   }
 }

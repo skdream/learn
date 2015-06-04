@@ -2,6 +2,25 @@
 
 var mozjpeg = require('imagemin-mozjpeg');
 module.exports = function(grunt){
+
+	var pkg = grunt.file.readJSON('package.json');
+
+	var dest = pkg.dest,
+			src = pkg.src;
+
+	function getDirect(type){
+		return (src + '/' + dest + '/') + (type? type: '');
+	}
+	
+
+	var destImages = getDirect('images'),
+			destCss    = getDirect('css'),
+			destJs     = getDirect('js'),
+			destHtml   = getDirect();
+
+
+console.log(src);
+
 	// config
 	grunt.initConfig({
 		pkg:grunt.file.readJSON('package.json'),
@@ -16,20 +35,32 @@ module.exports = function(grunt){
 				},*/
 				files:[{
 					expand:true,
-					cwd:'js',
+					cwd:src + '/js',
 					src:['**/*.min.js'],
-					dest:'build/js',
+					dest:destJs,
 					filter:'isFile'
 				}]
 			},
-			htmlTarget:{
+
+			cssTarget:{
 				files:[{
 					expand:true,
-					cwd:'images',
-					src:['**/*.{png,jpg,gif}'],
-					dest:'build/images'
+					cwd:src + '/css',
+					src:['**/*.min.css'],
+					dest:destCss,
+					filter:'isFile'
 				}]
 			}
+
+
+			// htmlTarget:{
+			// 	files:[{
+			// 		expand:true,
+			// 		cwd:pkg.actName +'/images',
+			// 		src:['**/*.{png,jpg,gif}'],
+			// 		dest:pkg.actName+'/build/images'
+			// 	}]
+			// }
 		},
 
 
@@ -41,9 +72,9 @@ module.exports = function(grunt){
 			build:{
 				files:[{
 					expand:true,
-					cwd:'js',
+					cwd:src +'/js',
 					src:['**/*.js','!**/*.min.js'],
-					dest:'build/js'
+					dest:destJs
 				}]
 
 			}
@@ -58,10 +89,10 @@ module.exports = function(grunt){
 			build:{
 				files:[{
 					expand:true,
-					cwd:'css',
+					cwd:src +'/css',
 					src:['**/*.css','!**/*.min.css'],
-					dest:'build/css',
-					ext:'.min.css'
+					dest:destCss
+					//ext:'.min.css'
 				}]
 			}
 		},
@@ -71,14 +102,19 @@ module.exports = function(grunt){
 	  htmlmin: {                                     // Task 
 	    dist: {                                      // Target 
 	      options: {                                 // Target options 
+
+					// process:function(content, srcpath){
+					// 	var staticREG = /.*\/(:.*\.(css$|js$|png$)|[^\.]*$)/;
+					// 	return content.replace(/[-]/g,'_');
+					// },
 	        removeComments: true,
 	        collapseWhitespace: true
 	       },
 	      files: [{
 	      	expand:true,
-		      //	cwd:'./',
-	      	src:['**/*.html','!node_modules','!build'],
-	      	dest:'build'
+	      	cwd:src,
+	      	src:['**/*.html','!**/node_modules','!**/build'],
+	      	dest:destHtml
 	      }]
 	    },
 	    dev: {                                       // Another target 
@@ -91,27 +127,101 @@ module.exports = function(grunt){
 	  // 压缩图片
 	  imagemin:{
 	  	build:{
-	  		options: {                       // Target options 
+	  		options: { // Target options 
 	        optimizationLevel: 3,
 	        svgoPlugins: [{ removeViewBox: false }],
 	        use: [mozjpeg()]
 	      },
 	  		files:[{
 	  			expand:true,
-	  			cwd:'images/',
+	  			cwd:src +'/images/',
 	  			src:['**/*.{png,jpg,gif}'],
-	  			dest:'build/images'
+	  			dest:destImages
 	  		}]
 	  	}
 	  },
+	  // grunt-img 图片压缩
+
+	  img:{
+	  	task1:{
+	  		src : src +'/images/**/*.{png,jpg,gif}',
+	  		dest:destImages
+	  	}
+	  },
+	  //<[^>]+(?:src|href)=\s*["']?([^"]+\.(?:js|css))
+
+	 // replace: {
+   //    dist: {
+   //      options: {
+   //        patterns: [
+   //          {
+   //            match: '/foo/g',
+   //            replacement: 'bar'
+   //          }
+   //        ]
+   //      },
+   //      files: [
+   //        {expand: true, flatten: true, src: [pkg.actName + '**/*.html'], dest: pkg.actName + '/build/'}
+   //      ]
+   //    }
+   //  },
 
 
 		// js代码检查
 		jshint:{
 			files:{
+				expand:true,
+				cwd:src,
 				src:['js/**/*.js','!js/**/*.min.js']
 			}
 		},
+
+
+		// less
+		less: {
+		  development: {
+
+	      files: [{
+					expand: true,
+					cwd: src,
+	        src: 'css/**/*.less',
+	        dest: getDirect(),
+	        ext: '.css'
+	      }]
+		  }
+/*		  ,production: {
+		    options: {
+		      paths: ["assets/css"],
+		      plugins: [
+		        new require('less-plugin-autoprefix')({browsers: ["last 2 versions"]}),
+		        new require('less-plugin-clean-css')(cleanCssOptions)
+		      ],
+		      modifyVars: {
+		        imgPath: '"http://mycdn.com/path/to/images"',
+		        bgColor: 'red'
+		      }
+		    },
+		    files: {
+		      "path/to/result.css": "path/to/source.less"
+		    }
+		  }*/
+		},
+
+		// sass
+		sass: {
+	    dist: {
+	      files: [{
+	        expand: true,
+	        cwd: src,
+	        src: ['**/*.scss'],
+	        dest: getDirect(),
+	        ext: '.css'
+	      }]
+	    }
+	  },
+
+
+
 
 		// 代码监听
 		watch:{
@@ -119,13 +229,31 @@ module.exports = function(grunt){
         livereload: true,
       },
 			all:{
-				files:['js/**/*.js'],
+				files:[src+'/js/**/*.js'],
 				tasks:['default'],
 				options:{
 					//interrupt: true,
 					spawn:false //If you need to dynamically modify your config, the spawn option must be disabled to keep the watch running under the same context
 				}
 			}
+			,
+			sass:{
+					files:[src + 'css/**/*.{sass,scss}'],
+					tasks:['sass'],
+					options:{
+						livereload:true
+					}
+			}
+			,
+			lessTarget:{
+					files:[src + '/css/**/*.less'],
+					tasks:['less'],
+					options:{
+						//interrupt: true,
+						spawn:true //If you need to dynamically modify your config, the spawn option must be disabled to keep the watch running under the same context
+					}
+			}
+
 		}
 
 	});
@@ -135,20 +263,23 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-img');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-less');
 
+	grunt.loadNpmTasks('grunt-replace');
 	
 
-	grunt.registerTask('default',['jshint','uglify','cssmin','copy','imagemin']);
+	grunt.registerTask('default',['uglify','cssmin','img','htmlmin','copy']);
+	grunt.registerTask('test',['jshint']);
 
 	// 注意！！任务名不能跟配置里面的字段重名，否则会报错，或者不配置别名
 	// 直接 grunt watch
 	grunt.registerTask('watcher',['watch']);
 
 	grunt.registerTask('minhtml',['htmlmin']);
-
-
 }
