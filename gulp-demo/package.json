@@ -1,0 +1,38 @@
+{
+  "name": "gulp-demo",
+  "version": "0.1.0",
+  "description": "a gulp demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "skdream",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skdream/learn.git"
+  },
+  "keywords": [
+    "gulp",
+    "demo"
+  ],
+  "bugs": {
+    "url": "https://github.com/skdream/learn/issues"
+  },
+  "homepage": "https://github.com/skdream/learn",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-cache": "^0.2.10",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-jshint": "^1.11.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-minify-css": "^1.1.6",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0"
+  }
+}

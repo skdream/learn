@@ -1,70 +1,75 @@
 // grunt 插件 http://www.gruntjs.net/plugins
 
-var mozjpeg = require('imagemin-mozjpeg');
+//var mozjpeg = require('imagemin-mozjpeg');
 module.exports = function(grunt){
-
-	var pkg = grunt.file.readJSON('package.json');
-
-	var dest = pkg.dest,
-			src = pkg.src;
-
-	function getDirect(type){
-		return (src + '/' + dest + '/') + (type? type: '');
-	}
-	
-
-	var destImages = getDirect('images'),
-			destCss    = getDirect('css'),
-			destJs     = getDirect('js'),
-			destHtml   = getDirect();
-
-
-console.log(src);
 
 	// config
 	grunt.initConfig({
 		pkg:grunt.file.readJSON('package.json'),
 
-		// 复制代码
+		/**
+		 * 设置目录地址
+		 */
+		dir:{
+			css:'<%= pkg.src %>/css',
+			js:'<%= pkg.src %>/js',
+			img:'<%= pkg.src %>/images',
+			html:'<%= pkg.src %>',
+			sass:'<%= pkg.src %>/css',
+			less:'<%= pkg.src %>/css'
+		},
+		destImages : '<%= pkg.dest %>/images',
+		destCss    : '<%= pkg.dest %>/css',
+		destJs     : '<%= pkg.dest %>/js',
+		destHtml   : '<%= pkg.dest %>',
+
+
+		/**
+		 * 复制文件
+		 * @https://www.npmjs.com/package/grunt-contrib-copy
+		 */
 		copy:{
-			main:{
-/*				options:{
+			jsdest:{
+				/*				
+				options:{
 					process:function(content, srcpath){
 						return content.replace(/[-]/g,'_');
 					}
-				},*/
+				},
+				*/
 				files:[{
 					expand:true,
-					cwd:src + '/js',
+					cwd:'<%= dir.js %>',
 					src:['**/*.min.js'],
-					dest:destJs,
+					dest:'<%=destJs%>',
 					filter:'isFile'
 				}]
 			},
 
-			cssTarget:{
+			cssdest:{
 				files:[{
 					expand:true,
-					cwd:src + '/css',
+					cwd:'<%= dir.css %>',
 					src:['**/*.min.css'],
-					dest:destCss,
+					dest:'<%=destCss%>',
+					filter:'isFile'
+				}]
+			},
+
+			mediadest:{
+				files:[{
+					expand:true,
+					cwd:'<%= pkg.src %>',
+					src:['**/*.{swf,flv,mp3}'],
+					dest:dest,
 					filter:'isFile'
 				}]
 			}
-
-
-			// htmlTarget:{
-			// 	files:[{
-			// 		expand:true,
-			// 		cwd:pkg.actName +'/images',
-			// 		src:['**/*.{png,jpg,gif}'],
-			// 		dest:pkg.actName+'/build/images'
-			// 	}]
-			// }
 		},
-
-
-		// 压缩脚本
+		/**
+		 * Minify js
+		 * @ https://www.npmjs.com/package/grunt-contrib-uglify
+		 */
 		uglify:{
 			options:{
 				banner:'/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -72,33 +77,35 @@ console.log(src);
 			build:{
 				files:[{
 					expand:true,
-					cwd:src +'/js',
+					cwd:'<%= dir.js %>',
 					src:['**/*.js','!**/*.min.js'],
-					dest:destJs
+					dest:'<%=destJs%>'
 				}]
-
 			}
 		},
-		// 压缩样式
-
+		/**
+		 * cssmin
+		 * @https://www.npmjs.com/package/grunt-contrib-cssmin
+		 */
 		cssmin:{
 			options:{
 				shorthandCompacting:false,
 				roundingPrecision:-1
 			},
-			build:{
+			dist:{
 				files:[{
 					expand:true,
-					cwd:src +'/css',
+					cwd:'<%= dir.css %>',
 					src:['**/*.css','!**/*.min.css'],
-					dest:destCss
+					dest:'<%=destCss%>'
 					//ext:'.min.css'
 				}]
 			}
 		},
-
-		// 压缩html代码
-
+		/**
+		 * htmlmin
+		 * @https://www.npmjs.com/package/grunt-contrib-htmlmin
+		 */
 	  htmlmin: {                                     // Task 
 	    dist: {                                      // Target 
 	      options: {                                 // Target options 
@@ -112,40 +119,60 @@ console.log(src);
 	       },
 	      files: [{
 	      	expand:true,
-	      	cwd:src,
+	      	cwd:'<%= pkg.src %>',
 	      	src:['**/*.html','!**/node_modules','!**/build'],
-	      	dest:destHtml
+	      	dest:'<%=destHtml%>'
 	      }]
-	    },
-	    dev: {                                       // Another target 
-	      files: {
-	        'dist/index.html': 'src/index.html',
-	        'dist/contact.html': 'src/contact.html'
-	      }
 	    }
 	  },
-	  // 压缩图片
-	  imagemin:{
-	  	build:{
-	  		options: { // Target options 
-	        optimizationLevel: 3,
-	        svgoPlugins: [{ removeViewBox: false }],
-	        use: [mozjpeg()]
-	      },
-	  		files:[{
-	  			expand:true,
-	  			cwd:src +'/images/',
-	  			src:['**/*.{png,jpg,gif}'],
-	  			dest:destImages
-	  		}]
-	  	}
-	  },
-	  // grunt-img 图片压缩
+
+	  /**
+	   * Concatenate files
+	   * @https://www.npmjs.com/package/grunt-contrib-concat
+	   */
+
+	  concat: {
+	    options: {
+    	  separator: ';',
+	      stripBanners: true,
+	      banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+	        '<%= grunt.template.today("yyyy-mm-dd") %> */',
+	    },
+	    dist: {
+	      src: ['<%= dir.js%>/*.js'],
+	      dest: '<%= destJs %>/built.js',
+	    }
+  	},
+
+		/**
+		 * imagemin
+		 * @https://www.npmjs.com/package/grunt-contrib-imagemin
+		 */
+	  // imagemin:{
+	  // 	dist:{
+	  // 		options: { // Target options 
+	  //       optimizationLevel: 3,
+	  //       svgoPlugins: [{ removeViewBox: false }],
+	  //       use: [mozjpeg()]
+	  //     },
+	  // 		files:[{
+	  // 			expand:true,
+	  // 			cwd:'<%= dir.img %>',
+	  // 			src:['**/*.{png,jpg,gif}'],
+	  // 			dest:'<%=destImages%>'
+	  // 		}]
+	  // 	}
+	  // },
+
+	  /*
+	   * optimize png and jpg images
+	   * @https://www.npmjs.com/package/grunt-img
+	   */
 
 	  img:{
 	  	task1:{
-	  		src : src +'/images/**/*.{png,jpg,gif}',
-	  		dest:destImages
+	  		src : ['<%= dir.img %>/**/*.{png,jpg,gif}'],
+	  		dest:'<%=destImages%>'
 	  	}
 	  },
 	  //<[^>]+(?:src|href)=\s*["']?([^"]+\.(?:js|css))
@@ -167,25 +194,41 @@ console.log(src);
    //  },
 
 
-		// js代码检查
+		/**
+		 * js代码校验
+		 * @https://github.com/gruntjs/grunt-contrib-jshint
+		 */
 		jshint:{
+			
+			options: {
+	      curly: true,
+	      eqeqeq: true,
+	      eqnull: true,
+	      browser: true,
+	      globals: {
+	        jQuery: true
+	      },
+	      reporter: require('jshint-stylish')
+	    },
+	    
 			files:{
-				expand:true,
-				cwd:src,
-				src:['js/**/*.js','!js/**/*.min.js']
+				src:['<%= dir.js %>/**/*.js','!<%= dir.js %>/**/*.min.js']
 			}
 		},
 
 
-		// less
+		/**
+		 * less 2 css
+		 * @https://www.npmjs.com/package/grunt-contrib-less
+		 */
 		less: {
 		  development: {
 
 	      files: [{
 					expand: true,
-					cwd: src,
+					cwd: '<%= pkg.src %>',
 	        src: 'css/**/*.less',
-	        dest: getDirect(),
+	        dest: '<%= pkg.src %>',
 	        ext: '.css'
 	      }]
 		  }
@@ -212,74 +255,72 @@ console.log(src);
 	    dist: {
 	      files: [{
 	        expand: true,
-	        cwd: src,
+	        cwd: '<%= pkg.src %>',
 	        src: ['**/*.scss'],
-	        dest: getDirect(),
+	        dest: '<%= pkg.dest %>',
 	        ext: '.css'
 	      }]
 	    }
 	  },
 
-
-
+	  /**
+	   * Clean files and folders
+	   * @https://www.npmjs.com/package/grunt-contrib-clean
+	   */
+	  clean: {
+		  release:['<%= pkg.dest %>']
+		},
 
 		// 代码监听
 		watch:{
 			options: {
         livereload: true,
       },
-			all:{
-				files:[src+'/js/**/*.js'],
-				tasks:['default'],
-				options:{
-					//interrupt: true,
-					spawn:false //If you need to dynamically modify your config, the spawn option must be disabled to keep the watch running under the same context
-				}
-			}
-			,
+      // js:{
+			// 	files:['<%= dir.js%>/**/*.js'],
+			// 	tasks:['default'],
+			// 	options:{
+			// 		//interrupt: true,
+			// 		spawn:false //If you need to dynamically modify your config, the spawn option must be disabled to keep the watch running under the same context
+			// 	}
+			// },
 			sass:{
-					files:[src + 'css/**/*.{sass,scss}'],
+					files:['<%= dir.css %>/**/*.{sass,scss}'],
 					tasks:['sass'],
-					options:{
-						livereload:true
-					}
-			}
-			,
+			},
 			lessTarget:{
-					files:[src + '/css/**/*.less'],
+					files:['<%= dir.css%>/**/*.less'],
 					tasks:['less'],
 					options:{
 						//interrupt: true,
 						spawn:true //If you need to dynamically modify your config, the spawn option must be disabled to keep the watch running under the same context
 					}
 			}
-
 		}
-
 	});
 
 	// load plugin
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	//grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-img');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-
+	grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
 	grunt.loadNpmTasks('grunt-replace');
 	
-
-	grunt.registerTask('default',['uglify','cssmin','img','htmlmin','copy']);
+	grunt.registerTask('default',['clean','uglify','less','cssmin','img','htmlmin','copy']);
 	grunt.registerTask('test',['jshint']);
 
 	// 注意！！任务名不能跟配置里面的字段重名，否则会报错，或者不配置别名
 	// 直接 grunt watch
 	grunt.registerTask('watcher',['watch']);
-
+  grunt.registerTask('concater',['concat']);
 	grunt.registerTask('minhtml',['htmlmin']);
 }

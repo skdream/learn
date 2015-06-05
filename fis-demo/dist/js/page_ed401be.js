@@ -1,0 +1,1 @@
+$(function(){$(".swiper1").swiper({pagination:".dots1",loop:!0,grabCursor:!0,autoplay:3e3,paginationClickable:!0}),$(".swiper2").swiper({pagination:".dots2",loop:!0,grabCursor:!0,autoplay:3e3,paginationClickable:!0});$(".gotop-btn").on("click",function(){$(window).animate({scrollTop:"0"},1e3)}),$(".pop-x").on("click",function(){$(".mask, .pop").hide()})});
