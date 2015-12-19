@@ -1,11 +1,14 @@
 // grunt 插件 http://www.gruntjs.net/plugins
 
 //var mozjpeg = require('imagemin-mozjpeg');
+
 module.exports = function (grunt) {
 
 	// config
 	grunt.initConfig({
 		pkg : grunt.file.readJSON('package.json'),
+
+
 
 		/**
 		 * 设置目录地址
@@ -73,6 +76,7 @@ module.exports = function (grunt) {
 						filter : 'isFile'
 					}
 				]
+
 			}
 		},
 		/**
@@ -155,6 +159,7 @@ module.exports = function (grunt) {
 				dest : '<%= destJs %>/built.js',
 			}
 		},
+
 		/**
 		 * imagemin
 		 * @https://www.npmjs.com/package/grunt-contrib-imagemin
@@ -202,6 +207,7 @@ module.exports = function (grunt) {
 		//      ]
 		//    }
 		//  },
+
 
 
 		/**
@@ -307,7 +313,6 @@ module.exports = function (grunt) {
 				}
 			}
 		}
-
 	});
 
 	// load plugin
