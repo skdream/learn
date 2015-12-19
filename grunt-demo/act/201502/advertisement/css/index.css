@@ -1,0 +1,165 @@
+.bg {
+    background: url("../imgs/bg.jpg") center top no-repeat;
+}
+.none {
+    display: none;
+}
+
+/*头部*/
+
+.header {
+    height: 526px;
+}
+.wid1000 {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.bg-logo {
+    position: absolute;
+    display: block;
+    width: 229px;
+    height: 118px;
+    left: 0;
+    top: 24px;
+}
+.bg-video {
+    display: block;
+    position: absolute;
+    background: url("../imgs/bg-video_03.png") no-repeat;
+    width: 143px;
+    height: 93px;
+    top: 397px;
+    left: 214px;
+}
+.brandScroll{width: 193px; height: 135px; position: absolute; top: 42px; left: 238px; overflow: hidden;}
+.brandScroll ul{width: 193px; height: auto; float: left; display: inline; }
+.brandScroll ul li{width: 193px; height: 35px; padding-bottom: 10px; float: left; display: inline; }
+
+
+/*内容*/
+.main {
+    height: 1174px;
+}
+.con1 {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    background: url("../imgs/con1_03.png") no-repeat;
+    height: 509px;
+}
+.con1-1 {
+    width: 100%;
+    height: 330px;
+    position: relative;
+}
+.down {
+    position: absolute;
+    text-align: center;
+    left: 41px;
+    top: 0px;
+    width: 418px;
+    height: 271px;
+    background: url("../imgs/down_03.jpg") left 57px no-repeat;
+}
+.down p {
+    height: 57px;
+    line-height: 57px;
+    font-family: "微软雅黑";
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+.down a {
+    display: block;
+    width: 236px;
+    height: 73px;
+}
+.con1-2 {
+    min-height: 60px;
+    position: absolute;
+    left: 13px;
+    width: 987px;
+    top: 420px;
+}
+.con1-2 p {
+    float: left;
+    margin-left: 226px;
+    width: 214px;
+    color: #333333;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 20px;
+
+}
+.con2 {
+    height: 254px;
+    text-align: center;
+    margin-top: 45px;
+    background: url("../imgs/con2_03.png") center top no-repeat;
+}
+.con3 {
+    position: relative;
+    height: 334px;
+    width: 1000px;
+    margin: 37px auto 0;
+    background: url("../imgs/con3_03.png") center top no-repeat ;
+}
+.con3 p {
+    width: 190px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #333333;
+    text-align: left;
+    position: absolute;
+    top: 167px;
+}
+.con3 p.p1 {
+    left: 80px;
+}
+.con3 p.p2 {
+    left: 420px;
+}
+.con3 p.p3 {
+    left: 747px;
+}
+
+/*视频弹窗*/
+.popvideobox{ width: 800px; height: 460px;background: #f6f6f6; position: fixed; left: 50%; top: 50%; margin-left: -400px; margin-top: -275px;z-index: 9999;}
+.popvideobox #videowrap{ width: 800px; height: 460px; overflow-y: auto; overflow-x: hidden; }
+.popvideobox .closebtn{ width: 60px; height: 60px; position: absolute; top: 0; right: -60px; background: url(../imgs/closebtn.jpg) no-repeat;}
+.popvideobox .closebtn:hover{ background-position: 0 -60px;}
+/*短信弹窗*/
+.popDownloadBox{
+    width: 538px;
+    height: 320px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -269px;
+    margin-top: -160px;
+    background: url("../imgs/popDownload.jpg");
+    z-index: 9999;
+}
+.popDownloadBox .closebtn1{ width: 46px; height: 46px; position: absolute; top: 0; right: 0;}
+.popDownloadBox .closebtn2{ width: 190px; height: 50px; position: absolute; top: 170px; right: 174px;}
+
+/*注册*/
+.bg .aside {
+    position: absolute;
+    width: 300px;
+    height: 273px;
+    top: 0;
+    right: 135px;
+    border: none;
+}
+.bg .aside .quickHeading {
+    font-size: 22px;
+    width: 300px;
+}
+.bg .aside .label {
+    color: #333333;
+}
+.bg .aside .send {
+    padding-top: 20px;
+}

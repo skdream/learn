@@ -1,0 +1,72 @@
+body{ font-family: "microsoft Yahei";}
+.bg1{ width: 100%; height: 500px; background: url(../images/bg1.jpg) top center no-repeat;}
+.bg1 .cont{ width: 1000px; height: 500px;  margin: 0 auto; position: relative;}
+.bg1 .logo{ width:245px; height: 150px; position: absolute;  top: 40px; left: 50%; margin-left: -530px;  }
+.bg1 .act_num{ width: 580px; height: 50px; position: absolute; top: 50px; left: 50%; margin-left: -270px;font: normal 20px/30px ""; color: #ffeab9;}
+.bg1 #number{ padding: 0px 10px 0px 5px; height: 40px; background: #9f0000;  font: bold 40px/40px "" ; font-style:italic; color: #ffd800; margin: 0 5px;}
+
+.bg2{ width: 100%; height: 445px; background: url(../images/bg2.jpg) top center no-repeat;}
+
+.bg2 .cont{ width: 1000px; height: 445px; margin: 0 auto; position: relative;}
+.bg2 .cont .giftbox{ width: 1000px; height: 232px; position: absolute; top: 34px; left: -101px;}
+.bg2 .submitbox{ width: 780px; height: 145px; float: left; margin-top: 300px;}
+.bg2 h3{ height: 50px; font: bold 21px/40px ""; color: #f2d350; margin-bottom: 2}
+.bg2 .userform{ width: 340px; float: left;}
+.bg2 .act_detail_btn{ float: left; margin-top: 75px; color: #f2d350; text-decoration: none;}
+.bg2 .act_detail_btn:hover{ text-decoration: underline;}
+
+.bg2 .row{ width: 340px; height: 36px; float: left; position: relative; margin-top: 15px; }
+.bg2 .row label{ width: 70px; height: 36px; text-align: right; float: left; font: normal 14px/36px ""; color: #ffeebc;}
+
+.bg2 .row input{ width: 250px; height: 34px; float: left; border: none; margin-left: 10px; background: #f5e0a1;  font: 14px; text-indent: 10px; color: #333;font-family: "microsoft Yahei"; line-height: 34px; }
+.bg2 .row dl{ width: 250px; position: relative;}
+.bg2 .row .os_type{width: 250px; height: 34px; float: left; margin-left: 10px; background: #f5e0a1 url(../images/arr.jpg) right center no-repeat; font: normal 14px/36px ""; color: #333; text-indent: 10px;}
+.bg2 .row dl{ width: 250px; height: 90px; position: absolute; right: 10px; top: 34px; background: #fff;}
+.bg2 .row dd{ width: 100%; height: 30px; font: normal 14px/30px ""; color: #333; text-indent: 15px;}
+.bg2 .row dd:hover{ background: #eee;}
+.bg2 .loginfirst{ width: 373px; height: 109px; float: left; background: url(../images/login.png) 0 0 no-repeat;}
+.bg2 .loginfirst:hover{ background-position: 0 -109px;}
+.bg2 .submitbtn{ width: 373px; height: 109px; float: left; background: url(../images/submitbtn.png) 0 0 no-repeat;}
+.bg2 .submitbtn:hover{ background-position: 0 -109px;}
+
+.bg3{ width: 100%; height: 752px; background: url(../images/bg3.jpg) top center no-repeat;}
+.bg3 .cont{ width: 1030px; margin: 0 auto;}
+
+.bg3 .box1{ width: 375px; height: 120px;  margin-top: 90px; float: left;  *margin-top: 70px;}
+.bg3 .box2{ width: 420px; height: 200px; margin-top: 90px;  float: left; margin-left: 30px; overflow: hidden;*margin-top: 70px;}
+
+.bg3 .box2 ul{ margin-top: 20px; margin-left: 23px; _display: inline;}
+.bg3 .box2 li{ font: normal 14px/30px ""; color: #ffdacd;}
+.bg3 .box2 li b{ color: #f2d350; margin-right: 20px;}
+
+.bg3 .cont h3{ font: bold 21px/40px ""; color: #f2d350;}
+.bg3 .cont p{ width: 100%; font: normal 14px/22px ""; color: #ffdacd;}
+.bg3 .cont a{color: #f2d350;}
+.bg3 .flink{ width: 1000px;  float: left; margin-top: 200px;}
+.bg3 .flink h2{ height: 40px; font: bold 21px/40px ""; color: #f2d350;}
+.bg3 .flink_cont{ margin-top: 10px;}
+.bg3 .flink_cont img{ float: left; margin-right: 10px; margin-bottom: 10px;}
+
+.maskDiv{ width: 100%; height: 1200px; position: absolute; z-index: 1; background: #000; top: 0; left: 0;}
+.popbox{ width: 538px; height: 382px; background: url(../images/popbox.png) no-repeat; border-radius: 5px; position: fixed; _position: absolute; left: 50%; margin-left: -200px; top: 150px; z-index: 10;}
+
+.popbox .loginbox{ width: 415px; float: left; margin-left: 65px; margin-top: 90px; display: inline;}
+.popbox .row{ width: 415px; height: 60px; position: relative; }
+.popbox .forget{ text-align: right;}
+.popbox .forget a{ font: normal 14px/60px ""; color: #bbb;}
+.popbox .row .loginname{ width: 365px; height: 58px; border: 1px solid #ccc; background: #f4f4f4 url(../images/icon_1.png) 20px center no-repeat; border-top-right-radius:5px;border-top-left-radius:5px; font-size: 20px; padding-left:  50px; color: #444; font-family: "microsoft Yahei"; }
+.popbox .row .password{ width: 365px; height: 58px;  border: 1px solid #ccc; background: #f4f4f4 url(../images/icon_2.png) 20px center no-repeat; border-top: none; border-bottom-right-radius:5px;border-bottom-left-radius:5px; padding-left: 50px; font-size: 20px; color: #444; }
+.popbox .row span{ width: 332px; height: 40px; position: absolute; top: 9px; left: 50px; font: normal 20px/40px ""; color: #444;}
+.popbox .row .loginbtn{ width: 235px; height: 65px; float: left; margin-left: 85px; background: url(../images/loginbtn.jpg) 0 0  no-repeat;}
+.popbox .row .loginbtn:hover{ background-position: 0 -65px;}
+
+.popinfo{ width:538px; height: 263px; background: url(../images/popbg.png) no-repeat; border-radius: 5px; position: fixed; _position: absolute; left: 50%; margin-left: -200px; top: 150px; z-index: 10; text-align: center;}
+.popinfo .closebtn{ width: 30px; height: 30px; position: absolute; top: 5px; right: 5px; z-index: 11;}
+.popinfo p{ font: normal 20px/40px ""; color: #555; margin-top: 100px;}
+
+.act_detail{ width: 538px; height: 502px; background: url(../images/popmore.png) no-repeat; position: fixed;  _position: absolute; left: 50%; margin-left: -230px; top: 150px; z-index: 10; }
+.act_detail .closebtn{width: 30px; height: 30px; position: absolute; top: 5px; right: 5px; z-index: 11;}
+.act_detail .cont{ width: 500px; height: 480px; margin: 0 auto; margin-top: 40px; font: normal 14px/20px ""; color: #666;}
+.act_detail h2{ font: bold 20px/30px ""; color: #900; margin-bottom: 20px;}
+.act_detail h3{ font: normal 16px/24px ""; color: #333; margin-top: 10px;}
+

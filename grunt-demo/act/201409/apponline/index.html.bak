@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="Zh">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" type="text/css" href="http://static.woniu.com/stylesheets/base.css" />
+  <link rel="stylesheet" type="text/css" href="http://panda.woniu.com/static/concept/stylesheets/concept.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <title>太极熊猫</title>
+ </head>
+ <body>
+  
+  <div class="wrap">
+<!-- 下载部分 -->
+    <div class="m-download marcenter">
+	   <div class="min-download min-marcenter">
+	      <p class="cel-time"><span id="celLeft">2014年9月15日 至 9月27日</span><span id="celRight">App Store服务器</span></p>
+		  <div class="snS"><a class="btn" href="javascript:void(0);" target="_blank"></a> <img src="./images/erweima.jpg" alt="扫一扫" class="ewm"/></div>
+       </div>
+	</div>
+<!-- 活动1 -->    
+	<div class="m-one marcenter">
+	   <div class="min-one min-marcenter">
+	      <a class="more m1" href="javascript:void(0);" target="_blank">查看详情</a>
+		  <ul class="lists">
+		    <li id="img1"><p class="txt">下载登录即送200钻石</p></li>
+			<li id="img2"><p class="txt">下载登录即送橙装</p></li>
+			<li id="img3"><p class="txt">关注微信送100钻石 </p></li>
+			<li id="img4" style="margin-right:0px;"><p class="txt">写好评送100钻石</p></li>
+			<li id="img5"><p class="txt">抽奖得iPhone、iPad</p></li>
+			<li id="img6"><p class="txt">纪念免卡送送送</p></li>
+			<li id="img7"><p class="txt">每日登陆道具好礼送送送</p></li>
+			<li id="img8" style="margin-right:0px;"><p class="txt">每日免费领取25点体力</p></li>
+		  </ul>
+	   </div> 
+	</div>
+<!-- 活动2 -->
+    <div class="m-two marcenter">
+	    <div class="min-two min-marcenter">
+		   <p class="wpA">手机预订体验资格的玩家，参与不删档测试就送S级专属礼包!<em> 金币历练丹+体力丹+王者雕纹</em>，一键领取别客气</p>
+		   <div class="wrap_serch">
+		   <form method="" >
+		   <input type="text" name="" value="请输入预约测试手机号" class="serch-txt"/>
+		   <input type="submit" value=" " class="serch-submit"/>
+		   </form>
+		   <a class="txt-bot">没有预订？点我预约公测有礼！</a>
+		   </div>
+		</div>
+	</div>
+<!-- 活动2 -->
+   <div class="m-stwo marcenter">
+	    <div class="min-stwo min-marcenter">
+		  <p>参与对象：手机预订过《太极熊猫》体验资格的所有玩家</p>
+		  <p>领取方式：</p>
+		  <p>在登录状态下，玩家输入预订体验资格时的手机号，点击“领取”即可获得不删档测试S级专属礼包。</p>
+		  <p>注意事项：</p>
+		  <p>1.请确认输入的手机号与预约体验时提交的是否一致，是否与账号所关联的手机号一致，若不一致将无法领取相应礼包。</p>
+		  <p>2. 所获奖励将会于不删档测试后通过游戏内邮件发送。</p>
+		  <p>本活动最终解释权归蜗牛所有</p>
+		</div>
+	</div>
+<!-- 活动3 -->
+  <div class="m-three marcenter">
+	    <div class="min-three min-marcenter">
+		  <a class="more m2" href="javascript:void(0);" target="_blank">查看详情</a>   
+		   <p class="wpB">活动期间，成功击杀指定BOSS的用户将获得击杀奖励，击杀时间排前3名的玩家还可获得额外钻石奖励。</p>
+		</div>
+	</div>
+<!-- 活动4 -->
+  <div class="m-four marcenter">
+	    <div class="min-four min-marcenter">
+          <div class="mtxt mposA">邀请好友除了可互赠阅历外，在活动期间<em>好友数量达到50人</em>还可额外获得<em>大体力丹*1</em>和<em>50W金币</em>的奖励，官方将在活动期间每日统计符合条件的玩家并在1-2个工作日内进行奖励发放。</div>
+		</div>
+	</div>
+<!-- 活动5 -->
+  <div class="m-five marcenter">
+	    <div class="min-five min-marcenter">
+           <div class="mtxt mposB">
+		   <p>玩家可以在游戏过程中将游戏中遇到的bug或建议，按规定格式提交，经核实后，可获得与bug、建议重要程度相对应的奖励。</p>
+           <div class="hr"></div>
+           <p>另外玩家可以提交自己的心得体会以及游戏攻略，获得官方赠送的<em>100-1000不等的钻石奖励</em>，同时对较好的攻略我们还会推荐至官网及APP攻略专区，分享给更多的玩家，期待您的参与！</p>
+           </div> 
+		   <div class="btn-bug"><a href="javascript:void(0);" target="_blank" class="int-bug" title="bug"></a><a href="javascript:void(0);" target="_blank" class="int-int" title="intro"></a></div>
+		</div>
+	</div>
+<!-- 活动6 -->
+  <div class="m-six marcenter">
+	    <div class="min-six min-marcenter">
+           <ul class="companys">
+		     <li><a href="#" target="_blank"><img src="./images/01.jpg" alt=""></a></li>
+			 <li><a href="#" target="_blank"><img src="./images/02.jpg" alt=""></a></li>
+			 <li><a href="#" target="_blank"><img src="./images/03.jpg" alt=""></a></li>
+			 <li><a href="#" target="_blank"><img src="./images/04.jpg" alt=""></a></li>
+			 <li style="margin-right:0px;"><a href="#" target="_blank"><img src="./images/05.jpg" alt=""></a></li>
+		   </ul>
+		</div>
+	</div>
+<!-- 活动2 -->
+  </div>
+
+    <div id="asideMedia" class="sans aside asideMedia center">
+      <h2 class="hiddenText asideHeading mediaHeading">预定体验资格</h2>
+      <div class="asideBackground preorderBackground"></div>
+      <div class="drawer">
+        <div class="asideTrunk mediaTrunk">
+          <div class="preorder">
+            <div class="preorderPane preorderPane--visible">
+              <div class="preorderStep">
+                <span class="hiddenText preorderIndex pi1">1</span>
+                <label for="preorderField" class="preorderLabel">请输入您的手机号</label>
+                <div id="preorderHolder" class="preorderHolder">
+                  <input type="text" maxlength="11" autocomplete="off" id="preorderField" class="preorderField fieldInput">
+                  <label for="preorderField" class="preorderMessage fieldMessage">请输入您的手机号</label>
+                  <!-- <span id="preorderSend" class="preorderSend">确定</span> -->
+                </div>
+              </div>
+              <div class="preorderStep">
+                <span class="hiddenText preorderIndex pi2">2</span>
+                <p>请选择您的手机系统：</p>
+                <p>
+                  <input type="radio" name="os" value="ios" id="osRadio1" class="osRadio"><label for="osRadio1" hidefocus class="radioLabel">IOS</label>
+                  <input type="radio" name="os" value="iosb" id="osRadio2" class="osRadio"><label for="osRadio2" hidefocus class="radioLabel">IOS越狱</label>
+                </p>
+                <p>
+                  <input type="radio" name="os" value="andriod" id="osRadio3" class="osRadio"><label for="osRadio3" hidefocus class="radioLabel">安卓</label>
+                  <input type="radio" name="os" value="other" id="osRadio4" class="osRadio"><label for="osRadio4" hidefocus class="radioLabel">其他</label>
+                </p>
+                <button type="button" hidefocus id="preorderSend" class="hilite submit preorderSubmit">确定提交</button>
+              </div>
+            </div>
+            <div id="preorderFinished" class="preorderPane">
+              <h3 class="hilite preorderHeading">恭喜您预订成功！</h3>
+              <p class="fz13">15号可在官网领取二测礼包</p>
+              <div class="wechat">
+                <h3>扫一扫了解更多</h3>
+                <img src="/static/concept/images/wechat.png" alt="太极熊猫微信公众账号" class="wechatImage">
+              </div>
+            </div>
+          </div>
+          <hr class="mediaRule">
+          <p class="clearfix blogs">
+            <a href="http://weibo.com/snailtjxm" target="_blank" class="hiddenText blog blogSina">新浪微博<span class="asideFix"></span></a><a href="http://t.qq.com/snailtjxm" target="_blank" class="hiddenText blog blogTencent">腾讯微博<span class="asideFix"></span><a href="http://tieba.baidu.com/f?kw=%CC%AB%BC%AB%D0%DC%C3%A8" target="_blank" class="hiddenText blog blogBaidu">百度贴吧<span class="asideFix"></span></a>
+          </p>
+          <p class="qqGroup">官方QQ交流群<br>254550364</p>
+          <p class="bold asideHilite">客服 0512-67621819-8</p>
+        </div>
+      </div>
+    </div>
+	<div id="mask" class="mask"></div>
+    <div id="login" class="popup login">
+      <div class="accountTags"><a href="#" id="registerTag" class="hiddenText registerTag">账号注册</a></div>
+      <h3 class="loginHeading">预订体验资格，请先登录!</h3>
+      <form id="loginForm" name="loginForm" method="post" action="http://gwpassport.woniu.com/v2/login" class="loginForm">
+        <div class="aside-row row">
+          <label class="label" for="loginUsername">账号：</label>
+          <div class="collection">
+            <input type="text" id="loginUsername" name="username" class="disableIme inputDefault" maxlength="25" tabindex="20" />
+            <input class="msgContainer" type="text" value="蜗牛通行证">
+          </div>
+        </div>
+        <div class="aside-row row">
+          <label class="label" for="loginPassword">密码：</label>
+          <div class="collection">
+            <input type="password" id="loginPassword" name="password" class="disableIme inputDefault" maxlength="20" tabindex="21" />
+            <input class="msgContainer" type="text" value="******">
+          </div>
+        </div>
+        <div class="aside-row send row">
+          <input type="submit" value="登录" tabindex="22" class="hilite submit">
+        </div>
+      </form>
+      <div class="close"></div>
+    </div>
+<script src="//static.woniu.com/scripts/??jquery/jquery-1.10.2.min.js,widget/passport/passport.js"></script>
+ <script src="http://panda.woniu.com/static/concept/scripts/aside.js"></script>
+<script charset="utf-8" id="pub-header" login="http://www.woniu.com/account/login/?gameid=38&pagename=GW.PANDA.TL&goto=http%3A%2F%2Fpanda.woniu.com%2F" register="http://www.woniu.com/account/register/?gameid=38&pagename=GW.PANDA.TL&goto=http%3A%2F%2Fpanda.woniu.com%2F" src="http://static.woniu.com/header_tl/pub-header.js?v=2"></script>
+<script id="pub-footer" gamename="太极熊猫" src="http://static.woniu.com/footer_dl/pub-footer.js?v=2"></script>
+<script type="text/javascript" src="http://static.woniu.com/scripts/module/statistics/0.1/statistics.js"></script>
+</body>
+</html>

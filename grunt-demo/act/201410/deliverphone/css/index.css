@@ -1,0 +1,73 @@
+.mainContainer{width: 100%; height: 3000px; background: url(../images/bg.jpg) no-repeat top center; }
+.main{width: 1000px; margin: 0 auto;}
+.logo{width: 250px; height: 128px; margin-left: 20px; float: left; display: inline;}
+h1{width: 250px; height: 128px; font-size: 0; line-height: 0; overflow: hidden;}
+.login_area{width: 130px; height: 28px; margin-left: 520px; float: left; display: inline;}
+.login_area .links{width: 55px; }
+.login_area a{height: 28px; float: left; display: inline; font: normal 12px/28px 'microsoft yahei'; text-align: center; text-decoration: none; color: #ffffff;}
+.login_area a:hover{color: #e2dbdb;}
+.receive_btn{width: 377px; height: 126px; background: url(../images/receive.png) no-repeat; float: right; display: inline; margin-top: 412px; margin-right: 535px;}
+.receive_btn:hover{background: url(../images/receive_hover.png) no-repeat;}
+
+.pay{width: 1000px; float: left;}
+.pay h2{width: 948px; padding-left: 52px; font: bold 36px/45px 'microsoft yahei'; margin-top: 167px; color: #bb0000; float: left;display:inline;}
+.pay h2 span{padding: 0px 10px; margin: 0 5px; background: #b01717; color: #fff2a0;}
+.pay .pay_descrption{width: 630px; margin-left: 360px; margin-top: 70px; float: left; display:inline;}
+.pay .pay_descrption h3{height: 26px; font: bold 22px/26px 'microsoft yahei'; color: #bb0000;}
+.pay .pay_descrption ul{margin-top: 25px;}
+.pay .pay_descrption ul li{font: 14px/24px 'microsoft yahei'; color: #4c4948;}
+
+.phone_area{width: 1000px; margin-top: 200px; float: left;}
+.phone_area h2{width: 1000px; font: bold 36px/40px 'microsoft yahei'; color: #bb0000; text-align: center;}
+.phone_area h3{width: 1000px; font: bold 28px/32px 'microsoft yahei'; color: #4c4948; text-align: center;}
+.phone_area .left_description{width: 200px; height: 200px; margin-left: 32px; margin-top: 47px; float: left; display: inline; }
+.phone_area .left_description li{width: 200px; height: 40px; font: 16px/40px 'microsoft yahei'; color: #4c4948;}
+.phone_area .left_description li span{color: #bb0000;}
+.phone_area .right_description{width: 200px; height: 200px; margin-right: 24px; margin-top: 47px; float: right; display: inline; }
+.phone_area .right_description li{width: 200px; height: 40px; font: 16px/40px 'microsoft yahei'; color: #4c4948;}
+.phone_area .right_description li span{color: #bb0000;}
+
+.banner{width: 783px; height: 320px; margin-top: 175px; margin-left: 120px; _margin-left: 55px; float: left; position: relative; overflow: hidden;}
+.slide_area{/*width: 320px; height: 169px;*/ width: 783px; margin: 0 auto; display:block;}
+.swiper-slide{width: 100%; display: block; margin: 0 auto;}
+.slide_area img{/*width: 320px;*/ width:100%; }
+.sc .item .itemImg { width: 100%; display: block; margin: 0 auto;}
+.pagination,.pag_bg{ position: absolute; left: 0; text-align: center; bottom: 4px; width: 100%; z-index: 100;}
+.pag_bg{ background-color: #000; opacity: 0.5; z-index: 100; height: 19px; bottom: 0px;}
+.swiper-pagination-switch { display: inline-block; width: 38px; height: 5px; background: #000000; margin: 0 3px; cursor: pointer; overflow: hidden;}
+.swiper-active-switch {background: #bb0000;}
+
+.performance{width: 1000px; margin-top: 134px; float: left;}
+.performance ul{margin:0; padding: 0;}
+.performance ul li{width: 250px; height: 228px; float: left; display: inline;}
+.performance ul li .icon1{width: 89px; height: 94px; margin-left: 83px; background: url(../images/icons.png) no-repeat 0 0; }
+.performance ul li .icon2{width: 91px; height: 94px; margin-left: 83px; background: url(../images/icons.png) no-repeat -89px 0; }
+.performance ul li .icon3{width: 90px; height: 94px; margin-left: 83px; background: url(../images/icons.png) no-repeat -180px 0; }
+.performance ul li .icon4{width: 92px; height: 94px; margin-left: 83px; background: url(../images/icons.png) no-repeat -269px 0; }
+.performance ul li .icon5{width: 90px; height: 94px; margin-left: 83px; background: url(../images/icons.png) no-repeat 0 -92px; }
+.performance ul li .icon6{width: 91px; height: 94px; margin-left: 83px; background: url(../images/icons.png) no-repeat -89px -92px; }
+.performance ul li .icon7{width: 90px; height: 94px; margin-left: 83px; background: url(../images/icons.png) no-repeat -180px -92px; }
+.performance ul li .icon8{width: 84px; height: 94px; margin-left: 83px; background: url(../images/icons.png) no-repeat -269px -92px; }
+.performance ul li .line1{width: 250px; font: bold 14px/23px 'microsoft yahei'; color: #0d0d0d; text-align: center; margin-top: 24px;}
+.performance ul li .line2{width: 250px; font: 12px/20px 'microsoft yahei'; color: #545454; text-align: center; margin-top: 5px;}
+
+.see_more{width: 215px; height: 30px; margin-left: 424px; margin-top: 30px; font: bold 24px/27px 'microsoft yahei'; color: #292929; float: left; display: inline; position: relative;}
+.see_more .right_arrow{width: 19px; height: 18px; position: absolute; top: 7px; right: 0; background: url(../images/right_arrow.png) no-repeat; }
+
+.return_top{width: 47px; height: 47px; background: url(../images/return_top.png) no-repeat; position: fixed; bottom: 150px; right: 247px; _position: absolute; cursor: pointer;}
+
+.mask{width: 100%; height: 3191px; position: absolute; top: 0; left: 0; -moz-opacity: 0.7; opacity:0.70; filter: alpha(opacity=70); background: #444444; z-index: 2;}
+.prop{width: 483px; padding: 43px 27px; position: absolute; top: 0; left: 50%; margin-left: -242px; background: url(../images/prop_bg_1.png) no-repeat #eeeeee; z-index: 3;}
+.prop h4{width: 483px; margin-top: 50px; font: bold 32px/50px 'microsoft yahei'; color: #990000; text-align: center; float: left; display: inline;}
+.prop p{width: 483px; margin-top: 50px; font: 18px/30px 'microsoft yahei'; text-align: center; float: left; display: inline;}
+.prop_btn{width: 237px; height: 67px; background: url(../images/prop_submit.png) no-repeat; margin-top: 30px; margin-left: 121px; float: left; display: inline; font: 24px/67px 'microsoft yahei'; text-decoration: none; color: #fff6bd; text-align: center;}
+.prop_btn:hover{background: url(../images/prop_submit_hover.png) no-repeat;}
+#payAttention span{color: #990000;}
+.prop .rows{width: 423px; height: 38px; margin-top: 11px; float: left; display: inline; font: 16px/38px 'microsoft yahei';}
+.prop .rows .label{width: 117px; margin-right: 15px; float: left; display: inline; text-align: right;}
+.prop .rows .input_name{width: 290px; height: 36px; background: #ffffff; float: left; display: inline; border: 0 none;}
+.prop .rows .sure_to_rules{margin-left: 104px; float: left; margin-top: 4px; margin-right: 4px;}
+.prop .rows .description{font: 14px/18px 'microsoft yahei'; color: #990000;}
+.prop .exit{width: 22px; height: 43px; position: absolute; top: 0; right: 12px; cursor: pointer;}
+#got_gift{margin-top: 0;}
+#submitComplete p{margin-top: 15px;}

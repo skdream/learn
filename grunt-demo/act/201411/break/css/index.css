@@ -1,0 +1,144 @@
+body{ font-family: "Microsoft Yahei"; background: url(../images/bg2.jpg) repeat-y;}
+.bg{ width: 100%; display: table; background: url(../images/bg1.jpg) top center no-repeat;}
+.wrap{ width: 1000px; margin: 0 auto;}
+.wrap .top{ width: 100%; height: 40px;  }
+.wrap .top a{ width: 98px; height: 35px; float: right; background: url(../images/topnavbg.png) no-repeat; text-align: center; font: normal 12px/30px ""; color: #fff; text-decoration: none;}
+.wrap .loginbox{ width: 100%; height: 40px; margin-top: 350px; font: normal 13px/40px "Simsun"; color: #444; text-align: right;}
+.wrap .loginbox a{ color: #ce3f3f;}
+.s_alink{overflow: hidden;margin-top: 10px;}
+.s_alink a{float: right;color:#ad1602;font-size: 14px; text-decoration: underline;font-weight: bold;font-family: Simsun;}
+.s_nwrap{
+	height: 150px;
+	overflow: hidden;zoom:1;
+}
+.s_nwrap p{text-align: right;overflow: hidden;zoom:1;}
+.snp1{color: #e2da00;font-size: 12px;padding-top: 20px;}
+.snp2 span,.snp4 span{display: block;width: 93px;height: 22px;line-height: 22px;background-color: #a61504;border: 1px solid #d25345;float: right;text-align: center;color: #ffc9c2;margin-top: 10px;}
+.snp2 span em,.snp4 span em{color: #fff;font-family: "Microsoft Yahei";font-style:normal;}
+.snp3 a{float: right;color: #f5ceca;font-size: 12px;text-decoration: underline;margin-top: 5px;margin-right: 16px;}
+.tit{ width: 100%; height: 50px; background: url(../images/titbg.jpg) no-repeat;}
+.tit1{ background-position: 0 0;}
+.tit1 a{ font: normal 14px/40px ""; float: right; text-decoration: none; color: #333;}
+.tit2{ background-position: 0 -50px;}
+.tit3{ background-position: 0 -100px;}
+.tit4{ background-position: 0 -150px;}
+
+.wrap1{ width: 100%; height: 550px; margin-bottom: 20px;}
+.wrap1 .left{ width: 580px; height: 530px; float: left;margin-top: 15px;}
+.left .videobox{ width: 575px; height: 345px; border: 2px solid #d3cbc9;  margin-top: 15px; position: relative; z-index: 1;}
+
+.left .videolist{ width: 100%; height: 75px; position: relative; margin-top: 15px; z-index: 1;}
+.videolist .btn{ width: 13px; height: 70px; background: #d3cbc9; position: absolute; z-index: 2; font: normal 12px/70px "simsun"; color: #555; text-align: center; text-decoration: none;}
+.videolist .btn:hover{ background: #dfd7d5;}
+.videolist .btn1{ left: 0;}
+.videolist .btn2{ right: 0;}
+.listwrap{ width: 540px; height: 70px; overflow: hidden; position: absolute; top: 0; left: 15px; z-index: 1;}
+.left ul{ width: 2220px; height: 70px; }
+.left li{ width: 103px; height: 70px; float: left; margin-right: 8px; cursor: pointer;}
+
+.wrap1 .right{ width: 390px; height: 530px; float: right; margin-top:20px;}
+.right .upload{ width: 390px; height: 80px; float: left; background: url(../images/uploadbtn.jpg) 0 0 no-repeat;}
+.right .rules{ width: 180px; height: 46px; float: left; border: 1px solid #c00;  text-align: center; font: bold 18px/45px ""; color: #ad1602; margin-top: 20px; text-decoration: none;}
+.right .verify{ width: 180px; height: 46px; float: right; border: 1px solid #0d8991; text-align: center; font: bold 18px/45px ""; color: #0d8991; margin-top: 20px; text-decoration: none;}
+.right h3{ width: 100%; height: 40px; float: left; border-bottom: 1px solid #777; font: bold 20px/40px "Kaiti"; color: #444; text-align: center; margin-top: 10px;}
+.right .list_tit{ width: 100%; height: 30px; float: left;}
+.right .list_tit b{ width: 33%; float: left; text-align: center; font: normal 14px/30px ""; color: #c00;}
+.listbox ul li{ width: 390px; height: 30px; float: left; }
+.listbox ul li span{ width: 33%; float: left; text-align: center;}
+
+#scrollbar1 { width: 390px; height: 280px; float: left; margin-top: 10px; }
+#scrollbar1 .viewport { width: 380px; height: 260px; overflow: hidden; position: relative; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar1 .scrollbar{ background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 10px; }
+#scrollbar1 .track { background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbar1 .thumb .end { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar1 .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+.wrap2{ width: 100%; height: 560px;  margin-bottom: 20px; background: url(../images/img1.jpg) 0  70px no-repeat; }
+.wrap2 .moreinfo{ width: 160px; height: 50px; float: left; margin-top: 330px; margin-left: 492px; background: #c00; font: normal 18px/50px ""; color: #fff; text-decoration: none; text-align: center;}
+.wrap2 .moreinfo:hover{ background: #f00;}
+.wrap3{ width: 100%; height: 370px;   margin-bottom: 20px;}
+.wrap3 .rulsinfo{ padding-left: 10px; font: normal 14px/30px ""; color: #444;}
+.wrap3 .rulsinfo b{ color: #c50000; padding-top: 10px; font-weight: bold;}
+
+.wrap4{ width: 100%; height: 1200px;  margin-bottom: 20px;}
+
+.maskDiv{ width: 100%; height: 1200px; position: absolute; z-index: 20; background: #000; top: 0; left: 0;}
+.popbox{ width: 538px; height: 382px; background: url(../images/popbox.png) no-repeat; border-radius: 5px; position: fixed; _position: absolute; left: 50%; margin-left: -200px; top: 150px; z-index: 30;}
+.popbox .loginbox{ width: 415px; float: left; margin-left: 65px; margin-top: 90px; display: inline;}
+.popbox .closelogin{ width: 30px; height: 30px; float: right; margin-top: 10px; font: normal 16px/30px "Arial"; color: #fff; text-decoration: none;}
+.popbox .row{ width: 415px; height: 60px; position: relative; }
+.popbox .forget{ text-align: right;}
+.popbox .forget a{ font: normal 14px/60px ""; color: #bbb;}
+.popbox .row .loginname{ width: 365px; height: 58px; border: 1px solid #ccc; background: #f4f4f4 url(../images/icon_1.png) 20px center no-repeat; border-top-right-radius:5px;border-top-left-radius:5px; font-size: 20px;  line-height: 58px; padding-left:  50px; color: #444; font-family: "microsoft Yahei"; }
+.popbox .row .password{ width: 365px; height: 58px;  border: 1px solid #ccc; background: #f4f4f4 url(../images/icon_2.png) 20px center no-repeat; border-top: none; border-bottom-right-radius:5px;border-bottom-left-radius:5px; padding-left: 50px; font-size: 20px; color: #444; }
+.popbox .row span{ width: 332px; height: 40px; position: absolute; top: 9px; left: 50px; font: normal 20px/40px ""; color: #444;}
+.popbox .row .loginbtn{ width: 235px; height: 65px; float: left; margin-left: 85px; background: url(../images/loginbtn.jpg) 0 0  no-repeat;}
+.popbox .row .loginbtn:hover{ background-position: 0 -65px;}
+
+.popinfo{ width:538px; height: 263px; background: url(../images/popbg.png) no-repeat; border-radius: 5px; position: fixed; _position: absolute; left: 50%; margin-left: -200px; top: 150px; z-index: 30; text-align: center;}
+.popinfo .closebtn{ width: 30px; height: 30px; position: absolute; top: 5px; right: 5px; z-index: 31;}
+.popinfo p{ font: normal 20px/40px ""; color: #555; margin-top: 100px;}
+
+.popwrap{ width: 538px; background: url(../images/popbg.png) top center no-repeat; border-radius: 4px; position: fixed; _position: absolute; z-index: 30; left: 50%; margin-left: -260px; top: 200px;}
+.popwrap .closebtn{ width: 30px; height: 30px; float: right; margin: 5px;}
+.popwrap h3{ width: 100%; height: 50px; float: left; font: bold 30px/50px ""; color: #b01804; text-align: center; margin-top: 10px;}
+
+.pop_upload{ height: 540px; background-color: #fff; }
+.pop_upload .row{ width: 470px;  float: left; margin-top: 5px; margin-left: 35px; display: inline;}
+.pop_upload .row .example{ color: #c00; margin-left: 10px;}
+.pop_upload .row label{ width: 115px; height: 40px; float: left; font: normal 12px/40px ""; color: #333;}
+.pop_upload .row .txtinput{ width: 310px; height: 33px; border: 1px solid #dbdbdb; background: #f4f4f4; font-size: 14px; text-indent: 10px;  color: #555; border-radius: 4px;}
+.pop_upload .row textarea{ width: 290px; height: 75px; padding: 10px; border: 1px solid #dbdbdb;border-radius: 4px; background: #f4f4f4; font-size: 14px; color: #555;}
+.pop_upload .row .fileinput{ padding-top: 10px;}
+.pop_upload .submit_btn{ width: 237px; height: 66px; float: left; margin-left: 115px; margin-top: 30px; background: #ff0 url(../images/submitbtn.jpg) no-repeat; cursor: pointer;}
+.pop_upload .submit_btn:hover{ background-position: 0 -66px;}
+
+.pop_state{ height: 340px; background-color: #fff; }
+.pop_state .state{ width: 400px; height: 200px; float: left; padding-right: 10px; overflow-y: scroll;  margin-left: 80px; display: _inline; margin-top: 20px;}
+.pop_state .state li{ width: 100%; height: 30px; font: normal 14px/30px ""; color: #333;}
+.pop_state .state li span{ float: right;}
+
+.pop_alert{ height: 250px;}
+
+.pop_example{ width: 900px; height:800px; overflow: scroll; position: fixed; _position: absolute; z-index: 40; left: 50%; margin-left: -450px; top: 50px;}
+.pop_example a{  position: absolute; right: 0px; top: 0; z-index: 40; top: 10px; color: #333; text-decoration: none; font-size: 14px;}
+.pop_example a:hover{ color: #c00; text-decoration: underline;}
+/*内页*/
+.subwrap{ width: 1020px; margin: 0 auto; margin-top: 150px;}
+.subwrap .uploadrow{ width: 100%; height: 80px;}
+.subwrap .upload{ width: 390px; height: 80px; float: right; clear: both; background: url(../images/subupload.png) no-repeat;}
+.subwrap .upload:hover{ background-position: 0 -80px;}
+.subwrap ul{ margin-top: 10px; float: left;}
+.subwrap li{ width: 240px; height: 220px;  float: left; margin-left: 13px; margin-top: 20px; text-align: center; cursor: pointer;}
+.subwrap li img{ border: 3px solid #d3cbc9;}
+.subwrap li p{ margin-top: 5px; font: normal 14px/30px ""; color: #333;}
+
+.popvideo{ width: 800px; height: 470px; background: #ccc; position: fixed; _position: absolute; left: 50%; margin-left: -400px; top: 150px; z-index: 30;}
+.popvideo .closebtn{ width: 50px; height: 50px; background: #000; font: normal 18px/50px "Arial"; text-decoration: none; color: #FFF; text-align: center; position: absolute; right: -50px; z-index: 31;}
+
+.subwrap .page{ width: 100%; height: 60px; float: left; margin-top: 30px; text-align: center; margin-bottom: 30px;}
+.subwrap .page a{ width: 130px; height: 48px; display: inline-block;   background: url(../images/subpage.png) 0 -48px no-repeat; margin-left: 10px; font: normal 14px/48px ""; color: #fff; text-align: center; text-decoration: none; }
+.subwrap .page .disable{ background-position: 0 0;}
+.subwrap .page .prev{}
+
+
+.pop_playerbook{ width: 728px; height: 540px; background: url(../images/bookbg.jpg) no-repeat; position: fixed; _position: absolute; z-index: 40; left: 50%; top: 150px; margin-left: -319px;}
+.pop_playerbook .closebtn{ width: 30px; height: 30px; position: absolute; top: 5px; right: 5px; z-index: 31;}
+.pop_playerbook h3{ width: 90%; height: 110px; margin: 0 auto;  font: bold 30px/110px ""; color: #ab1602; text-align: center;}
+.pop_playerbook .bookcont{ width: 90%; margin: 0 auto; margin-top: 30px; font: normal 14px/30px ""; color: #444; text-indent: 2em;}
+.pop_playerbook .bookcont b{ font-weight: bold; color: #ab1602;}
+
+
+
+
+
+
+
+
+
+
+
+

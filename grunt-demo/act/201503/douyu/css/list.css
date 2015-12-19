@@ -1,0 +1,27 @@
+/*************************
+*Author: wangjia
+*Date: 2015-4-3
+*************************/
+
+/*list style*/
+.list_wrap{ width: 1000px; margin: 0 auto; margin-top: 30px;}
+.videolist{ width: 920px; margin: 0 auto;}
+.list_wrap { padding-bottom: 50px; overflow: hidden;}
+.list_wrap .info{ padding-left: 20px; background: url(../images/num_ico.png) 0 5px no-repeat; font: normal 14px/22px "Microsoft Yahei"; color: #ff9900; margin-bottom: 20px; }
+.table{ background: #eeeded; }
+thead{ width: 100%; height: 50px; background: #000;}
+thead td{ width: 150px; height: 50px; font: 16px/50px "Microsoft Yahei"; color: #fff; background-color: #282725; border-left: 1px solid #fff; text-align: center;}
+thead .td1{ width: 149px; border-left: none;}
+thead .td2{ width: 259px;}
+thead .td3{width: 200px}
+thead .td4{width: 210px;}
+
+.user{ width: 96px; margin: 10px auto; position: relative;}
+.user p{ width: 100%; height: 24px; font: normal 12px/25px "Microsoft Yahei"; background-color: #000; opacity: 0.6; filter: alpha(opacity=60); position: absolute; bottom: 0; left: 0;}
+.user span{display: block; width: 100%; height: 24px; position: absolute; color: #FFF; bottom: 0; left: 0; text-align: center;}
+
+tbody td{ height: 105px; background: #fcc694;  vertical-align: middle; border-bottom: 1px solid #5c2c00;  border-left: 1px solid #5c2c00; font: normal 14px/24px "Microsoft Yahei"; color: #333; text-align: center;  }
+tbody td a{ padding: 5px 10px; background: #e6a642; color: #fff; }
+tbody td a:hover{ background: #f50;}
+.odd_tr td{background-color: #f7ae6b;}
+

@@ -1,0 +1,18 @@
+{
+  "name": "node-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jquery": "^2.1.4"
+  },
+  "dependencies": {
+    "date": "^1.0.2",
+    "zepto": "0.0.4"
+  }
+}

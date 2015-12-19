@@ -1,0 +1,67 @@
+body {
+    background: url(../images/detail/bg.jpg) center top no-repeat;
+    background-attachment:fixed;
+}
+.bg {
+    width: 991px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+/*header*/
+.bg-header {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+.bg-logo {
+    display: block;
+    height: 100px;
+    width: 145px;
+    float: left;
+}
+.bg-nav {
+    height: 50px;
+    width: 600px;
+    float: left;
+    margin: 25px 66px 12px 68px;
+}
+.bg-nav li {
+    float: left;
+    font: 16px/20px Arial;
+    width: 130px;
+    height: 20px;
+    margin-right: 20px;
+    margin-bottom: 13px;
+}
+.bg-nav li a {
+    color: #fff;
+}
+.bg-return {
+    display: block;
+    height: 36px;
+    width: 109px;
+    background: url(../images/detail/returnbtgn.png) no-repeat;
+    float: left;
+    margin-top: 39px;
+}
+.bg-return:hover {
+    background-position: 0 -36px;
+}
+
+/*main*/
+.bg-main {
+    width: 851px;
+    padding: 25px 70px 50px;
+    background-color: #dbe9ff;
+}
+.main-tit {
+    font: bold 40px/120px 'Myriad';
+    color: #333399;
+    text-align: center;
+}
+.main-con {
+    font: 16px/25px Arial;
+    color: #333333;
+    text-align: left;
+}

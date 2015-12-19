@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import "variable.scss";
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/utilities/";
+@import "compass/layout";
+@import "compass/utilities";
+@import "compass";
+body{
+	font-size:12px;
+	color:#333;
+}
+$width:5em;
+
+#main{
+	$width: 10em !global;
+	width:$width;
+}
+
+#sidebar{
+	width:$width;
+	height:(1.38/1.50)px
+}
+
+
+@include firefox-message('.header');
+
+p{
+	font:10px/8px;
+	$width:1000px;
+	width:$width/2;
+	height:250px;
+	margin-left:9px;
+}
+
+p{
+	$font-size:12px;
+	$line-height:30px;
+
+	font:#{$font-size}/#{$line-height}
+}
+h2{
+	font-size:30px;
+	line-height:26px;
+	color:#fff;
+}
+
+.rounded {
+	@include border-radius(5px);
+}
+.conner{
+	@include border-corner-radius(top, left, 5px);
+}
+
+#opacity {
+	//@include opacity(0.5); 
+	@include opacity(0);
+}
+
+#inline-block {
+	@include inline-block;
+}
+
+#footer{
+	@include sticky-footer(54px);
+}
+#stretch-full {
+	@include stretch; 
+}
+
+.animation{
+	@include animation('ease,1s');
+}
+.box-sizing{
+	@include box-sizing('content-box');
+}
+
+a {
+	@include link-colors(#00c, #0cc, #c0c, #ccc, #cc0);
+}
+
+
+.clearfix {
+	@include clearfix;
+}
+
+table {
+	@include table-scaffolding;
+}
+
+.icon {
+	width:image-width("icon.png");
+	height:image-height('icon.png');
+	background-image: inline-image("icon.png");}
+
+.icon2 {
+width:image-width("icon.png");
+height:image-height('icon.png');
+background-image: url("/images/icon.png");}
+
+
+$share-spacing: 50px;
+//$setting-position: 5px;
+$share-layout: vertical;
+
+//$setting-sprite-dimensions: true;
+
+@import "compass/utilities/sprites";
+@import "share/*.png";
+@include all-share-sprites;
+
+.test{
+	@include share-sprites(icon);
+}
+
+$share: sprite-map("share/*.png");
+.ts{
+	height: 89px;
+	background-position:  sprite-position($share, 2, 3px, -2px);
+}

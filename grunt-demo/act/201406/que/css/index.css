@@ -1,0 +1,242 @@
+.top{
+	background: url(../images/bg-top.jpg) no-repeat top center;
+}
+.top_view{
+	position: relative;
+	width: 1000px;
+	height: 645px;
+	margin: 0 auto;
+}
+.begin_btn{
+	color: #549922;
+	border: 1px solid #549922;
+	display: inline-block;
+	position: absolute;
+	width: 178px;
+	height: 50px;
+	text-align: center;
+	font:16px/50px "Microsoft YaHei";
+	text-decoration: none;
+	top:471px;
+	left: 342px;
+}
+.begin_btn:hover{
+	background-color: #549922;
+	color: #fff;
+}
+.ask_view{
+	width: 1000px;
+	margin: 0 auto;
+	height: 655px;
+}
+.container{
+	background: url(../images/cn-bg.jpg) no-repeat top center;
+	font-family: "Microsoft YaHei";
+}
+.askv_h{
+	font-size: 16px;
+	color: #909093;
+	line-height: 28px;
+	padding-left: 125px;
+	padding-top: 45px;
+}
+.tobar{
+	width: 900px;
+	height: 9px;
+	background-color: #2f2e31;
+	overflow: hidden;
+	position: relative;
+	margin: 29px 0 0 52px;
+}
+.toing{
+	position: absolute;
+	width: 75px;
+	height: 9px;
+	overflow: hidden;
+	background-color: #474749;
+	top:0;
+	left: 0;
+}
+.ask_cont{
+	position: relative;
+	padding-top: 113px;
+}
+.prev{
+	background: url(../images/left.png) no-repeat 0 0;
+	position: absolute;
+	width: 72px;
+	height: 130px; 
+	top:113px;
+	left: 0;
+}
+.prev:hover{
+	background: url(../images/left_h.png) no-repeat 0 0;
+}
+.next{
+	background: url(../images/right.png) no-repeat 0 0;
+	position: absolute;
+	width: 72px;
+	height: 130px; 
+	top:113px;
+	right: 0;
+}
+.next:hover{
+	background: url(../images/right_h.png) no-repeat 0 0;
+}
+.swiper-slide{
+	color: #858489;
+	font-size: 14px;
+}
+.swiper-slide .ans{
+	padding-top: 10px;
+}
+#mdSlider{
+	width: 550px;
+	height: 380px;
+	padding-left: 40px;
+}
+.anslist,.banslist,.cbanslist{
+	overflow: hidden;
+	zoom:1;
+	padding-top: 5px;
+}
+.swiper-slide{
+	cursor: default;
+}
+.anslist a{
+	background: url(../images/un.png) no-repeat 0 0;
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin: 3px 10px 0 0;
+	_background: url(../images/un_6.png) no-repeat 0 0;
+}
+.banslist a,.cbanslist a{
+	background: url(../images/un.png) no-repeat 0 0;
+	width: 15px;
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin: 3px 10px 0 0;
+	_background: url(../images/b_un_6.png) no-repeat 0 0;
+}
+.anslist a.sdd{
+	background: url(../images/ed.png) no-repeat 0 0;
+	_background: url(../images/ed_6.png) no-repeat 0 0;
+}
+.banslist a.sdd,.cbanslist a.sdd{
+	background: url(../images/ed.png) no-repeat 0 0;
+	_background: url(../images/b_ed_6.png) no-repeat 0 0;
+}
+.anslist span,.banslist span,.cbanslist span{
+	float: left;
+}
+.branch{
+	background: #161619;
+	overflow: hidden;
+	zoom:1;
+	font-size: 12px;
+	padding: 15px 20px 15px 20px;
+	margin-top: 10px;
+	float: left;
+}
+.bra_l,.bra_r{
+	float: left;
+	width: 108px;
+}
+.bra_r{
+	margin-left: 50px;
+}
+.finish_view h2,.suc_view h2{
+	color: #549922;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+}
+.finish_view p{
+	text-align: center;
+}
+.finish_view .fv_p1{
+	text-align: left;
+	padding-top: 15px;
+	line-height: 30px;
+}
+.fv_p2{
+	overflow: hidden;
+	zoom:1;
+	padding-left: 70px;
+	padding-top: 17px;
+}
+.fv_p1 span{
+	color: #bfbdc7;
+}
+.fv_p2 span,.fv_p2 input{
+	float: left;
+}
+.fv_p2 span{
+	margin: 5px 5px;
+}
+.fv_p2 input{
+	width: 175px;
+	height: 32px;
+	padding-left: 5px;
+	line-height: 32px;
+	background-color: #1a1a1d;
+	border: 1px solid #2a292c;
+	color: #bfbdc7;
+}
+.fvp2_s2{
+	color: #b03737;
+}
+.finish_view .fv_p3{
+	padding-top: 32px;
+	text-align: left;
+	padding-left: 155px;
+}
+.submit,.sucb_l a{
+	display: inline-block;
+	width: 178px;
+	height:50px;
+	border: 1px solid #549922;
+	color: #549922;
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+	line-height: 50px;
+}
+.submit:hover,.sucb_l a:hover{
+	background-color: #549922;
+	color: #fff;
+}
+.sucv_p1{
+	text-align: center;
+	color: #b9b9b9;
+	font-size: 16px;
+	padding-top: 20px;
+}
+.suc_b{
+   overflow: hidden;
+   zoom:1;	
+   padding-top: 40px;
+   padding-left: 100px;
+}
+.sucb_l{
+	width: 180px;
+}
+.sucb_l,.sucb_r{
+	float: left;
+}
+.sucb_r{
+	margin-left: 40px;
+}
+.sucb_r p{
+	text-align: center;
+}
+.sucb_l .cha{
+	border: 1px solid #cd811f;
+	color: #cd811f;
+	margin-top: 20px;
+}
+.sucb_l .cha:hover{
+	background-color: #cd811f;
+}

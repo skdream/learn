@@ -1,0 +1,18 @@
+/*************************
+*Author: Panfei
+*Date: 2015-4-7
+*************************/
+
+.container{ width: 1000px; margin: 0 auto; margin-top: 30px; overflow: hidden;}
+.container .info{padding-left: 20px; background: url(../images/num_ico.png) 0 10px no-repeat; font: 16px/2 "Microsoft Yahei"; color: #ff9900;}
+
+.video_list{margin: 30px 0 0 -12px;}
+.videobox{width: 319px; color: #333; background-color: #fdab37; border: 1px solid #d08037; overflow: hidden; float: left; margin: 0 0 20px 15px; _display: inline; _zoom: 1;}
+.videobox img{border: 5px solid #d08037; width: 309px; height: 169px; overflow: hidden;}
+.videobox h3{font: 16px/2 "microsoft yahei";}
+.videobox .videoinfo{padding: 3px 15px 8px;}
+
+
+
+
+

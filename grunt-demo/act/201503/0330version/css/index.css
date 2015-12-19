@@ -1,0 +1,464 @@
+/**
+ * Created with WebStorm.
+ * User: wangxiaoxiao
+ * Date: 2015/3/30/0030
+ * Time: 11:24
+ * To change this template use File | Settings | File Templates.
+ */
+body {
+    background-color: #A31810;
+    font: 12px/1.5 "microsoft yahei", "simhei", "宋体", tahoma, arial, sans-serif;
+}
+.white{
+    color: #d6d2ca;
+}
+.black{
+    color: #121212;
+}
+.red{
+    color: #a2150f;
+}
+.bg1 {
+    min-width: 1024px;
+    background: url(../images/bg.jpg) no-repeat center top #A31810;
+}
+
+.container{
+    width: 1024px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    position: relative;
+}
+.header{
+    height: 843px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    color: #333;
+}
+
+.header a{
+    font: normal 14px/30px "microsoft yahei";
+    color: #333;
+    margin: 0 4px;
+    text-decoration: none;
+}
+.actTitle{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 50px;
+    height: 50px;
+    padding-left: 130px;
+}
+.title1{
+    margin-top: -80px;
+}
+.nowNum{
+    color: #ff0;
+    font-size: 30px;
+    font-style: italic;
+}
+.rule{
+    background-color:#171613;
+    color: #a2150f;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.intro{
+    color: #121212;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-left: 130px;
+}
+.prize1{
+    position: relative;
+    width: 908px;
+    height: 226px;
+    margin: 25px auto 0 100px;
+    background: url("../images/prize1.jpg") no-repeat scroll 0 0;
+}
+.prize1Hover{
+    height: 226px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../images/prize1-get.jpg") no-repeat;
+    min-width: 20px;
+}
+.btnBox{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn{}
+.getPrize{
+    display: inline-block;
+    width: 245px;
+    height: 86px;
+    background: url("../images/btn.jpg") no-repeat;
+    background-position: 0 -86px;
+}
+.getPrizeNot{
+    display: inline-block;
+    width: 245px;
+    height: 86px;
+    background: url("../images/getprize-gray.jpg") no-repeat;
+}
+.getPrize:hover{
+    background-position: 0 0;
+}
+.check{
+    display: inline-block;
+    width: 155px;
+    height: 86px;
+    background: url("../images/btn.jpg") no-repeat;
+    background-position: -245px -86px;
+    margin-left: 20px;
+}
+.check:hover{
+    background-position: -245px 0;
+}
+.p02{
+    font-size: 25px;
+    color: #121212;
+    line-height: 40px;
+    height: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 130px;
+}
+.joinBox{
+    margin-top: 20px;
+    padding-left: 120px;
+    position: relative;
+}
+.orderBox{
+    overflow: hidden;
+    text-align: center;
+    margin: 50px 0;
+}
+#order-phone{
+    float: none;
+    margin-left: -150px;
+}
+.joinNow{
+    color: #ff0000;
+    font-size: 20px;
+    height: 49px;
+    line-height: 48px;
+    text-align: center;
+    width: 150px;
+    background: none repeat scroll 0 0 #121212;
+    font-weight: bold;
+    margin-left: 20px;
+    text-decoration: none;
+    left: 700px;
+    position: absolute;
+    top: 0;
+}
+.joinNow:hover{
+    background: #222222;
+}
+.joinBox input {
+    background: url("../images/inputText.jpg") no-repeat #A31810;
+    border: none;
+    color: #121212;
+    float: left;
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 10px;
+    text-indent: 10px;
+    width: 251px;
+}
+
+.joinBox input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: #121212;}
+
+.joinBox input:-moz-placeholder, textarea:-moz-placeholder {color:#121212;}
+
+.joinBox input::-moz-placeholder, textarea::-moz-placeholder {color:#121212;}
+
+.joinBox input:-ms-input-placeholder, textarea:-ms-input-placeholder {color:#121212;}
+
+.os_type {
+    background: url("../images/listbg.jpg") no-repeat scroll right center #f5e0a1;
+    color: #121212;
+    font-size: 18px;
+    line-height: 48px;
+    height: 48px;
+    margin-left: 10px;
+    margin-top: -1px;
+    text-indent: 10px;
+    width: 300px;
+    cursor: pointer;
+    border: 1px solid #2f2e2a;
+    left: 381px;
+    position: absolute;
+    top: 0;
+}
+.joinBox dl {
+    background: none repeat scroll 0 0 #fff;
+    height: 120px;
+    position: absolute;
+    left: 392px;
+    top: 50px;
+    width: 300px;
+    cursor: pointer;
+    overflow-y: auto;
+    z-index: 999;
+}
+.joinBox dd {
+    color: #333;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    text-indent: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+.joinBox dd:hover{
+    background-color: #ffd96d;
+}
+
+/*bg2*/
+.bg2{
+    min-width: 1024px;
+    background: #121212;
+}
+.icon02{
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    width: 123px;
+    height: 123px;
+    background: url("../images/btn.jpg") no-repeat;
+    background-position: -223px -358px;
+}
+.rule2{
+    border: 1px solid #a2150f;
+}
+.title2{
+    padding-top: 50px;
+}
+.color1{
+  color: #999999;
+}
+.color2{
+    color: #ffffff;
+}
+.prize2{
+    position: relative;
+    width: 910px;
+    height: 264px;
+    margin: 25px auto 0 100px;
+    background: url("../images/prize2.jpg") no-repeat scroll 0 0;
+    padding-left: 27px;
+}
+.prize2Hover{
+    height: 226px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 20px;
+    background: url("../images/prize2-get.jpg") no-repeat;
+}
+.getBtn{
+    /*background-color:#121212;
+    border: 1px solid #a2150f;
+    color: #a2150f;*/
+    background-color:#999;
+    border: 1px solid #999;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 11px;
+    text-align: center;
+    margin: 224px 60px 0;
+    float: left;
+    width: 45px;
+}
+.awardBtn_get{
+    /*background-color:#121212;*/
+    border: 1px solid #a2150f;
+    /*color: #a2150f;*/
+    background-color:#a2150f;
+    color: #121212;
+}
+.awardBtn_got{
+    background-color:#121212;
+    border: 1px solid #a2150f;
+    color: #a2150f;
+}
+.btn2{
+    display: inline-block;
+    width: 223px;
+    height: 93px;
+    background: url("../images/btn.jpg") no-repeat;
+}
+.startInvite{
+    background-position: 0 -450px;
+}
+.startInvite:hover{
+    background-position: 0 -357px;
+}
+.acceptInvite{
+    background-position: 0 -172px;
+    margin-left: 20px;
+}
+.acceptInvite:hover{
+    background-position: 0 -265px;
+}
+.checkPrize{
+    background-position: -223px -172px;
+    margin-left: 20px;
+}
+.checkPrize:hover{
+    background-position: -223px -265px;
+}
+.p03{
+    font-size: 16px;
+    color: #666666;
+    float: left;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 150px;
+}
+.iconFour{
+    float: left;
+    background: url("../images/btn.jpg") no-repeat scroll -223px -482px;
+    height: 32px;
+    margin-left: 20px;
+    margin-top: 24px;
+    width: 154px;
+}
+.iconShare{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+.ml8{
+    margin-left: 8px;
+}
+
+/*bg3*/
+.bg3{
+    min-width: 1024px;
+    background: url("../images/bg03.jpg") repeat;
+}
+.container03{
+    background: url("../images/img03.jpg") no-repeat scroll 400px 89px;
+}
+.icon03{
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    width: 121px;
+    height: 123px;
+    background: url("../images/btn.jpg") no-repeat scroll -346px -358px;
+}
+.intro03{
+    font-size: 16px;
+    line-height: 31px;
+    width: 522px;
+}
+.img03{
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+
+/*pop*/
+.mask{
+    background-color: #000;
+    opacity: 0.6;
+}
+.pop{
+    position: absolute;
+    display: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+}
+.close{
+    width: 51px;
+    height: 51px;
+    background: url("../images/close.jpg") no-repeat;
+    position: absolute;
+    right: -51px;
+    top: 0;
+}
+.alertPop{
+    width: 420px;
+    padding: 30px;
+    background: #ffffff;
+    font-size: 16px;
+    line-height: 30px;
+}
+.alertPopCont{
+    color: #121212;
+    font-size: 14px;
+    line-height: 25px;
+}
+.alertPopCont h2{
+    font-size: 30px;
+    color: #121212;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+}
+.alertPopCont h3{
+    font-size: 18px;
+    color: #121212;
+    line-height: 50px;
+    text-align: center;
+}
+.alertPopCont p{
+    margin-bottom: 10px;
+}
+.popTitle{
+    margin-left: -10px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    color: #ffffff;
+    background: #121212;
+}
+.popInput{
+    background: url("../images/popInput.jpg") no-repeat #ffffff;
+    border: none;
+    color: #121212;
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    text-indent: 10px;
+    width: 280px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.submit {
+    background: #a2150f;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    height: 70px;
+    margin: 0 auto;
+    width: 238px;
+    border-bottom: 5px solid #680000;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.row{
+    padding: 10px 0;
+    text-align: center;
+    color: #666;
+}

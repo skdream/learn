@@ -1,0 +1,45 @@
+/*this css is exported by senroLabel © www.passtome.com/senroLabel/*/
+
+/*simpleSliderLR方法样式开始*/
+        .simpleSliderLR{
+            position: relative;
+            width: 440px;
+            height: 331px;
+            margin: 228px auto 20px;
+        }
+        .simpleSliderLR .itemStag{
+            position: relative;
+            width: 440px;
+            height: 331px;
+            overflow: hidden;
+        }
+        .simpleSliderLR .itemWrap{
+            position: absolute;
+            width: 9999px;
+            height: 331px;
+        }
+        .simpleSliderLR .itemImg{
+            float: left;
+            width: 440px;
+            height: 331px;
+        }
+        .simpleSliderLR .arrow{
+            cursor: pointer;
+            height: 101px;
+            position: absolute;
+            top: 50%;
+            margin-top: -40px;
+            width: 48px;
+            display: block;
+            outline: none;
+        }
+        .simpleSliderLR .arrowLeft {
+            left: -63px;
+            background: url(../images/arrowLeft.png);
+        }
+        .simpleSliderLR .arrowRight {
+            background: url(../images/arrowRight.png);
+            right: -63px;
+        }
+        /*simpleSliderLR方法样式结束*/
+

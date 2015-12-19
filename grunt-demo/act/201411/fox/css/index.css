@@ -1,0 +1,97 @@
+.bg1{width: 100%; height: 960px; background: url(../images/bg_1.jpg) no-repeat top center;}
+.container{width: 990px; margin: 0 auto;}
+.logo{width: 355px; height: 200px; margin-right: 635px; float: left; display: inline;}
+.qrcodeBorder{width: 346px; height: 96px; margin-top: 461px; margin-left: 100px; float: left; display: inline;}
+.qrcodeBorder .description{width: 191px; margin-left: 12px; float: left; display: inline;}
+.qrcodeBorder .description .row1{ margin-top: 10px; font: bold 16px/24px 'Microsoft Yahei'; color: #1e244c; width: 191px; float: left; }
+.qrcodeBorder .description .row2{ font: bold 16px/24px 'Microsoft Yahei'; color: #177fff; width: 191px; float: left; position: relative;}
+.qrcodeBorder .description .row2 span{width: 12px; height: 12px; background: url(../images/arrow_right.png) no-repeat; position: absolute; top: 7px; right: 95px;}
+.qrcodeBorder .description .row3{font: 12px/18px 'Microsoft Yahei'; color: #1e244c; width: 191px; margin-top: 5px;}
+.qrcodeBorder img{float: left;}
+.bg1 .arrowDown{width: 108px; height: 108px; margin-top: 82px; margin-left: 442px; margin-right: 440px; cursor: pointer; float: left; display: inline; background: url(../images/arrow_down.png) no-repeat;}
+
+.bg2{width: 100%; height: 1365px; background: url(../images/bg_2.jpg) no-repeat top center;}
+.bg2 h2{width: 829px; height: 46px; margin-top: 137px; font: 30px/46px 'Microsoft Yahei'; color: #e6e6e6; text-align: center; float: left; display: inline;}
+.bg2 .description{width: 829px; height: 393px; margin-top: 47px; float: left; display: inline;}
+.bg2 .description img{margin-top: -21px; float: left; }
+.roleDetail{width: 410px; margin-left: 36px; float: left; display: inline;}
+.roleDetailUl li{width: 410px; padding-bottom: 12px; font: 14px/26px 'Microsoft Yahei'; color: #000000;}
+.roleDetailUl li span, .roleSkillArea h3 span{width: 9px; height: 12px; margin-top: 7px; margin-right: 7px; background: url(../images/arrow_right_black.png) no-repeat; float: left;}
+.bg2 h3{font: 16px/24px 'Microsoft Yahei'; color: #000000; padding-bottom: 5px;}
+.parterns{width: 390px;}
+.parterns li{width: 120px; height: 110px; margin-right: 10px; float: left; display: inline; position: relative;}
+.bg2 .parterns li img{margin: 0;}
+.parterns li h4{width: 120px; height: 24px; position: absolute; bottom: 0; left: 0; background: url(../images/h4.png) no-repeat; 
+	font: 14px/24px 'Microsoft Yahei'; color: #ffffff; text-align: center;}
+.roleSkillArea{width: 829px; float: left; }
+.roleSkillArea h3{width: 829px; height: 30px; padding: 10px 0; font: 14px/30px 'Microsoft Yahei';}
+.roleSkillArea h3 span{margin-top: 10px;}
+.roleSkill{width: 830px; height: 157px; border-top: 1px solid #8ea3cb; border-left: 1px solid #8ea3cb;}
+.roleSkill li{width: 414px; height: 78px; border: 1px solid #8ea3cb; margin: -1px 0 0 -1px; float: left; display: inline;}
+.roleSkill li span{width: 61px; height: 61px; margin-top: 10px; margin-left: 21px; float: left; display: inline;}
+.roleSkill li p{margin: 5px 0 0 9px; font: 14px/24px 'Microsoft Yahei'; width: 297px; float: left; display: inline;}
+.roleSkill1{background: url(../images/skills.png) no-repeat 0 -78px;}
+.roleSkill2{background: url(../images/skills.png) no-repeat 0 0;}
+.roleSkill3{background: url(../images/skills.png) no-repeat -62px 0;}
+.roleSkill4{background: url(../images/skills.png) no-repeat -62px -78px;}
+.picsShowArea{width: 831px; height: 339px; margin-top: 40px; float: left; display: inline;}
+.leftBtn, .leftBtnHover{margin: 139px 0 0 10px; width: 33px; height: 59px; background: url(../images/arrows.png) no-repeat 0 0; float: left; display: inline;}
+.leftBtnHover:hover{background: url(../images/arrows.png) no-repeat -33px 0;}
+.scrollPics{width: 600px; height: 338px; float: left; display: inline; overflow: hidden; margin-left: 73px;}
+.scrollPics ul{width: 1000000px; height: 338px;}
+.scrollPics ul li{width: 600px; height: 338px; float: left; display: inline;}
+.rightBtn,.rightBtnHover{margin: 139px 0 0 10px; width: 33px; height: 59px; background: url(../images/arrows.png) no-repeat -99px 0; float: right; display: inline;}
+.rightBtnHover:hover{background: url(../images/arrows.png) no-repeat -66px 0;}
+.bg2 .arrowDown{width: 108px; height: 108px; margin-top: 34px; margin-left: 442px; margin-right: 440px; cursor: pointer; float: left; display: inline; background: url(../images/arrow_down.png) no-repeat;}
+
+.bg3{width: 100%; height: 960px; background: url(../images/bg_3.jpg) no-repeat top center;}
+.element1{width: 290px; height: 178px; background: url(../images/element_1.png) no-repeat 0 0; position: absolute; top: 311px; left: -14px; z-index: 1;}
+.element1:hover{left: -34px;}
+.element2{width: 285px; height: 186px; background: url(../images/element_2.png) no-repeat 0 0; position: absolute; top: 477px; left: 30px; z-index: 2;}
+.element2:hover{left: 10px;}
+.element3{width: 287px; height: 275px; background: url(../images/element_3.png) no-repeat 0 0; position: absolute; top: 585px; left: -14px; z-index: 3;}
+.element3:hover{left: -34px;}
+.element4{width: 282px; height: 274px; background: url(../images/element_4.png) no-repeat 0 0; position: absolute; top: 167px; left: 544px; z-index: 1;}
+.element4:hover{left: 574px;}
+.element5{width: 282px; height: 185px; background: url(../images/element_5.png) no-repeat 0 0; position: absolute; top: 342px; left: 589px; z-index: 2;}
+.element5:hover{left: 619px;}
+.element6{width: 282px; height: 188px; background: url(../images/element_6.png) no-repeat 0 0; position: absolute; top: 508px; left: 543px; z-index: 3;}
+.element6:hover{left: 573px;}
+.element7{width: 282px; height: 275px; background: url(../images/element_7.png) no-repeat 0 0; position: absolute; top: 616px; left: 589px; z-index: 4;}
+.element7:hover{left: 619px;}
+.bg3 .arrowDown{width: 108px; height: 108px; margin-top: 840px; margin-left: 442px; margin-right: 440px; cursor: pointer; float: left; display: inline; background: url(../images/arrow_down.png) no-repeat;}
+.bg4{width: 100%; height: 960px; background: url(../images/bg_4.jpg) no-repeat top center; }
+.positionRelative{position: relative;}
+.bg4 .leftBar{width: 150px; position: absolute; top: 165px; left: 0; z-index: 1}
+.bg4 .leftBar a{width: 150px; height: 139px; margin-top: 30px; float: left; display: inline;}
+.championBtn{background: url(../images/selecters.png) no-repeat -152px -6px;}
+.championBtn.selected{background: url(../images/selecters.png) no-repeat -1px -6px;}
+.battleBtn{background: url(../images/selecters.png) no-repeat -152px -174px;}
+.battleBtn.selected{background: url(../images/selecters.png) no-repeat -2px -174px;}
+.warBtn{background: url(../images/selecters.png) no-repeat -152px -342px;}
+.warBtn.selected{background: url(../images/selecters.png) no-repeat -2px -342px;}
+/*.bg4 .rightPart{}*/
+.bg4 .rightScenes{position: absolute; width: 1153px; height: 625px; top: 95px; left: -61px;}
+.bg4 .rightScenes div{width: 1153px; height: 625px; }
+.championPic{background: url(../images/champion_pic.png) no-repeat;}
+.battlePic{background: url(../images/battle_pic.png) no-repeat;}
+.warPic{background: url(../images/war_pic.png) no-repeat;}
+.seeMore{width: 90px; height: 20px; position: absolute; top: 455px; left: 528px;}
+.seeMore2{width: 90px; height: 20px; position: absolute; top: 455px; left: 678px;}
+.seeMore3{width: 90px; height: 20px; position: absolute; top: 455px; left: 611px;}
+.bg5{width: 100%; height: 356px; background: url(../images/bg_5.jpg) no-repeat top center;}
+.brand{width: 1004px; margin-top: 42px; float: left; display: inline;}
+.brand li{width: 306px; height: 156px; margin-right: 13px; float: left; display: inline;}
+.brand .brand1{width: 353px; background: #ffffff;}
+.brand1 img{width: 125px; height: 128px; margin: 14px 0 0 26px; float: left; display: inline;}
+.brand1 p{width: 184px; margin-top: 30px; font: 16px/34px 'Microsoft Yahei'; color: #355279; float: right; }
+.brand2{background: url(../images/bg_5_bg_2.jpg) no-repeat;}
+.brand3{background: url(../images/bg_5_bg_3.jpg) no-repeat;}
+
+.slideBarArea{width: 140px; height: 520px; border: 1px solid #3c4352; position: absolute; _position: absolute; top: 36px; right: 0;/* margin-right: -500px;*/ z-index: 1000;}
+.slideBarArea a{width: 140px; height: 64px; border-bottom: 1px solid #8f9fbf; float: left; display: inline; background: url(../images/slide_bar.jpg);
+	font: 18px/64px 'Microsoft Yahei'; color: #474d8e; text-align: center; text-decoration: none;}
+.slideBarArea a.selected{background: url(../images/slide_bar_selected.jpg) no-repeat;}
+.qrcodeArea{width: 140px; height: 195px; float: left; display: inline; background: url(../images/qrcode_bg.jpg) no-repeat;}
+.qrcodeArea img{width: 132px; height: 136px; margin-top: 12px; margin-left: 4px; float: left; display: inline;}
+.qrcodeArea p{width: 140px; margin-top: 5px; font: 12px/18px ''; color: #000a6f; text-align: center; float: left; display: inline;}

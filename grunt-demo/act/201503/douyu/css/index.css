@@ -1,0 +1,51 @@
+/*************************
+*Author: Panfei
+*Date: 2015-4-7
+*************************/
+
+.bg1{height: 632px; background: url(../images/bg1.jpg) no-repeat 50% 0; min-width: 1100px;}
+.bg2{height: 631px; background: url(../images/bg2.jpg) no-repeat 50% 0; overflow: hidden;}
+.bg3{height: 1488px; background: url(../images/bg3.jpg) no-repeat 50% 0; overflow: hidden;}
+.bg1 .box{height: 632px;}
+.bg2 .box{height: 631px;}
+.bg3 .box{height: 1488px;}
+.official-a{width: 338px; height: 108px; position: absolute; top: 18px; left: 0;}
+.act_explain{width: 500px; color: #feb46b; font: 16px/1.5 microsoft yahei; margin: 203px 0 0 450px;}
+.act_explain .bold-p{font: 700 26px/2 microsoft yahei;}
+
+.btnbox{width: 100%; margin: 66px auto 0; text-align: center;}
+.bg2 .btnbox a{width: 386px; height: 127px; display: inline-block; margin: 0 30px;}
+.btn1{background: url(../images/btn1.png) no-repeat 0 0;}
+.btn2{background: url(../images/btn1.png) no-repeat 0 -139px;}
+.btn1:hover{background: url(../images/btn2.png) no-repeat 0 0;}
+.btn2:hover{background: url(../images/btn2.png) no-repeat 0 -139px;}
+
+.p1, .p3{font: 16px/1 microsoft yahei; color: #feb76d; text-align: center; margin-top: 248px;}
+.p1 span, .p3 span{margin-left: 114px;}
+.p2{text-align: right; margin-top: 20px;}
+.p2 a{font: 16px/1 microsoft yahei; color: #d36400; padding-right: 128px; text-decoration: underline;}
+.p3{margin-top: 300px;}
+.prize_explain{font: 14px/2 microsoft yahei; color: #d36400; margin: 577px 0 0 639px;}
+
+.bottombox{width: 1000px; margin: 0 auto 40px; color: #d08037; font: 14px/2 microsoft yahei; overflow: hidden;}
+.bottombox h3{font-size: 26px; margin-bottom: 20px;}
+.bottombox h4{color: #fff;}
+
+.act_con{width: 100%;}
+.act_note{width: 95%; padding-left: 5%;}
+.act_con h4, .act_note p{padding-left: 22px; background: url(../images/num_ico.png) no-repeat 0 9px;}
+/*.act_note{margin-left: 60px; _display: inline; _zoom: 1;}*/
+.act_con p{padding-left: 26px;}
+
+.bottombox .btnbox{float: left; width: 1025px; text-align: center; margin-bottom: 40px; overflow: hidden; margin-left: -29px;}
+.bottombox .btnbox a{display: inline-block; width: 223px; height: 107px; background: url(../images/btn3.jpg) no-repeat 0 0; margin-left: 29px; font: 700 22px/107px microsoft yahei; color: #fff;}
+.bottombox .btnbox a:hover{background: url(../images/btn3.jpg) no-repeat 0 -108px;}
+
+.bg4{height: 1076px; background: url(../images/bg4.jpg) no-repeat 50% 0;}
+.bg5{height: 1341px; background: url(../images/bg5.jpg) no-repeat 50% 0;}
+.bg6{height: 349px; background: url(../images/bg6.jpg) no-repeat 50% 0;}
+.bg4 .box{height: 100%;}
+.bg4 .box a{width: 80px; height: 20px; display: block; position: absolute; top: 292px; right: 129px;}
+.rc{color: #d92400;}
+.left{float: left; width: 47%;}
+.right{float: right; width: 49%;}

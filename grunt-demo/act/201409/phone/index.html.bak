@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  
+  <link rel="stylesheet" href="http://panda.woniu.com/static/act/201409/apponline/css/index.css" />
+
+  <link rel="stylesheet" type="text/css" href="http://static.woniu.com/stylesheets/base.css" />
+  <link rel="stylesheet" href="http://panda.woniu.com/static/act/201409/phone/css/index.css" />
+  <link rel="stylesheet" type="text/css" href="http://panda.woniu.com/static/act/201409/phone/css/idangerous.swiper.css"/>
+ 
+  <title>太极熊猫928手机专题</title>
+ </head>
+ <body>
+   <div class="wrap">
+     <div class="topbga">
+	       <div class="login"><a href="http://www.woniu.com/account/login/?gameid=38&pagename=GW.PANDA.TL&goto=http%3A%2F%2Fpanda.woniu.com%2F" target="_blank" class="a">登 录</a>&nbsp;&nbsp;&nbsp;<em class="shu">|</em>&nbsp;&nbsp;&nbsp;<a href="http://www.woniu.com/account/register/?gameid=38&pagename=GW.PANDA.TL&goto=http%3A%2F%2Fpanda.woniu.com%2F" target="_blank" class="b">注 册</a></div>
+	 </div>
+	 <div class="topbgb"></div>
+	 <div class="topbgc"></div>
+
+	 <div class="m-center">
+	     <img src="http://panda.woniu.com/static/act/201409/phone/images/m01.jpg" />
+	     <img src="http://panda.woniu.com/static/act/201409/phone/images/m02.jpg" />
+		 <img src="http://panda.woniu.com/static/act/201409/phone/images/m03.jpg" />
+		 <div class="wrapimg">
+		   <a id="mouseona" class="leftone" href="javascript:;">合约A计划</a>
+		   <a id="mouseonb" class="rightone" href="javascript:;">合约B计划</a>
+		   <div class="showa" id="showa"></div>
+		   <div class="showb" id="showb"></div>
+
+		 </div>
+
+		 
+		 <div class="wrapc">
+		   <a href="http://www.snail.com/phone/W1/" target="_blank" class="a"></a>
+		   <a href="http://www.snail.com/phone/W1/" target="_blank" class="b"></a>
+		 </div>
+		 <img src="http://panda.woniu.com/static/act/201409/phone/images/m06.jpg" />
+		  
+         <div class="wrapd">
+		   <a href="http://mall.snail.com/card/card-item-1999.html" target="_blank" class="a"></a>
+		   <a href="http://mall.snail.com/card/card-item-1999.html" target="_blank" class="b"></a>
+		 </div>
+		 <div class="wrapimgb">
+		    
+            <div class="swiper-container wrass">
+               <div class="swiper-wrapper">
+      <!--First Slide-->
+      <div class="swiper-slide"> 
+         <img src="http://panda.woniu.com/static/act/201409/phone/images/bg1.jpg" style="padding-top: 46px;padding-left: 60px;"/>
+      </div>      
+      <!--Second Slide-->
+      <div class="swiper-slide">
+        <img src="http://panda.woniu.com/static/act/201409/phone/images/02.png" style="padding-top: 46px;display:block;margin:0 auto;"/>
+      </div> 
+      <!--Third Slide-->
+      <div class="swiper-slide"> 
+        <img src="http://panda.woniu.com/static/act/201409/phone/images/03.png" style="padding-top: 46px;display:block;margin:0 auto;"/>
+      </div>
+      <!--Etc..-->
+               </div>
+			     <div class="pagination"></div>
+            </div>
+
+		 </div>
+		 <img src="http://panda.woniu.com/static/act/201409/phone/images/m08.jpg" />
+		 <img src="http://panda.woniu.com/static/act/201409/phone/images/m09.jpg" />
+         <div class="wrapimgten">
+		    <a href="http://mall.snail.com/card/card-item-1999.html" target="_blank" class="a"></a>
+		 </div>
+		  
+
+		 <img src="http://panda.woniu.com/static/act/201409/phone/images/m11.jpg" />
+		 <img src="http://panda.woniu.com/static/act/201409/phone/images/m12.jpg" />
+		 <div class="wrapimgtre">
+		    <a href="http://www.snail.com/static/mlive/" class="a" target="_blank"></a>
+	
+		 </div>
+		
+	 </div>
+   </div>
+
+   <div class="uptop" id="uptop"></div>
+   
+   <script charset="utf-8" id="pub-header" login="http://www.woniu.com/account/login/?gameid=38&pagename=GW.PANDA.TL&goto=http%3A%2F%2Fpanda.woniu.com%2F" register="http://www.woniu.com/account/register/?gameid=38&pagename=GW.PANDA.TL&goto=http%3A%2F%2Fpanda.woniu.com%2F" src="http://static.woniu.com/header_tl/pub-header.js?v=2"></script>
+   <script id="pub-footer" gamename="太极熊猫" src="http://static.woniu.com/footer_dl/pub-footer.js?v=2"></script>
+   <script type="text/javascript" src="http://static.woniu.com/js/jquery.js"></script>
+   <script type="text/javascript" src="http://panda.woniu.com/static/act/201409/phone/js/idangerous.swiper-2.1.min.js"></script>
+   <script type="text/javascript" src="./js/index.js"></script>
+ </body>
+</html>

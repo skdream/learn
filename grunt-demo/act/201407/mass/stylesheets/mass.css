@@ -1,0 +1,480 @@
+@charset 'UTF-8';
+/*!
+ * @fileOverview panda.woniu.com mass special stylesheet
+ * @version 0.0.1
+ */
+.mass{
+  min-width: 1000px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #3a3a3a;
+}
+
+.header{
+  position: relative;
+  height: 500px;
+  background: url(../images/bg0.jpg) center 0 no-repeat;
+}
+.logo{
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  margin-left: -495px;
+  width: 180px;
+  height: 124px;
+}
+.date,
+.dateLabel{
+  -webkit-box-shadow: 1px 1px 1px #b8b3a7;
+  box-shadow: 1px 1px 1px #b8b3a7;
+}
+.date{
+  display: block;
+  position: absolute;
+  top: 408px;
+  left: 50%;
+  margin-left: -492px;
+  width: 298px;
+  height: 25px;
+  overflow: hidden;
+  line-height: 25px;
+  border: 1px solid #000;
+}
+.dateLabel{
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 102px;
+  height: 25px;
+  text-align: center;
+  color: #eeeadd;
+  background-color: #000;
+}
+
+.trunk{
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.activity1{
+  height: 908px;
+  background: url(../images/bg1.jpg) center 0 no-repeat;
+}
+.progress{
+  position: relative;
+  padding: 265px 0 0 41px;
+  height: 159px;
+  width: 906px;
+}
+.progressBar{
+  position: relative;
+  width: 0%;
+  -webkit-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+.barHead,
+.barEnd,
+.milestoneDim,
+.milestoneLite,
+.recruite{
+  background-image: url(../images/activity1.png);
+  _background-image: url(../images/activity1.png8.png);
+  background-repeat: no-repeat;
+}
+.barHead,
+.barEnd{
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 22px;
+  overflow: hidden;
+}
+.barHead{
+  left: -12px;
+  background-position: -284px -210px;
+}
+.barEnd{
+  right: -12px;
+  background-position: -296px -210px;
+}
+.barTrunk{
+  width: 100%;
+  height: 22px;
+  background: url(../images/progress.png) repeat-x;
+}
+.milestone{
+  position: absolute;
+  top: 227px;
+  margin-left: -49px;
+  width: 98px;
+  height: 104px;
+  text-align: center;
+}
+.milestone1{
+  left: 152px;
+}
+.milestone2{
+  left: 304px;
+}
+.milestone3{
+  left: 456px;
+}
+.milestone4{
+  left: 760px;
+}
+.milestoneDim,
+.milestoneLite{
+  width: 98px;
+  height: 104px;
+}
+.milestoneLite{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  _filter: alpha(opacity=0);
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.milestone--hilite .milestoneLite{
+  opacity: 1;
+  _filter: alpha(opacity=100);
+}
+.milestone2 .milestoneDim{
+  background-position: -99px 0;
+}
+.milestone3 .milestoneDim{
+  background-position: -198px 0;
+}
+.milestone4 .milestoneDim{
+  background-position: -297px 0;
+}
+.milestone1 .milestoneLite{
+  background-position: 0 -105px;
+}
+.milestone2 .milestoneLite{
+  background-position: -99px -105px;
+}
+.milestone3 .milestoneLite{
+  background-position: -198px -105px;
+}
+.milestone4 .milestoneLite{
+  background-position: -297px -105px;
+}
+.milestoneText{
+  padding-top: 10px;
+}
+.recruiteInfo{
+  padding-left: 100px;
+  height: 126px;
+  line-height: 82px;
+}
+.recruiteCount{
+  float: left;
+  width: 256px;
+  font-size: 24px;
+  color: #35342f;
+}
+.recruiteTotal{
+  color: #dd3838;
+}
+.recruite{
+  display: block;
+  float: left;
+  width: 283px;
+  height: 82px;
+  background-position: 0 -210px;
+}
+.recruite:hover{
+  background-position: 0 -293px;
+}
+.recruiteShare{
+  float: left;
+  padding-left: 22px;
+}
+.col{
+  float: left;
+  width: 500px;
+}
+.squareList{
+  list-style-type: square;
+  padding-left: 2em;
+}
+.ruleList1{
+  padding: 82px 0 0 36px;
+}
+.recruiteUsers{
+  position: relative;
+  top: 82px;
+  left: 44px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.activity2{
+  height: 1088px;
+  background: url(../images/bg2.jpg) center 0 no-repeat;
+}
+.inviteButtons{
+  padding: 444px 0 0 48px;
+  height: 214px;
+}
+.inviteButton,
+.shareButton{
+  background-image: url(../images/activity2.png);
+  _background-image: url(../images/activity2.png8.png);
+  background-repeat: no-repeat;
+}
+.inviteButton{
+  display: block;
+  float: left;
+  margin-right: 43px;
+  width: 238px;
+  height: 82px;
+}
+.inviteButton2{
+  background-position: -239px 0;
+}
+.inviteButton3{
+  background-position: -478px 0;
+}
+.inviteButton1:hover{
+  background-position: 0 -83px;
+}
+.inviteButton2:hover{
+  background-position: -239px -83px;
+}
+.inviteButton3:hover{
+  background-position: -478px -83px;
+}
+.shareInvitation{
+  float: left;
+  width: 100%;
+  padding-top: 32px;
+  line-height: 38px;
+  font-size: 16px;
+  color: #7d6f58;
+}
+.shareButton{
+  float: left;
+  display: block;
+  margin-right: 26px;
+  width: 156px;
+  height: 41px;
+}
+.shareButton1{
+  background-position: 0 -166px;
+}
+.shareButton2{
+  background-position: -157px -166px;
+}
+.shareButton3{
+  background-position: -314px -166px;
+}
+.shareButton4{
+  background-position: -471px -166px;
+}
+.rule2{
+  padding-top: 78px;
+}
+.rule2Intro,
+.ruleList2{
+  padding-left: 36px;
+  width: 426px;
+}
+.awardList{
+  padding: 72px 0 0 70px;
+  height: 148px;
+}
+.inviteInfo{
+  display: inline-block;
+  width: 224px;
+}
+.inviteRank{
+  display: inline-block;
+  width: 60px;
+}
+.inviteList{
+  padding: 46px 0 0 70px;
+}
+
+.activity3{
+  height: 860px;
+  background: url(../images/bg3.jpg) center 0 no-repeat;
+}
+.preorder{
+  padding: 443px 0 0 50px;
+  height: 100px;
+}
+.preorderSet{
+  float: left;
+  position: relative;
+  width: 458px;
+  height: 67px;
+}
+.preorderField,
+.preorerMessage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  width: 426px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  border: 1px solid #54543c;
+}
+.preorerMessage{
+  color: #c5c5c5;
+}
+.preorderButton{
+  float: left;
+  display: block;
+  margin-left: 36px;
+  width: 194px;
+  height: 67px;
+  background: url(../images/activity3.png) no-repeat;
+  _background-image: url(../images/activity3.png8.png);
+}
+.preorderButton:hover{
+  background-position: 0 -68px;
+}
+.ruleList3{
+  padding: 80px 0 0 40px;
+}
+
+.activity4{
+  height: 961px;
+  background: url(../images/bg4.jpg) center 0 no-repeat;
+}
+.cardLink{
+  position: absolute;
+  top: 116px;
+  left: 50%;
+  margin-left: 294px;
+  width: 130px;
+  height: 23px;
+}
+.lottery{
+  display: block;
+  float: left;
+  padding: 188px 0 0 30px;
+  width: 481px;
+  height: 431px;
+}
+.square{
+  float: left;
+  margin: 0 15px 13px 0;
+  width: 142px;
+  height: 135px;
+  background-image: url(../images/activity4.jpg);
+  background-repeat: no-repeat;
+}
+.p1{
+  background-position: -143px 0;
+}
+.p2{
+  background-position: -286px 0;
+}
+.p3{
+  background-position: 0 -136px;
+}
+.spin{
+  background-position: -143px -136px;
+}
+.spin:hover{
+  background-position: 0 -408px;
+}
+.p4{
+  background-position: -286px -136px;
+}
+.p5{
+  background-position: 0 -272px;
+}
+.p6{
+  background-position: -143px -272px;
+}
+.p7{
+  background-position: -286px -272px;
+}
+.sign{
+  float: left;
+  padding-top: 188px;
+  width: 454px;
+}
+.signButton{
+  float: left;
+  display: block;
+  width: 238px;
+  height: 82px;
+  background: url(../images/activity4.png) no-repeat;
+  _background-image: url(../images/activity4.png8.png);
+}
+.signButton:hover{
+  background-position: 0 -83px;
+}
+.signInfo{
+  float: left;
+  padding: 22px 0 0 10px;
+  line-height: 30px;
+  font-size: 16px;
+}
+.chances{
+  font-size: 24px;
+  color: #b51010;
+}
+.shareSign{
+  clear: left;
+  height: 67px;
+  line-height: 54px;
+  font-size: 14px;
+}
+.recordList{
+  float: left;
+  padding: 66px 0 0 44px;
+  height: 200px;
+  overflow: hidden;
+}
+.recordContent{
+  display: inline-block;
+  width: 296px;
+}
+.ruleList4{
+  clear: both;
+  padding: 80px 0 0 39px;
+}
+
+.activity5{
+  height: 428px;
+  background: url(../images/bg5.jpg) center 0 no-repeat;
+}
+.mediaList{
+  padding: 181px 0 0 29px;
+}
+.mediaItem{
+  float: left;
+  width: 192px;
+}
+.mediaLink{
+  display: block;
+  width: 171px;
+  height: 92px;
+  background-image: url(../images/activity5.jpg);
+  background-repeat: no-repeat;
+}
+.mediaLink2{
+  background-position: 0 -93px;
+}
+.mediaLink3{
+  background-position: 0 -186px;
+}
+.mediaLink4{
+  background-position: 0 -279px;
+}
+.mediaLink5{
+  background-position: 0 -372px;
+}

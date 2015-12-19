@@ -1,0 +1,57 @@
+body{ font-family: "Microsoft Yahei"; background: #efeeed url(../images/bottombg.jpg) bottom  center no-repeat;}
+.top{ width: 100%; height: 633px; background: url(../images/bg.jpg) top center no-repeat;}
+.top .cont{ width: 1000px; height: 633px; margin: 0 auto; position: relative;}
+.top .logo{ width:250px; height: 160px; position: absolute; top: 0; left: 0; }
+.top .link{ width: 230px; height: 35px; position: absolute; top: 50px; left: 500px; font:normal 16px/35px "KaiTi"; color: #444;}
+.top .link a{ color: #000; text-decoration: none;}
+.top .link a:hover{ text-decoration: underline;}
+.top .time{ width: 400px; height: 35px; position: absolute; top: 560px; left: 120px; font:normal 16px/35px ""; color: #444;}
+.top .time b{ font-weight: bold;}
+
+.navbg{ width: 100%; height: 110px; background: url(../images/navbg.jpg) top center no-repeat;}
+.navbg .nav{ width: 1030px; height: 110px; margin: 0 auto;}
+.nav a{ width: 121px; height: 102px; float: left; margin-right: 7px; _display: inline; background: url(../images/nav.jpg) no-repeat;}
+.nav .a1{ background-position:0px 0;}
+.nav .a2{ background-position:-129px 0;}
+.nav .a3{ background-position:-258px 0;}
+.nav .a4{ background-position:-387px 0;}
+.nav .a5{ background-position:-516px 0;}
+.nav .a6{ background-position:-645px 0;}
+.nav .a7{ background-position:-774px 0;}
+.nav .a8{ background-position:-903px 0;}
+.nav .a1:hover,.nav .current1{ background-position:0px -102px;}
+.nav .a2:hover,.nav .current2{ background-position:-129px -102px;}
+.nav .a3:hover,.nav .current3{ background-position:-258px -102px;}
+.nav .a4:hover,.nav .current4{ background-position:-387px -102px;}
+.nav .a5:hover,.nav .current5{ background-position:-516px -102px;}
+.nav .a6:hover,.nav .current6{ background-position:-645px -102px;}
+.nav .a7:hover,.nav .current7{ background-position:-774px -102px;}
+.nav .a8:hover,.nav .current8{ background-position:-903px -102px;}
+
+.article{ width: 1000px; display: table; padding-bottom: 30px; margin: 0 auto; margin-top: 30px;} 
+.article h1{ width: 100%; height: 70px; background: url(../images/titbg.jpg) top center no-repeat; font: bold 32px/70px ""; color: #333; text-align: center;}
+
+.content h3{ font-size: 14px; font-weight: bold; display: inline; margin-right: 10px; padding: 5px 10px; background: #c00; color: #fff;}
+.content{ width: 100%; display: table; margin: 0 auto; margin-top: 20px; font: normal 14px/30px "Simsun"; color: #444; }
+
+.loadbar{ width: 53px; height: 257px; background: url(../images/loadbar.jpg) no-repeat; position: fixed; _position: absolute; top: 200px; left: 0; z-index: 1px;}
+.floatbox{ width: 230px; height: 470px; background: url(../images/floatbg.jpg) no-repeat; position: fixed; _position: absolute; top: 150px; left: 0; z-index: 2;}
+.floatbox .closebtn{ width: 23px; height: 23px; position: fixed; _position: absolute; left: 204px; top: 153px; background: url(../images/close.jpg) no-repeat; cursor: pointer;}
+.floatbox .closebtn:hover{ background-position: 0 -23px;}
+.floatbox a{ width: 188px; height: 54px; float: left; margin-left: 16px; margin-top: 13px; background: url(../images/down.jpg) no-repeat;}
+.floatbox .a1{  margin-top: 245px; background-position: 0 0 ;}
+.floatbox .a2{ background-position: 0 -54px;}
+.floatbox .a3{   background-position: 0 -108px;}
+.floatbox .a1:hover{ background-position: -188px 0 ;}
+.floatbox .a2:hover{ background-position: -188px -54px;}
+.floatbox .a3:hover{   background-position: -188px -108px;}
+
+
+
+
+
+
+
+
+
+

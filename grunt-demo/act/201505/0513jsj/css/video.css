@@ -1,0 +1,63 @@
+/*************************
+*Author: Panfei
+*Date: 2015-5-13
+*************************/
+
+/*--------------------
+	Grid
+--------------------*/
+body{font: 0.75em/1.5 microsoft yahei, Arial; min-width: 1060px;}
+a{text-decoration: none;}
+img{vertical-align: middle;}
+
+.box{width: 1000px; height: 100%; margin: 0 auto; position: relative; overflow: hidden;}
+.bg1{height: 499px; background: url(../images/bg4.jpg) no-repeat 50% 0;}
+.logo-a{width: 258px; height: 67px; display: block; background: url(../images/logo.png) no-repeat; margin: 12px auto 0;}
+
+.bg2{background: #1f1b42 url(../images/bg5.jpg) no-repeat 50% 0; padding-bottom: 40px;}
+.sort-bar{padding: 0 16px; font: 14px/65px 'microsoft yahei'; color: #fff; background-color: #2a214f;}
+.sort-bar a{width: 80px; text-align: center; display: inline-block; color: #fff; margin: 0 6px;}
+.sort-bar a:hover, .sort-hov{background-color: #49328a;}
+
+.video-box{margin: 35px 0 0 -42px;}
+.video{float: left; margin: 0 0 66px 42px; width: 304px; overflow: hidden;}
+.video img{border: 6px solid #5b3da6; width: 292px; height: 168px; overflow: hidden;}
+.video p{font: 14px/2 'microsoft yahei'; padding: 0 6px; color: #d2dce3; background-color: #3d3073;}
+.video-dlbtn{width: 173px; height: 48px; display: block; margin: 20px auto; background: url(../images/video_dlbtn.jpg) no-repeat 0 0;}
+.video-dlbtn:hover{background-position: 0 -48px;}
+
+.page-bar{text-align: center;}
+.page-bar a{display: inline-block; border: 1px solid #413b77; font: 14px/36px 'microsoft yahei'; padding: 0 14px; margin: 0 4px;}
+.page-bar .page, .page-bar span{color: #bbb4f6;}
+.page-bar .page:hover, .page-hov{background-color: #413b77;}
+.page-bar .prev-page, .page-bar .next-page{color: #413b77; font-weight: 700}
+.page-bar .prev-page:hover, .page-bar .next-page:hover, .page-bar .page-turn{background-color: #413b77; color: #fff;}
+
+.mask{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	position: fixed;
+	_position: absolute;
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+	top: 0;
+	left: 0;
+	z-index: 49;
+	display: none;
+}
+.video-pop{width: 850px; height: 470px; position: fixed; _position: absolute; z-index: 50; background: #000; left: 50%; margin-left: -425px; top: 200px; display: none;}
+.pop-x{width: 67px; height: 67px; display: block; position: absolute; right: -67px; top: 0; background: url(../images/pop_x.jpg) no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+
+

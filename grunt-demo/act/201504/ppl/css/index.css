@@ -1,0 +1,289 @@
+.bg {
+    background: url(../images/bg.jpg) center top no-repeat;
+}
+
+/*header*/
+.bg-header {
+    width: 1060px;
+    height: 926px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.bg-logo {
+    display: block;
+    width: 516px;
+    height: 79px;
+    background: url(../images/logo_03.png) no-repeat;
+    margin: 33px auto;
+}
+
+/*nav*/
+.bg-nav {
+    width: 1060px;
+    height: 211px;
+    position: absolute;
+    bottom: 0;
+}
+.bg-nav li {
+    float: left;
+    width: 160px;
+    height: 211px;
+    margin-left: 41px;
+    position: relative;
+}
+.bg-nav li a {
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 87px;
+    z-index: 10;
+}
+.none {
+    display: none;
+}
+.bg-nav li a .nav-hover {
+    position: absolute;
+    width: 212px;
+    height: 51px;
+    background: url(../images/nav.jpg) no-repeat;
+    top: -51px;
+    left: -26px;
+}
+.bg-nav li a .nav-hover.nav-hover1 {
+    background-position: 0 0;
+}
+.bg-nav li a .nav-hover.nav-hover2 {
+    background-position: -200px -59px;
+}
+.bg-nav li a .nav-hover.nav-hover3 {
+    background-position: -406px -118px;
+}
+.bg-nav li a .nav-hover.nav-hover4 {
+    background-position: -614px -59px;
+}
+.bg-nav li a .nav-hover.nav-hover5 {
+    background-position: -816px 0;
+}
+.bg-nav li a.homepage {
+    top: 14px;
+}
+.bg-nav li a.rule {
+    top: 73px;
+}
+.bg-nav li a.matches {
+    top: 132px;
+}
+.bg-nav li a.videos {
+    top: 73px;
+}.bg-nav li a.winners {
+     top: 14px;
+ }
+
+/*part1*/
+.part {
+    width: 967px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.p1 {
+    margin-top: 54px;
+}
+.part .tit {
+
+    height: 81px;
+    padding-left: 411px;
+    border-bottom: 1px solid #141248;
+    font: bold 36px/81px 'microsoft yahei';
+    color: #fdc861;
+    background: url(../images/tit_07.jpg) 381px 27px no-repeat;
+}
+.part .con {
+    border-top: 1px solid #000000;
+    overflow: hidden;
+}
+.p1 ul {
+    width: 936px;
+    height: 434px;
+    margin-left: 20px;
+    margin-top: 58px;
+    background: url(../images/p1_03.jpg) no-repeat;
+    color: #d9e4e9;
+    font: 14px/18px 'microsoft yahei';
+    text-align: center;
+}
+.p1 ul li {
+    float: left;
+    width: 166px;
+    padding-top: 245px;
+}
+.p1 ul li.l1 {
+    margin: 0 82px 0 10px;
+}
+.p1 ul li.l2 {
+    margin: 0 91px 0 0px;
+}
+.p1 ul li.l3 {
+    margin: 0 74px 0 0px;
+}
+.p1 ul li.l4 {
+    margin: 0 ;
+}
+
+/*part2*/
+.p2 {
+    margin-top: 83px;
+}
+.p2 .p2-1 {
+    margin-top: 36px;
+}
+.p2 .p2-tit {
+    height: 30px;
+    font: 20px/30px 'microsoft yahei';
+    color: #fdc861;
+    padding-left: 63px;
+    background: url(../images/tit2_11.png) 19px top no-repeat;
+    margin-bottom: 28px;
+}
+.p2-1 .p2-con {
+    padding-left: 13px;
+    margin-bottom: 67px;
+}
+.p2-1 .p2-con ul {
+    height: 147px;
+    width: 990px;
+}
+.p2-1 .p2-con ul li {
+    list-style: none;
+    height: 147px;
+    width: 278px;
+    background: url(../images/p2_10.png) no-repeat;
+    margin-right: 53px;
+    float: left;
+}
+.p2-1 .p2-con ul li .f1 {
+    height: 76px;
+    width: 264px;
+    text-align: center;
+    font: bold 38px/76px 'microsoft yahei';
+    color: #362c1a;
+}
+.p2-1 .p2-con ul li .f2 {
+    font: 14px/25px 'microsoft yahei';
+    color: #d9e4e9;
+    padding: 10px 17px;
+}
+.p2-1 .p2-con ul li .f2 span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #90c3e6;
+}
+.p2-2 .p2-con {
+    font: 16px/27px 'microsoft yahei';
+    color: #d9e4e9;
+    padding-left: 20px;
+}
+
+/*part3*/
+.p3 {
+    margin-top: 75px;
+}
+.p3 .p3-tit {
+    height: 30px;
+    font: 20px/30px 'microsoft yahei';
+    color: #fdc861;
+    padding-left: 63px;
+    background: url(../images/tit2_11.png) 19px top no-repeat;
+    margin-bottom: 28px;
+}
+.p3-1 {
+    float: left;
+    margin: 22px 22px 100px 8px;
+    width: 528px;
+}
+.p3-1 table {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    color: #eef5ff;
+    font-family: 'microsoft yahei';
+    border-left: 1px solid #365885;
+    border-right: 1px solid #365885;
+    border-top: 1px solid #365885;
+}
+.p3-1 table .thead {
+    background-color: #365885;
+    font-size: 16px;;
+}
+.p3-1 table tr {
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    border-bottom: 1px solid #365885;
+}
+.bright {
+    border-right: 1px solid #365885;
+}
+.p3-2 {
+    float: left;
+    margin-top: 22px;
+}
+.p3-2 .p3-con {
+    width: 394px;
+    height: 355px;
+    overflow: hidden;
+    position: relative;
+}
+.p3-2 .imgbox {
+    position: absolute;
+    height: 355px;
+    width: 10000px;
+    left: 0;
+}
+.p3-2 .imgbox ul {
+    height: 355px;
+    margin: 0;
+    padding: 0;
+}
+.p3-2 .imgbox ul li {
+    float: left;
+    height: 355px;
+    width: 394px;
+}
+.p3-2 .des {
+    position: absolute;
+    width: 394px;
+    height: 80px;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.p3-2 .p3-con a {
+    position: absolute;
+    width: 16px;
+    height: 30px;
+    display: block;
+    top: 300px;
+    z-index: 10;
+}
+.p3-2 .p3-con a.lb {
+    left: 6px;
+    background: url(../images/lb_03.png) no-repeat;
+}
+.p3-2 .p3-con a.rb {
+    right: 6px;
+    background: url(../images/rb_05.png) no-repeat;
+}
+.p3-2 .des .wordsbox  {
+    word-wrap: break-word;
+    width: 314px;
+    height: 60px;
+    padding: 10px 40px;
+    color: #b9bec7;
+    font: 14px/20px 'microsoft yahei';
+}

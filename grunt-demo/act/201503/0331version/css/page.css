@@ -1,0 +1,53 @@
+/*************************
+*Author: Panfei
+*Date: 2015-4-1
+*************************/
+
+/*--------------------
+	indexbg
+--------------------*/
+img{vertical-align: top;}
+area{outline: none;}
+a{text-decoration: none;}
+.indexbg{height: 1110px; background: url(../images/bg1.jpg) no-repeat 50% 0; min-width: 1000px; overflow: hidden; position: relative;}
+.topbox{width: 1000px; height: 30px; margin: 0 auto; position: relative;}
+.official-a{width: 124px; height: 30px; position: absolute; top: 0; right: 2px; font: 700 14px/30px microsoft yahei; color: #723730; text-align: center;}
+.official-a:hover{color: #b13729;}
+.mapbox{margin: 369px auto 0; text-align: center; width: 950px;}
+
+/*--------------------
+	dtlbg
+--------------------*/
+.dtlbg1{height: 630px; background: url(../images/bg2.jpg) no-repeat 50% 0; min-width: 1000px; overflow: hidden; position: relative; z-index: 97;}
+.tabbox{width: 926px; height: 108px; position: relative; margin: 428px auto 0;}
+.tabbox a{width: 107px; height: 140px; overflow: hidden; position: absolute; z-index: 98;}
+.tabbox .a1{left: 0; top: 24px; background: url(../images/tab1.png) no-repeat 0 0;}
+.tabbox .a2{left: 117px; top: 16px; background: url(../images/tab2.png) no-repeat 0 0;}
+.tabbox .a3{left: 233px; top: 8px; background: url(../images/tab3.png) no-repeat 0 0;}
+.tabbox .a4{left: 349px; top: 0; background: url(../images/tab4.png) no-repeat 0 0;}
+.tabbox .a5{left: 465px; top: 0; background: url(../images/tab5.png) no-repeat 0 0;}
+.tabbox .a6{left: 581px; top: 8px; background: url(../images/tab6.png) no-repeat 0 0;}
+.tabbox .a7{left: 697px; top: 16px; background: url(../images/tab7.png) no-repeat 0 0;}
+.tabbox .a8{left: 813px; top: 24px; background: url(../images/tab8.png) no-repeat 0 0;}
+.tabbox a:hover, .dtlbg1 .tabbox .tabon{background-position: 0 -141px;}
+.tabcover{height: 88px; position: relative; z-index: 99; bottom: 0; background: url(../images/cover.png) no-repeat 50% 0;}
+
+.dtlbg2{background: url(../images/dtlbg2.jpg) repeat;}
+.dtlbox{width: 930px; margin: 0 auto; display: none;}
+.dtlbox-hd{text-align: center; margin-bottom: 20px;}
+.dtlbox-hd h2{font: 700 40px/1.5 microsoft yahei; color: #333;}
+.dtlbox-hd h3{font: 20px/2 microsoft yahei; color: #d21600; position: relative;}
+.dtlbox-hd h3 a{font-size: 12px; color: #333; position: absolute; bottom: 4px; right: 0;}
+.dtlbox-hd h3 a:hover{text-decoration: underline;}
+
+.h-cutline{width: 100%; height: 0; border-top: 1px solid #cfc7c1; border-bottom: 1px solid #fff;}
+
+.dtlbox-bd{padding: 0 40px 20px;}
+.dtlbox-bd h4{margin-top: 20px; font: 700 16px/2 microsoft yahei; color: #d21600;}
+.dtlbox-bd h5{font: 700 14px/2 microsoft yahei; color: #d21600;}
+.dtlbox-bd p{font: 14px/2 microsoft yahei; color: #333;}
+.dtlbox-bd img{margin: 20px 0;}
+
+
+
+

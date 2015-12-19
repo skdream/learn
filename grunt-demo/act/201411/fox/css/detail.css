@@ -1,0 +1,14 @@
+.bg1{width: 100%; height: 579px; background: url(../images/detail_bg.jpg) no-repeat top center; }
+.container{width: 990px; margin: 0 auto;}
+.logo{width: 355px; height: 200px; margin-right: 635px; float: left; display: inline;}
+.backToIndex{width: 135px; height: 40px; margin-top: 325px; margin-left: 790px; background: url(../images/back_to_index.jpg) no-repeat; font: 18px/40px 'Microsoft Yahei'; color: #ffffff; text-decoration: none; padding-left: 61px; float: left; display: inline;}
+.bg2{width: 100%; background: #ffffff;}
+.detailNav{width: 988px; margin: 2px 0 0 2px; }
+.detailNav a{width: 196px; height: 60px; margin: 1px 1px 0 0; font: bold 18px/60px 'Microsoft Yahei'; color: #474d8e; text-align: center; 
+float: left; display: inline; text-decoration: none; background: url(../images/detail_menu_bgs.png) no-repeat 0 0;}
+.detailNav a:hover{background: url(../images/detail_menu_bgs.png) no-repeat 0 -60px;}
+
+.detailContent{margin: 45px 68px; width: 842px; }
+.detailContent h2{width: 842px; height: 40px; font: 30px/40px 'Microsoft Yahei'; color: #474d8e;}
+.detailContent h2 span{font-weight: bold;}
+.detailContent p{font: 14px/26px ''; color: #333333; margin-top: 13px;}

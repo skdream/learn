@@ -1,0 +1,215 @@
+.w_wrap,
+.w_wrap .w {
+	width: 100%;
+	min-width: 960px;
+}
+.w1 {
+	background: url(../images/w1_01.jpg) no-repeat top center;
+	height: 1985px;
+}
+.w2 {
+	background: url(../images/w1_02.jpg) no-repeat top center;
+	height: 712px;
+}
+.w3 {
+	background: url(../images/w1_03.jpg) no-repeat top center;
+	height: 783px;
+}
+.w4 {
+	background: url(../images/w1_04.jpg) no-repeat top center;
+	height: 1113px;
+}
+.w5 {
+	background: url(../images/w1_05.jpg) no-repeat top center;
+	height: 511px;
+}
+
+/*w1*/
+.w1_view {
+	width: 960px;
+	position: relative;
+	height: 1979px;
+	margin: 0 auto;
+}
+.w1v1 {
+	position: absolute;
+	top: 1130px;
+	left: 34px;
+	height: 480px;
+	width: 330px;
+	font-family: "微软雅黑";
+}
+.w1v1 span {
+	color: #ffde00;
+}
+.w1v1_1 {
+	height: 195px;
+	font-size: 20px;
+	line-height: 35px;
+	padding-top: 15px;
+	color: #fff;
+	border-bottom: 1px solid #cc6100;
+}
+.w1v1_2 {
+	height: 200px;
+	font-size: 16px;
+	line-height: 30px;
+	padding-top: 20px;
+	color: #ffde00;
+}
+.w1v1 a {
+	display: block;
+	height: 70px;
+	width: 340px;
+	margin-top: 20px;
+	background: url(../images/btn1.jpg) no-repeat;
+}
+
+.w1v1 a:hover {
+	background: url(../images/btnHover1.jpg) no-repeat;
+}
+.w1v2 {
+	position: absolute;
+	top: 1130px;
+	right: 37px;
+	height: 480px;
+	width: 330px;
+	font-family: "微软雅黑";
+}
+.w1v2 span {
+	color: #baf12e;
+}
+.w1v2_1 {
+	height: 195px;
+	line-height: 35px;
+	padding-top: 15px;
+	font-size: 20px;
+	color: #fff;
+	border-bottom: 1px solid #3c9c05;
+}
+.w1v2_2 {
+	height: 220px;
+	line-height: 30px;
+	padding-top: 20px;
+	font-size: 16px;
+	color: #baf12e;
+}
+.w1v2_2 a {
+	display: block;
+	height: 70px;
+	width: 340px;
+	margin-top: 20px;
+	background: url(../images/btn2.jpg) no-repeat;
+}
+.w1v2_2 a:hover {
+	background: url(../images/btnHover2.jpg) no-repeat;
+}
+.w1v2_1 a {
+	text-decoration: none;
+	color: #fff;
+}
+.w1v2_1 a:hover {
+	color: blue;
+}
+
+/*w2*/
+.w2_view {
+	width: 1000px;
+	position: relative;
+	height: 712px;
+	margin: 0 auto;
+}
+.w2v1 {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	height: 480px;
+	width: 380px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #666666;
+	line-height: 30px;
+}
+.w2v1 a {
+	color:  #096c6a;
+	text-decoration: none;
+}
+.w2v1 a:hover {
+	color: #1ea4a1;
+}
+.w2v1_b {
+	font-size: 35px;
+	line-height: 70px;
+	color: #096c6a;
+}
+
+/*w3*/
+.w3_view {
+	width: 1000px;
+	position: relative;
+	height: 783px;
+	margin: 0 auto;
+}
+.w3v1 {
+	position: absolute;
+	top: 390px;
+	right: 0;
+	height: 480px;
+	width: 350px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #666666;
+	text-align: right;
+	line-height: 30px;
+}
+.w3v1 a {
+	color:  #096c6a;
+	text-decoration: none;
+}
+.w3v1 a:hover {
+	color: #1ea4a1;
+}
+
+/*w4*/
+.w4_view {
+	width: 960px;
+	position: relative;
+	height: 1113px;
+	margin: 0 auto;
+}
+.w4v1 a {
+	display: block;
+	height: 81px;
+	width: 337px;
+	background: url(../images/btnHover3.jpg) no-repeat;
+}
+.w4v1 {
+	position: absolute;
+	top: 872px;
+	left: 312px;
+	height: 81px;
+	width: 337px;
+}
+.w4v1 a:hover {
+	background: url(../images/btn3.jpg) no-repeat;
+}
+
+.w4v2 {
+	position: absolute;
+	top: 220px;
+	left: 25px;
+	height: 480px;
+	width: 850px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #666666;
+	text-align: center;
+	line-height: 30px;
+}
+.w4v2 a {
+	color:  #096c6a;
+	text-decoration: none;
+}
+.w4v2 a:hover {
+	color: #1ea4a1;
+}

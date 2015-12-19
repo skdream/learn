@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns:wb=“http://open.weibo.com/wb”>
+<head>
+<meta charset="utf-8">
+<title>蜗牛携手同程旅游浪漫奉献，魅力狐仙-我和女神有个约会!</title>
+<meta name="keywords" content="太极熊猫官网，太极熊猫，ARPG，RPG游戏，动作游戏，ACT游戏，3D游戏" />
+<meta name="description" content="《太极熊猫》是蜗牛首款动作RPG手游，拥有浓厚美式漫画风格，采用3D端游引擎和真人捕捉技术打造，首创浮空连招格斗带来全新畅爽打击体验！" />
+<meta name="copyright" content="苏州蜗牛数字科技股份有限公司"/>
+<link rel="stylesheet" type="text/css" href="http://static.woniu.com/stylesheets/base.css" />
+<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/page.css" />
+<!--[if IE 6]>
+<script src="http://static.woniu.com/script/iepng/iepng.js"></script>
+<script>DD_belatedPNG.fix('.pngimg');</script>
+<![endif]-->
+</head>
+<body>
+  <div class="header">
+      <div class="hd_cont">
+          <a href="http://www.woniu.com" target="_blank" class="wn_logo"></a>
+          <a href="http://www.ly.com" target="_blank"  class="tc_logo"></a>
+      </div>
+  </div>
+
+  <!--狐仙列表-->
+  <div class="wrap player_wrap">
+      <a href="http://panda.woniu.com/" class="logo" target="_blank"></a>
+      <div class="cont player_cont">
+          <div class="player_box1">
+              <!-- <div class="ewm_box">
+                 
+              </div> -->
+              <div class="info_box">
+                  <div class="after">
+                      欢迎您,<span id="wx_name"></span> !
+                  </div>
+                  上传美女自己的<b>【半脸媚图】</b>，网络投票选出得票最高的前6名。同时随机选出4名投票用户，共同组成“魅影狐仙女神团”，开启<b>“4晚5日免费豪华邮轮韩国游”</b>的浪漫旅程，更有蜗牛游戏手机和众多礼品相送。<a href="javascript:;" id="viewdetail">详情查看>></a>
+              </div>
+              <div class="join_box">
+                  <a href="javascript:;" class="joinbtn close"></a>
+                  <a href="javascript:;" class="status close">审核状态</a>
+              </div>
+          </div>
+          <div class="player_box2">
+              <div class="cate_hd player_hd">
+                  <a href="javascript:;"  id="orderbyTime">最新上传</a>
+                  <a href="javascript:;" id="orderbyVote">投票排名</a>
+              </div>
+              <ul class="player_list" id="playerList">
+              </ul>
+
+              <div class="player_page">
+                  <div id="player_pageVote" class="none"></div>
+                  <div id="player_pageTime" class="none"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!--抽奖-->
+  <div class="wrap gift_wrap">
+      <div class="cont gift_cont">
+          <div class="cate_hd gift_hd">
+              <!-- <div class="l_before"><a href="javascript:;" id="showLogin">登录</a></div> -->
+              <div class="l_after none">尊敬的用户<span id="account"></span>你好!   <a href="http://gwpassport.woniu.com/v2/logout?goto=http://panda.woniu.com/static/act/201412/huxian/" class="logout"> 注销</a></div>
+          </div>
+          <div class="gift_notice">
+               <a href="javascript:;" id="weiboShare" class="sharebtn weibo_share"></a><b>详细规则</b>   每日进入该页面抽奖次数+1、每日微博分享后抽奖次数+2 (<span style="color:#c00;">请勿使用360浏览器极速模式！</span>)
+          </div>
+          <div class="gift_zone">
+              <a href="javascript:;" class="gift_item gift1"></a>
+              <a href="javascript:;" class="gift_item gift2"></a>
+              <a href="javascript:;" class="gift_item gift3"></a>
+              <a href="javascript:;" class="gift_item gift4"></a>
+              <a href="javascript:;" class="gift_item gift5"></a>
+              <a href="javascript:;" class="gift_item gift6"></a>
+              <a href="javascript:;" class="gift_item gift7"></a>
+              <a href="javascript:;" class="gift_item gift8"></a>
+              <a href="javascript:;" class="gift_item gift9"></a>
+              <a href="javascript:;" class="gift_item gift10"></a>
+              <a href="javascript:;" class="gift_item gift11"></a>
+              <a href="javascript:;" class="gift_item gift12"></a>
+              <a href="javascript:;" class="gift_item gift13"></a>
+              <a href="javascript:;" class="gift_item gift14"></a>
+              <a href="javascript:;" class="gift_item gift15"></a>
+              <a href="javascript:;" class="gift_item gift16"></a>
+
+              <a href="javascript:;" class="getbtn close" id="getGift"></a>
+              <div class="gift_info">
+                  <div class="noBind">
+                      还未绑定手机！
+                  </div>
+                  <div class="hasBind none">
+                      <a class="fr showHistory" href="javascript:;">查看中奖记录>></a>
+                      当前拥有抽奖次数 <span id="luckyNum">0</span>次
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!--新闻-->
+  <div class="wrap news_wrap">
+      <div class="cont news_cont">
+          <div class="cate_hd news_hd"></div>
+          <ul class="news_list">
+              
+          </ul>
+          <div class="news_page">
+              
+              
+          </div>
+      </div>
+  </div>
+  
+  <!--规则-->
+  <div class="wrap rules_wrap" id="actdetail">
+      <div class="cont rules_cont">
+          <div class="cate_hd rules_hd"></div>
+          <div class="rules_detail">
+            1. 海选时间：2015年1月1日-2015年1月20日；<br>
+            2. 由于360浏览器极速模式不支持微博分享，建议您使用兼容模式；<br>
+            3. 参与活动的美女上传自己的【半脸媚图】，最终将选出网络投票最高的前6名女神体验免费豪华邮轮韩国游；同时将从投票玩家中随机选出4名幸运用户体验免费豪华邮轮韩国游；<br>
+            4. 最终的6名魅影狐仙女神和4名幸运用户须提前准备好护照和相关有效证件（身份证复印件、户口本复印件等），官方工作人员会负责联系出游事宜；如果因个人证件或签证原因造成无法按时登船的，后果由个人承担，同时视为主动弃权处理，活动方不承担任何责任；<br>
+            5. 为防止恶意刷票，参与投票需先扫描二维码并输入手机号，方可参与投票和幸运抽奖；<br>
+            6. 请参与活动的用户正确填写手机号码和蜗牛通行证，用户抽中奖励后，请第一时间根据提示登录并选择所在区服，如关闭登录窗口导致领取失败，视为主动弃权处理，活动方不承担任何责任；<br>
+            7. 同一女神每个账号每天只有1次投票机会；<br>
+            8. 同一账号每天1次抽奖机会，每分享1次活动，可额外获得2次抽奖机会，每人每天只能分享1次；<br>
+            9. 活动期间，每个账号每天最多5次奖品兑换机会；<br>
+            10. 活动最终解释权归主办方（蜗牛及同程旅游）所有。<br>
+
+          </div>
+      </div>
+  </div>
+
+ 
+
+  <!--遮罩层-->
+  <div class="maskDiv none"></div>
+
+  <!--弹层-->
+  <div class="pop popbox none">
+      <a href="javascript:;" class="closepop"></a>
+      <h3></h3>
+      <p></p>
+  </div>
+
+  <!--微信登陆弹层-->
+  <div class="pop popWxlogin none">
+      <a href="javascript:;" class="closepop"></a>
+      <h3>使用微信登陆后才能进行投票抽奖哦！</h3>
+      <a href="http://gwact.woniu.com/wxapi/Wxqr" class="gotoWX"></a>
+  </div>
+  
+  <!--中奖弹窗-->
+  <div class="pop popGetgift none">
+      <a href="javascript:;" class="closepop"></a>
+      <h3>恭喜您<br>获得了<span></span></h3>
+      <p>（价值<span id="giftPrice"></span>元RMB）请登录后领取奖励,现在关闭将无法领取奖励！</p>
+      <a href="javascript:;" class="pop_login"></a>
+  </div>
+
+  <!--弹窗登陆-->
+  <div class="pop poplogin none">
+      <a href="javascript:;" class="closepop"></a>
+      <div class="loginbox">
+          <div class="row"><input type="text" value="输入蜗牛通行证" class="loginname"></div>
+          <div class="row"><input type="password" value="" class="password"><span class="pwdtip">输入密码</span></div>
+          <div class="row forget"><a href="http://res.woniu.com/security/pwd_retrieval_email_apply.html" target="_blank">忘记密码？</a> <a href="http://www.woniu.com/account/register/?gameid=38&pagename=GW.PANDA.TL&goto=http://panda.woniu.com/static/act/201412/huxian/" target="_blank" class="reg" style="color:#900; margin-left:10px;">立即注册>></a></div>
+          <div class="row"><a href="javascript:;" class="loginbtn"></a></div>
+      </div>
+  </div>
+
+  <!--弹窗选服-->
+  <div class="pop popser none">
+      <a href="javascript:;" class="closepop"></a>
+      <div class="server_box">
+          <input type="text" class="input_area" value="请选择大区" />
+          <ul class="area_list none"></ul>
+          <input type="text" class="input_ser" value="请选择服务器" />
+          <ul class="ser_list none"></ul>
+          <a href="javascript:;" class="chooseArea"></a>
+      </div>
+  </div>
+
+  <!--中奖纪录-->
+  <div class="pop giftHistory none">
+      <a href="javascript:;" class="closepop"></a>
+      <h2>中奖纪录</h2>
+      <ul class="giftbox">
+      </ul>
+  </div>
+
+  <!--上传资料-->
+  <div class="pop popUpload none">
+      <a href="javascript:;" class="closepop"></a>
+      <!-- <div class="welcome">尊敬的用户: <span id="account">Nagisa</span> 你好! <a href="#">注销</a></div> -->
+
+      <div class="uploadbox">
+          <form action="http://gwact.woniu.com/pd/h141219/saveGoddessInfo" method="post" enctype="multipart/form-data" id="playInfo">
+              女神名：<input type="text" name="nickname" class="nickname"> <br>
+              选择本地照片：<input type="file" name="bigeye_pic" class="">
+
+      </div>
+      <p class="upload_tips">
+        注意事项：<br>1.图片大小必须小于500K并且名称只能为英文数字组合，一旦提交便无法修改，请谨慎填写！成功提交后请耐心等待审核。<br>
+        2.请务必上传个人【半脸媚图】，展现你不一样的魅力，谢谢配合。
+
+      </p>
+      <input type="submit" class="uploadbtn" value="" />
+      </form>
+  </div>
+
+  <!--审核状态-->
+  <div class="pop playerStatus none">
+      <a href="javascript:;" class="closepop"></a>
+      <h2>审核状态</h2>
+      <ul class="statusbox">
+      </ul>
+  </div>
+
+  <!--绑定手机-->
+  <div class="pop popMobile none">
+      <a href="javascript:;" class="closepop"></a>
+      <div class="welcome">您的手机暂未绑定！</div>
+      <div class="mobile">
+          请填写您的手机号码参与投票与抽奖<br>
+          <input type="text" maxlength="11" id="phone">
+      </div>
+      <a href="#" class="bindPhone"></a>
+  </div>
+
+ <!--女神模板-->
+  <script id="playerTemplate" type="text/html">
+       <li>
+          <div class="photobox">
+              <img src="${img_url}" width="223">
+              <div class="player_info">
+                  <span class="fl" id="playerName">${nickname}</span>
+                  <span class="fr" id="playerNum">${vote}票</span>
+              </div>
+          </div>
+          <div class="votebox">
+              <a href="javascript:;" class="votebtn" data-phone=${phone}>投票</a>
+              <a href="javascript:;" class="sharebtn" data-share="tsina"></a>
+          </div>
+      </li>
+  </script>
+
+<script type="text/javascript" src="http://static.woniu.com/js/jquery.js"></script>
+<script type="text/javascript" src="http://panda.woniu.com/jspool/fox.js"></script>
+<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+<script src="js/jquery.paginate.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/wnshare.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<script type="text/javascript" src="http://static.woniu.com/scripts/module/statistics/0.1/statistics.js"></script>
+</body>
+</html>

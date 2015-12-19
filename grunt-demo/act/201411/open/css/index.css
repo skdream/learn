@@ -1,0 +1,117 @@
+.bg{width: 100%; height: 2184px; background: url(../images/bg.jpg) no-repeat top center;}
+.container{width: 1000px; margin: 0 auto;}
+.subnav{width: 1000px; height: 30px;}
+.subnav a{float: right; color: #ffffff; font: 14px/30px '楷体'; text-decoration: none;}
+.subnav a:hover{color: #d30000;}
+.links{padding: 0 12px;}
+.logoAndVideo{width: 1000px; height: 207px;}
+.logoAndVideo .logo{width: 308px; height: 145px; margin-left: 22px; float: left; display: inline;}
+#video{width: 216px; height: 123px; margin-left: 157px; margin-top: 120px; float: left; display: inline; }
+.part1{width: 1000px; margin-top: 342px; margin-left: 27px;}
+.part1 .row1{width: 739px; height: 40px;}
+.part1 .row1 h2{width: 565px; height: 40px; font: bold 36px/40px 'microsoft yahei'; float: left; display: inline;}
+.part1 .row1 h2 span{color: #d30000;}
+.see_rule{width: 143px; height: 40px; background: url(../images/see_rule_btn.jpg); float: left; display: inline; text-align: center; font: normal 16px/40px 'microsoft yahei'; color: #fff; text-decoration: none;}
+.part1 .row2{width: 739px; height: 48px; margin-top: 15px; font: 14px/24px 'microsoft yahei'; color: #000;}
+.part1 .row3{width: 687px; height: 123px; background: url(../images/diamonds.png) no-repeat; margin-left: 33px; margin-top: 30px;}
+.part1 .row4{width: 820px; height: 105px; background: url(../images/process_bar.png) no-repeat; margin-left: -27px; overflow: hidden;}
+.part1 .row5{width: 820px; height: 24px; margin-left: 67px; }
+.part1 .row5 .got_it{width: 71px; height: 24px; background: url(../images/got_it_btn.jpg) no-repeat; font: 16px/24px 'microsoft yahei'; color: #ffffff; text-align: center; text-decoration: none; float: left; margin-right: 108px;}
+.part1 .row5 .got_it_hover{background: url(../images/got_it_btn_hover.jpg) no-repeat;}
+.part1 .row6{margin-top: 50px; height: 122px;}
+.part1 .row6 a{margin-right: 14px; float: left;}
+.invite{width: 269px; height: 122px; background: url(../images/btns.jpg) no-repeat 0 0;}
+.invite:hover{background: url(../images/btns.jpg) no-repeat 0 -122px;}
+.got_invite{width: 269px; height: 122px; background: url(../images/btns.jpg) no-repeat -283px 0;}
+.got_invite:hover{background: url(../images/btns.jpg) no-repeat -283px -122px;}
+.query{width: 169px; height: 122px; background: url(../images/btns.jpg) no-repeat -565px 0;}
+.query:hover{background: url(../images/btns.jpg) no-repeat -565px -122px;}
+.part1 .row7{margin-top: 20px; height: 30px;}
+.part1 .row7 p{width: 396px; height: 30px; font: 22px/30px '楷体'; float: left; display: inline;}
+.part1 .row7 .share{width: 339px; height: 30px; float: left; display: inline;}
+/*.part1 .row7 .share a{width: 30px; height: 30px; margin-left: 12px; float: left; display: inline;}*/
+.share_tengxun{background: url(../images/share.png) no-repeat 0 0;}
+.share_baidu{background: url(../images/share.png) no-repeat -42px 0;}
+.share_qzone{background: url(../images/share.png) no-repeat -84px 0;}
+
+.part2{width: 1000px; margin-top: 90px; margin-left: 27px; height: 490px;}
+.part2 .left_part{width: 416px; float: left;}
+.part2 .left_part h2{width: 416px; height: 25px; font: bold 22px/25px 'microsoft yahei';}
+.part2 h2 span{color: #d30000;}
+.part2 .left_part .row1{width: 416px; margin-top: 14px; font: 14px/24px 'microsoft yahei';}
+.part2 .left_part .row1 span{font-weight: bold;}
+.part2 .left_part .prize{width: 346px; height: 89px; background: url(../images/prize.jpg) no-repeat; margin-top: 6px;}
+.part2 .left_part .row2{margin-top: 18px; width: 416px; height: 42px;}
+.part2 .left_part .row2 input{width: 204px; height: 32px; padding: 5px 10px; background: url(../images/input_box.png) no-repeat; float: left; display: inline; border: 0 none;}
+.part2 .left_part .row2 .got_prize{width: 114px; height: 42px; margin-left: 8px; background: url(../images/got_prize.jpg) no-repeat; float: left; display: inline; 
+	text-align: center; text-decoration: none; font: 16px/42px 'microsoft yahei'; color: #ffffff;}
+.part2 .left_part .row2 .got_prize:hover{background: url(../images/got_prize_hover.jpg) no-repeat;}
+.part2 .left_part .row3{margin-top: 5px; font: 12px/24px 'microsoft yahei';}
+.red{color: #d30000;}
+.part2 .right_part{width: 535px; float: left;}
+.part2 .right_part h2{height: 25px; font: bold 22px/25px 'microsoft yahei';}
+.part2 .right_part .row1{width: 535px; height: 48px; margin-top: 15px; font: 14px/24px 'microsoft yahei'; color: #000;}
+.part2 h2 span{color: #d30000;}
+.activities{width: 535px; height: 255px; margin-top: 25px; background: url(../images/activities_pic.png) no-repeat;}
+
+.part3{width: 973px; margin-top: 80px; margin-left: 27px;}
+.part3 h2{width: 1000px; font: bold 23px/30px 'microsoft yahei'; }
+.part3 ul{width: 1000px; margin-top: 20px; }
+.part3 ul li{width: 75px; height: 35px; margin: 0 5px; float: left; display: inline;}
+.part3 ul li img{width: 75px; height: 35px;}
+
+.mask{ width: 100%; height: 2519px; position: absolute; top: 0; left: 0; -moz-opacity: 0.7; opacity:0.70; filter: alpha(opacity=70); background: #444444; z-index: 2;}
+.popbox{ width: 538px; height: 382px; background: url(../images/popbox.png) no-repeat; border-radius: 5px; position: fixed; _position: absolute; left: 50%; margin-left: -269px; top: 150px; z-index: 10;}
+
+.popbox .loginbox{ width: 415px; float: left; margin-left: 65px; margin-top: 90px; display: inline;}
+.popbox .row{ width: 415px; height: 60px; position: relative; }
+.popbox .forget{ text-align: right;}
+.popbox .forget a{ font: normal 14px/60px ""; color: #bbb;}
+.popbox .row .loginname{ width: 365px; height: 58px; border: 1px solid #ccc; background: #f4f4f4 url(../images/icon_1.png) 20px center no-repeat; border-top-right-radius:5px;border-top-left-radius:5px; font-size: 20px; line-height: 58px; padding-left:  50px; color: #444; font-family: "microsoft Yahei"; }
+.popbox .row .password{ width: 365px; height: 58px;  border: 1px solid #ccc; background: #f4f4f4 url(../images/icon_2.png) 20px center no-repeat; border-top: none; border-bottom-right-radius:5px;border-bottom-left-radius:5px; padding-left: 50px; font-size: 20px; line-height: 58px; color: #444; }
+.popbox .row span{ width: 332px; height: 40px; position: absolute; top: 9px; left: 50px; font: normal 20px/40px ""; color: #444;}
+.popbox .row .loginbtn{ width: 235px; height: 66px; float: left; margin-left: 85px; background: url(../images/loginbtn.jpg) 0 0  no-repeat;}
+.popbox .row .loginbtn:hover{ background-position: 0 -66px;}
+
+.prop{width: 538px; background: url(../images/popbg.png) no-repeat #eeeeee; position: absolute; top: 0; left: 50%; margin-left: -269px; z-index: 3;}
+.prop .exit{width: 19px; height: 30px; float: right; margin-top: 3px; margin-right: 11px; cursor: pointer;}
+.exit_popbox{width: 58px; height: 58px; float: right; background: url(../images/closebtn.jpg) no-repeat; cursor: pointer;}
+#query_result p{float: left; font: 16px/30px 'microsoft yahei';}
+#query_result p span{color: #d30000;}
+#query_result .box{margin: 48px 50px 48px 59px; float: left;}
+#join_successed p{font: bold 32px/56px 'microsoft yahei'; color: #990000; width: 536px; text-align: center; margin: 75px 0;}
+#invite_code p{width: 536px; margin-top: 50px; text-align: center; font: 16px/30px 'microsoft yahei'; color: #000000; float: left; display: inline;}
+#invite_code p span{color: #d30000;}
+#invite_code .submit_btn{ width: 235px; height: 66px; float: left; margin: 41px 0 48px 151px; background: url(../images/submitbtn.jpg) 0 0  no-repeat;}
+#invite_code .submit_btn:hover{background-position: 0 -67px;}
+#please_stepin_invite_code .box{margin-top: 44px; margin-left: 53px; width: 492px; height: 81px; float: left;}
+#please_stepin_invite_code .box p{width: 140px; height: 39px; font: 18px/38px 'microsoft yahei'; color: #000000; float: left; display: inline;}
+#please_stepin_invite_code .box input{width: 269px; height: 37px; border: 1px solid #999999; font: 18px/37px 'microsoft yahei'; float: left; display: inline;}
+#please_stepin_invite_code .submit_btn{ width: 235px; height: 66px; float: left; margin: 0 0 48px 151px; background: url(../images/submitbtn.jpg) 0 0  no-repeat;}
+#please_stepin_invite_code .submit_btn:hover{background-position: 0 -66px;}
+#got_prize_successed h2{margin-top: 45px; font: bold 32px/50px 'microsoft yahei'; width: 536px; text-align: center; color: #990000;}
+#got_prize_successed p{font: 16px/30px 'microsoft yahei'; margin: 15px 0 57px 0; width: 536px; text-align: center; }
+
+.popvideobox{ width: 800px; height: 450px; background: #000; position: fixed; left: 50%; top: 50%; margin-left: -400px; margin-top: -275px;}
+.popvideobox .closebtn{ width: 60px; height: 60px; position: absolute; top: 0; right: -60px; background: url(../images/closebtn.jpg) no-repeat;}
+.popvideobox .closebtn:hover{ background-position: 0 -60px;}
+
+.selectbox{width: 271px;  margin-bottom: 29px; background: url(../images/selected_input_bg.jpg) no-repeat #ffffff; float: left; /*overflow: hidden;*/ z-index:4; position: relative;}
+.selectbox .default{ width: 249px; padding: 5px 34px 6px 20px; float: left;}
+.selectbox .default .words{font-size: 18px; color: #aaaaaa; float: left;}
+.selectbox .default .arrow_down{width: 35px; height: 19px; margin-top: 9px; background: url(../images/icons.png) no-repeat 0 -5px; float: right; cursor: pointer;}
+.selectbox .default .arrow_up{width: 35px; height: 19px; margin-top: 9px; background: url(../images/icons.png) no-repeat 0 -25px; float: right; cursor: pointer;}
+#selectbox1 ul{width: 270px; position: absolute; top: 39px; left: 0; border: 1px solid #e9e9e9; border-top: none; overflow: hidden; max-height: 340px;}
+#selectbox2 ul{width: 270px; position: absolute; top: 39px; left: 0; border: 1px solid #e9e9e9; border-top: none; overflow: hidden; max-height: 340px;}
+#selectbox1 ul,#selectbox1{ z-index: 5;}
+.selectbox ul li{width: 216px; padding: 8px 34px 12px 20px; font-size: 18px; color: #666666; background: #ffffff; } 
+.selectbox ul li.odd{background: #fafafa;}
+
+#server_list .box{margin-top: 44px; margin-left: 71px; width: 465px; height: 45px; float: left;}
+#server_list .box p{width: 121px; height: 39px; font: 18px/38px 'microsoft yahei'; color: #000000; float: left; display: inline;}
+#server_list .submit_btn{ width: 235px; height: 66px; float: left; margin: 41px 0 48px 151px; background: url(../images/get_prize_btn.jpg) 0 0  no-repeat;}
+#server_list .submit_btn:hover{background-position: 0 -67px;}
+
+#act_introduce .box{margin-top: 44px; margin-left: 71px; padding-bottom: 44px; width: 465px; float: left;}
+#act_introduce .box p{width: 425px; font: 14px/26px 'microsoft yahei'; color: #000000; float: left; display: inline;}
+.font16{font-size: 16px;}

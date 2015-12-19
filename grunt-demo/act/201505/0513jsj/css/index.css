@@ -1,0 +1,39 @@
+/*************************
+*Author: Panfei
+*Date: 2015-5-13
+*************************/
+
+/*--------------------
+	Grid
+--------------------*/
+body{font: 0.75em/1.5 microsoft yahei, Arial; min-width: 1060px;}
+img{vertical-align: middle;}
+
+.box{width: 960px; height: 100%; margin: 0 auto; position: relative; overflow: hidden;}
+.bg1{height: 680px; background: url(../images/bg1.jpg) no-repeat 50% 0;}
+.bg1 p{text-align: center; color: #ecbfe6; font-size: 18px; margin-top: 470px;}
+.logo-a{width: 258px; height: 67px; display: block; background: url(../images/logo.png) no-repeat; margin: 12px auto 0;}
+.c-yellow{color: #ffef86;}
+.fw700{font-weight: 700;}
+.underline{text-decoration: underline;}
+
+.bg2{height: 1269px; background: url(../images/bg2.jpg) no-repeat 50% 0;}
+.bg-tt{height: 65px; color: #ffef86; font: 700 30px/44px 'Microsoft yahei'; text-align: center; margin: 40px 0; background: url(../images/bg_tt.png) no-repeat 50% 0;}
+.box-tt{color: #ece4fe; font: 700 22px/1.5 'Microsoft yahei'; padding-left: 30px; margin-top: 40px; background: url(../images/box_tt.png) no-repeat 10px 11px;}
+.box-tx{color: #b5a4db; font: 16px/1.5 'microsoft yahei';}
+
+.bg2 .p-img{margin: -20px 0 0 50px;}
+.img-box{text-align: center; margin: 40px auto;}
+.img-box img{margin: 0 10px;}
+.btn-box{text-align: center;}
+.dlbtn, .explain-btn{width: 407px; height: 126px; display: inline-block; background: url(../images/dlbtn.jpg) no-repeat 0 0; margin: 0 20px;}
+.explain-btn{background: url(../images/explain_btn.jpg) no-repeat 0 0;}
+.dlbtn:hover, .explain-btn:hover{background-position: 0 -126px;}
+
+.bg3{background: #16132e url(../images/bg3.jpg) no-repeat 50% 0; color: #b5a4db; padding-bottom: 80px; font: 16px/1.5 'microsoft yahei';}
+.diamond-box{margin-top: 45px;}
+.diamond-box .diamond-u{text-align: center; margin-bottom: 30px;}
+.diamond1, .diamond2, .diamond3{width: 240px; float: left;}
+.diamond2{margin: 0 118px;}
+.diamond3{margin-top: -20px;}
+.diamond-box .diamond-tt{display: block; color: #fff; padding: 2px 6px; width: 111px; font: 16px/1 'microsoft yahei'; background-color: #5f56a9; margin: 0 auto;}
