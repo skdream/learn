@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vuejs</title>
+	<script src="./vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<span>Message: {{ msg }}</span><br>
+
+		<input type="text" v-model='msg'>
+
+
+		<ul>
+			<li v-for="todo in todos">
+				{{ todo.text }}
+			</li>
+		</ul>
+
+		<button v-on:mouseover="reverseMessage">Reverse Message</button>
+		<br><br>
+
+		<!-- todos  -->
+		<input type="text" v-model="newTodo" v-on:keyup.enter='addTodo'>
+
+		<ul>
+			<li v-for="todo in todos">
+				<span>{{todo.text}}</span>
+				<button v-on:click="removeTodo($index)">X</button>
+			</li>
+		</ul>
+	</div>
+	
+	<script>
+	var vm = new Vue({
+		el:"#app",
+		data:{
+			msg:'hello,world!',
+			newTodo:'',
+			todos:[
+			{text:'Learn JavaScript'},
+			{text:'Learn Vue.js'},
+			{text:'Build Something Awesome'}
+			]
+		},
+		methods:{
+			reverseMessage:function(){
+				this.msg = this.msg.split('').reverse().join('');
+			},
+			addTodo:function(){
+				var text = this.newTodo.trim();
+				if(text){
+					this.todos.push({text:text})
+					this.newTodo = '';
+				}
+			},
+			removeTodo:function(index){
+				this.todos.splice(index,1);
+			}
+		},
+		created:function(){
+			console.log('a is:' + this.msg);
+		}
+
+	})
+	</script>
+</body>
+</html>
