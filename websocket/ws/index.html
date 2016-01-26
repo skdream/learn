@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>websocket demo</title>
+</head>
+<body>
+
+<div id="systemInfo">
+	
+</div>
+
+<form id="testForm" name="testForm" >
+	
+	<input type="text" name="username"> <br>
+	<input type="text" name="msg">
+	<input type="submit">
+</form>
+
+<div id="close">
+	关闭连接
+</div>
+
+	<script>
+	var ws = new WebSocket('ws://172.18.30.88:8808/');
+	var systemInfo = document.getElementById('systemInfo');
+	var close = document.getElementById('close');
+	var username = document.testForm.username;
+	var msg = document.testForm.msg;
+	// 建立服务器连接
+	ws.onopen = function(){
+		systemInfo.innerHTML = '<p>和websocket服务器连接成功</p>';
+	}
+	// 接收到服务器返回的数据
+
+	ws.onmessage = function(e){
+		systemInfo.innerHTML += '<p>' + e.data + '</p>';
+	}
+
+	// 断开服务器连接
+
+	ws.onclose = function(){
+		systemInfo.innerHTML += '<p>WebSocket服务器连接关闭</p>'
+	}
+
+	// ws发生错误
+
+	ws.onerror = function(e){
+		console.log(e);
+		systemInfo.innerHTML += '<p>WebSocket 发生错误</p>'
+	}
+
+	testForm.onsubmit = function(){
+		// 发送数据给服务器
+
+		ws.send(username.value+":"+msg.value);
+		return false;
+	}
+
+	close.addEventListener('click',function(){
+		ws.close();
+	}, false);
+
+
+	</script>
+</body>
+</html>

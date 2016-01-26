@@ -30,21 +30,147 @@
 				<button v-on:click="removeTodo($index)">X</button>
 			</li>
 		</ul>
+
+		<h1 v-if="ok">yes</h1>
+
+		<template v-if="ok">
+		<h1>Title</h1>
+		<p>Paragraph 1</p>
+		<p>Paragraph 2</p>
+		</template>
+
+		<h1 v-show="ok">Hello!ss</h1>
+
+		<div v-if="Math.random() > 0.5">
+			Sorry
+		</div>
+		<div v-else>
+			Not sorry
+		</div>
+		
+		<div v-for="(index, item) in todos | filterBy 'Learn' ">
+			{{index}} {{item.text}} {{$index}}
+		</div>
+
+
+		<ul>
+		  <template v-for="item in todos">
+		    <li>{{ item.text }}</li>
+		    <li class="divider"></li>
+		  </template>
+		</ul>
+
+		<ul>
+			<li v-for="value in object">
+				{{$index}} - {{$key}} :{{value}}
+			</li>
+		</ul>
+
+
+		<div>
+		<span v-for="n in 10">{{ n }} </span>
+		</div>
+<!-- 
+		<button v-on:click='greet'>Greet</button>
+		<button v-on:click="say('hello!',$event)">say</button>
+
+
+		<select name="" id="" v-model="selected">
+			<option value="A" selected>A</option>
+			<option value="B">B</option>
+			<option value="C">C</option>
+		</select>
+		<span>Selected:{{ selected }}</span>
+
+		<input
+  type="checkbox"
+  v-model="toggle"
+  v-bind:true-value="a"
+  v-bind:false-value="b"> -->
+
+
+
+
 	</div>
-	
+
+
+<div id="exp1">
+
+  	<!-- <input type="radio" v-model="picked" v-bind:value="a"> -->
+<!-- 
+  	<input
+  type="checkbox"
+  v-model="toggle"
+  v-bind:true-value="A"
+  v-bind:false-value="B">
+
+	<select v-model="selected">
+	  <option v-for="option in options" v-bind:value="option.value">
+	    {{ option.text }}
+	  </option>
+	</select>
+<span>Selected: {{ selected }}</span> -->
+
+
+<!-- <select v-model="selected">
+  
+  <option v-bind:value="{ number: 123 }">123</option>
+</select> -->
+
+<input type="radio" v-model="pick" v-bind:value="a">
+
+<input v-model="msg" lazy debounce="500">
+
+<span>{{ msg }}</span>
+</div>
+
+
+
+
 	<script>
+
+	var vm1 = new Vue({
+		el:'#exp1',
+		data:{
+			selected:'B',
+
+			pick:'',
+			options:[
+			{text:'One',value:'A'},
+			{text:'Two',value:'B'},
+			{text:'Three',value:'C'}
+			]
+		}
+	});
+
 	var vm = new Vue({
 		el:"#app",
 		data:{
+			// pick:'',
 			msg:'hello,world!',
 			newTodo:'',
+			ok:true,
+			name:'Vue.js',
 			todos:[
-			{text:'Learn JavaScript'},
-			{text:'Learn Vue.js'},
-			{text:'Build Something Awesome'}
-			]
+				{text:'Learn JavaScript'},
+				{text:'Learn Vue.js'},
+				{text:'Build Something Awesome'}
+			],
+			object:{
+				FirstName:'John',
+				Lastname:'Doe',
+				Age:30
+			}
 		},
 		methods:{
+			greet:function(event){
+				alert('Hello ' + this.name + '!');
+				alert(event.target.tagName);
+			},
+			say:function(msg, event){
+				event.preventDefault();
+				alert(msg);
+			},
 			reverseMessage:function(){
 				this.msg = this.msg.split('').reverse().join('');
 			},
