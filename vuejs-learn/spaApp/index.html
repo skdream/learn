@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vuejs app</title>
+	<style>
+	dl,dt,dd{
+		margin: 0;
+		padding: 0;
+		font-family: "Microsoft Yahei"
+	}
+	dl{
+		margin-bottom: 10px;
+	}
+	dd{
+		line-height: 22px;
+	}
+	[v-cloak] { display: none }
+	</style>
+</head>
+<body>
+
+
+<div id="app">
+
+	<input type="text" v-model="username"  @keyup.enter="submitForm">
+	<span v-pre>{{ this will not be compiled }}</span>
+	<span v-text="message | reverse"></span>
+
+<div v-cloak>
+  {{ message }}
+</div>
+
+<div v-if="Math.random()>0.5" calss="show">
+	sorry
+</div>
+<div v-else>
+	Not sorry
+</div>
+
+	<div  v-show="0">{{message}}</div>
+	<a href="#" @click=showConfirm>删除</a>
+
+
+	<div v-for="item in newsItems">
+		<dl>
+			<dt>标题-{{item.title}}</dt>
+			<dd>内容：{{item.content}}</dd>
+		</dl>
+	</div>
+
+	<button v-on:click="login">login</button>
+	<a href="#" v-on:click.prevent="register">注册</a>
+
+
+	<confirm-modal :show.sync="isConfirmModal" :onconfirm="onconfirm"></confirm-modal>
+</div>
+
+
+
+
+<script type="x/template" id="modal-template">
+	<div class="modal {{class || ''}}" v-show="show"  transition="modal">
+		<div class="modal-layout">
+			<div class="modal-container">
+				<div class="modal-content">
+					<div class="remove" v-show="closable" @click="close()">
+						<i class="icon-lnr-cross"></i>
+					</div>
+					<div class="modal-header">
+						<slot name="header">
+						</slot>
+					</div>
+					<div class="modal-body">
+						<slot name="body">
+						</slot>
+					</div>
+					<div class="modal-footer">
+						<slot name="footer">
+						</slot>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="x/template" id="confirm-modal-template">
+	<modal :show.sync="show" :closable="false" class="confirm-modal">
+		<div class="notify-body body" slot="body">
+			<div class="message">确认消耗0.1码币？</div>
+			<div class="yellow-buttons clearfix">
+				<div class="button yellow" @click="confirm()">
+					确认
+				</div>
+				<div class="button yellow" @click="close()">
+					取消
+				</div>
+			</div>
+		</div>
+	</modal>
+</script>
+
+<script src="./js/vue.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/api.js"></script>
+<script src="./js/component.js"></script>
+<script type="text/javascript">
+	
+
+
+	var app = new Vue({
+		el:'#app',
+		data:{
+			isConfirmModal:false,
+			userLoaded:false,
+			myLotteryLogs:[],
+			message:'Hello,World!',
+			username:'tom',
+			newsItems:[]
+		},
+		created:function(){
+this.newsItems = this.getNews();
+		},
+		beforeCompile:function(){
+			this.updateUserProfile();
+			
+		},
+		compiled:function(){
+
+		},
+		ready:function(){
+
+		},
+		beforeDestory:function(){
+
+		},
+		destoryed:function(){
+
+		},
+		filters:{
+			reverse:function(value){
+				return value.split('').reverse().join('');
+			}
+		},
+		methods:{
+			login:function(){
+				alert('your are logined!')
+			},
+			register:function(){
+				alert('register!')
+			},
+			showConfirm:function(e){
+				e.preventDefault();
+				this.isConfirmModal = true;
+			},
+			onconfirm:function(){
+
+				return true;
+			},
+
+			getNews:function(){
+				return API.getTopNews();
+			},
+			updateUserProfile:function(){
+				var p = API.current_user();
+				p.then(function(result){
+					this.user = result.data.user;
+					this.userLoaded = true;
+					this.myLotteryLogs = result.data.records;
+				}.bind(this));
+
+				p.fail(function(){
+					this.userLoaded = true;
+				}.bind(this));
+			},
+			submitForm:function(value){
+				console.log(this.username);
+			}
+		}
+	});
+
+
+
+
+</script>
+</body>
+</html>
