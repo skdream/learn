@@ -12,6 +12,6 @@ router.get('/api/contact/:id',contact.contact);
 
 router.put('/api/contact/:id',contact.edit);
 router.post('/api/contact',contact.add);
-router.delete('/api/contact',contact.delete);
+router.delete('/api/contact/:id',contact.delete);
 
 module.exports = router;

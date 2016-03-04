@@ -13,7 +13,7 @@ exports.contacts = function(req, res){
 };
 
 
-exports.contact = function(){
+exports.contact = function(req,res){
 
 	var id = req.params.id;
 	if(id){
@@ -32,7 +32,7 @@ exports.contact = function(){
 };
 
 
-exports.add = function(){
+exports.add = function(req,res){
 	var body = req.body;
 	var contact = new Contact({
 		name:   body.name,
@@ -80,14 +80,21 @@ exports.delete = function(req, res){
 	if(id){
 		Contact.findById(id,function(err,contact){
 			if(!err){
-				contact.remove(function(err){
-					if(!err){
-						res.json(true);
-					}else{
-						res.json(false);
-						console.log(err);
-					}
-				});
+				if(contact){
+					contact.remove(function(err){
+						if(!err){
+							res.json(true);
+						}else{
+							res.json(false);
+							console.log(err);
+						}
+					});	
+				}else{
+					res.json({data:'不存该数据！'})
+				}
+
+			}else{
+				console.log(err);
 			}
 		});
 	}
