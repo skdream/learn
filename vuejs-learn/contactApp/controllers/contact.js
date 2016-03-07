@@ -57,11 +57,13 @@ exports.edit = function(req, res){
 	if(id){
 		Contact.findById(id,function(err,contact){
 			if(!err){
+				console.log(contact);
 				contact.name = req.body.name;
 				contact.phone = req.body.phone;
 				contact.email = req.body.email;
 				contact.qq = req.body.qq;
 				contact.remark = req.body.remark;
+				contact.update_at = new Date()
 
 				contact.save(function(err){
 					if(!err){

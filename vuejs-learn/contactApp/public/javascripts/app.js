@@ -7,11 +7,20 @@ var app = new Vue({
 		qq:'',
 		remark:'',
 		contacts:[],
+		form:{
+			edit:{
+			},
+			add:{
+
+			}
+		},
+		curContact:{name:'44'},
 		searchKey:'',
 		sortKey:'_id',
 		order:-1,
 		delId :'',
-		curUser:{name:''}
+
+		allheaders : ["姓名", "手机", "邮箱", "QQ","备注"]
 	},
 	created:function(){
 		//this.getAllContacts();
@@ -29,11 +38,15 @@ var app = new Vue({
 	},
 	methods:{
 		clearHistory:function(){
-			this.name='';
-			this.phone='';
-			this.email='';
-			this.qq='';
-			this.remark='';
+
+			for (key in this.form.add){
+				this.form.add[key] = '';
+			}
+			// this.name='';
+			// this.phone='';
+			// this.email='';
+			// this.qq='';
+			// this.remark='';
 		},
 		getAllContacts:function(){
 			var p = API.getAllContacts();
@@ -48,23 +61,31 @@ var app = new Vue({
 		},
 		view:function(id){
 			console.log(id);
-		},
 
-		showDelModal:function(id){
-			
+			this.resetCurContact(id);
+			$('#modal-view').modal('show');
+
+		},
+		resetCurContact:function(id){
 			this.contacts.forEach(function(contact){
 				if(contact._id == id){
-					this.curUser['name'] = contact.name;
-					this.curUser['id'] = contact._id;
+
+					this.curContact = contact;
+					// this.curContact['name'] = contact.name;
+					this.curContact['id'] = contact._id;
 				}
 			}.bind(this))
-			$('#modal-contactDelete').modal('show');
-			console.log(this.curUser);
+		},
+		showDelModal:function(id){
 
-			//curUser.id = id;
+			this.resetCurContact(id);
+			$('#modal-contactDelete').modal('show');
+			console.log(this.curContact);
+
+			//curContact.id = id;
 		},
 		deleteContact:function(){
-			var p =API.delContact(this.curUser.id);
+			var p =API.delContact(this.curContact.id);
 
 			p.then(function(data){
 				$('#modal-contactDelete').modal('hide');
@@ -75,27 +96,41 @@ var app = new Vue({
 				console.log(err);
 			});
 		},
-		edit:function(){
+		edit:function(id){
 
+			this.resetCurContact(id);
+
+			this.form.edit = this.curContact;
+
+
+			$('#modal-edit').modal('show');
 		},
-		saveContact:function(){
-			var data = {
-				name:this.name,
-				phone:this.phone,
-				email:this.email,
-				qq:this.qq,
-				remark:this.remark,
-			}
-			var p = API.saveContact(data);
+		addContact:function(el){
+
+			var p = API.saveContact(this.form.add);
 
 			p.then(function(data){
-				$('#modal-id').modal('hide');
+				$('#'+el).modal('hide');
 				this.getAllContacts();
 			}.bind(this));
 
 			p.fail(function(err){
 				console.log(err);
 			}.bind(this));
+		},
+		editContact:function(el){
+
+			var p = API.editContact(this.form.edit);
+
+			p.then(function(data){
+				$('#'+el).modal('hide');
+				//this.getAllContacts();
+			}.bind(this));
+
+			p.fail(function(err){
+				console.log(err);
+			}.bind(this));
+
 		}
 	}
 })

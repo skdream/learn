@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
 router.get('/api/contacts',contact.contacts);
 router.get('/api/contact/:id',contact.contact);
 
+
 router.put('/api/contact/:id',contact.edit);
 router.post('/api/contact',contact.add);
 router.delete('/api/contact/:id',contact.delete);

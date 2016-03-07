@@ -40,6 +40,27 @@ var api = {
 
 		return deffer.promise();
 	},
+	editContact:function(data){
+		var deffer = $.Deferred();
+
+		$.ajax({
+			url: '/api/contact/'+data.id,
+			type: 'PUT',
+			data:data,
+			dataType: 'json'
+		})
+		.done(function(data) {
+			deffer.resolve(data);
+		})
+		.fail(function(err) {
+			deffer.reject(err)
+		})
+		.always(function() {
+			console.log("complete");
+		});
+
+		return deffer.promise();
+	},
 	delContact:function(id){
 		var deffer = $.Deferred();
 
