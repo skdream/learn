@@ -1,6 +1,10 @@
 var app = new Vue({
 	el:'#app',
 	data:{
+		isConfirmModal:false,
+		confirmId:"modal-contactDelete",
+		viewId:"modal-view",
+		addId:"modal-add",
 		name:'',
 		phone:'',
 		email:'',
@@ -22,14 +26,14 @@ var app = new Vue({
 
 		allheaders : ["姓名", "手机", "邮箱", "QQ","备注"]
 	},
-	created:function(){
+	compiled:function(){
 		//this.getAllContacts();
 
-		$('#modal-id').modal({
+		$('#'+this.addId).modal({
 			show:false
 		});
 
-		$('#modal-id').on('show.bs.modal', function () {
+		$('#'+this.addId).on('show.bs.modal', function () {
 			this.clearHistory();
 		}.bind(this));
 	},
@@ -79,12 +83,15 @@ var app = new Vue({
 		showDelModal:function(id){
 
 			this.resetCurContact(id);
+			this.isConfirmModal = true;
 			$('#modal-contactDelete').modal('show');
 			console.log(this.curContact);
 
 			//curContact.id = id;
 		},
 		deleteContact:function(){
+
+			
 			var p =API.delContact(this.curContact.id);
 
 			p.then(function(data){
@@ -95,6 +102,7 @@ var app = new Vue({
 			p.fail(function(err){
 				console.log(err);
 			});
+			return true;
 		},
 		edit:function(id){
 

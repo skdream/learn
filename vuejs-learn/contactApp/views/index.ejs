@@ -31,7 +31,7 @@
 				<input type="text" v-model="searchKey" class="form-control" id="search" placeholder="字段搜索">
 			</div>
 			<button type="submit" class="btn btn-primary">搜索</button>
-			<a data-toggle="modal" href='#modal-id' class="btn btn-info"><i class="glyphicon-plus glyphicon"></i></a>
+			<a data-toggle="modal" href='#{{addId}}' class="btn btn-info"><i class="glyphicon-plus glyphicon"></i></a>
 		</form>
 		</p>
 
@@ -65,10 +65,24 @@
 			</table>
 		</div>
 
+	<confirm-modal :id="confirmId" :show.sync="isConfirmModal" :delete-Contact="deleteContact" :cur-Contact.sync="curContact">
+	</confirm-modal>
 
-		<!-- 		<a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a> -->
+	<view-modal :id="viewId" :show.sync="false" :cur-contact.sync="curContact" :headers="allheaders">
+	</view-modal>
+
+	<add-modal :id="addId" :form.sync="form" :show.sync="false" :add-contact="addContact">
+	</add-modal>
+
+
+
+
+
+
+
+		<!-- <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a> -->
 		<!-- 新增对话框 -->
-		<div class="modal fade" id="modal-id">
+<!-- 		<div class="modal fade" id="modal-id">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -117,10 +131,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- 查看对话框 -->
-		<div class="modal fade" id="modal-view">
+<!-- 		<div class="modal fade" id="modal-view">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div modal="contactView">
@@ -143,7 +157,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- 编辑 -->
 		<div class="modal fade" id="modal-edit">
 			<div class="modal-dialog">
@@ -197,7 +211,7 @@
 
 				<!-- 删除对话框 -->
 
-		<div class="modal  fade" id="modal-contactDelete">
+<!-- 		<div class="modal  fade" id="modal-contactDelete">
 			<div class="modal-dialog modal-sm">
 				<div class="modal-content">
 					<div modal="contactDelete">
@@ -214,8 +228,107 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
+	<!-- 模态框 -->
+	<script type="x/template" id="modal-template">
+		<div id="{{id}}" class="modal {{class || 'fade'}}" v-show="show">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true" v-show="closable">&times;</button>
+						<slot name="header">
+						</slot>
+					</div>
+					<div class="modal-body">
+						<slot name="body">
+						</slot>
+					</div>
+					<div class="modal-footer">
+						<slot name="footer">
+						</slot>
+					</div>
+				</div>
+			</div>
+		</div>
+	</script>
+	<!-- 确认 -->
+	<script type="x/template" id="confirm-modal-template">
+		<modal :id="id" :show.sync="show" :closable="false" :cur-Contact.sync="curContact">
+			<h4 slot="header">提示</h4>
+			<div slot="body">
+				你确定要删除“ {{ curContact.name }} ”吗?
+			</div>
+			<div slot="footer">
+				<button class="btn btn-danger ok" @click="confirm()">确定</button>
+				<button class="btn btn-warning cancel" data-dismiss="modal">取消</button>
+			</div>
+		</modal>
+	</script>
+	<!-- 查看 -->
+	<script type="x/template" id="view-modal-template">
+		<modal :id="id" :show.sync="show" :closable="false" :cur-Contact.sycn="curContact" :header="header">
+			<h3 slot="header">{{  curContact.name}}</h3>
+			<dl slot="body" class="dl-horizontal">
+				<dt v-for="header in headers ">{{ header}}:</dt>
+				<dd>{{ curContact.name }}</dd>
+				<dd>{{ curContact.phone || " - " }}</dd>
+				<dd><a href="mailto:{{ curContact.email }}">{{ curContact.email || " - " }}</a></dd>
+				<dd>{{curContact.qq}}</dd>
+				<dd>{{curContact.remark}}</dd>
+			</dl>
+			<button slot="footer" class="btn btn-warning cancel"  data-dismiss="modal">关闭</button>
+		</modal>
+	</script>
+
+	<script type="x/template" id="add-modal-template">
+		<modal :id="id"  :closable="true" :form.sync="form" :show.sync="show" :addContact:"addContact">
+			<h4 slot="header" class="modal-title">新增联系人</h4>
+			<div slot="body">
+				<form  action="" method="POST" class="form-horizontal" role="form">
+					<div class="form-group">
+			            <label class="control-label col-sm-2" for="inputName">姓名</label>
+			            <div class="col-sm-6">
+			              <input type="text" class="form-control" id="inputName" name="name" v-model="form.add.name" placeholder="姓名">
+			            </div>
+					</div>
+					<div class="form-group">
+			            <label class="control-label col-sm-2" for="inputPhone">手机号码</label>
+			            <div class="col-sm-6">
+			              <input maxlength="11" type="text" class="form-control" id="inputPhone" name="phone" v-model="form.add.phone" placeholder="手机号码">
+			            </div>
+					</div>
+					<div class="form-group">
+			            <label class="control-label col-sm-2" for="inputEmail">邮箱</label>
+			            <div class="col-sm-6">
+			              <input type="text" class="form-control" id="inputEmail" name="email" v-model="form.add.email" placeholder="邮箱">
+			            </div>
+					</div>
+					<div class="form-group">
+			            <label class="control-label col-sm-2" for="inputQQ">QQ</label>
+			            <div class="col-sm-6">
+			              <input type="text" class="form-control" id="inputQQ" name="qq" v-model="form.add.qq" placeholder="QQ">
+			            </div>
+					</div>
+					<div class="form-group">
+			            <label class="control-label col-sm-2" for="inputRemarks">备注</label>
+			            <div class="col-sm-6">
+			              <textarea type="text" class="form-control" id="inputRemarks" name="remarks" v-model="form.add.remark" placeholder="备注">
+			              	
+			              </textarea>
+			            </div>
+					</div>
+				</form>
+			</div>
+			<div slot="footer" class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary" @click="addContact('modal-add')">保存</button>
+			</div>
+		</modal>
+	</script>
+
+
+
     <script src="./javascripts/bower_components/jquery/dist/jquery.js"></script>
     <script src="./javascripts/bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./javascripts/bower_components/vue/dist/vue.js"></script>
