@@ -113,6 +113,15 @@ Vue.component('view-modal',{
 
 Vue.component('add-modal',{
 	template:"#add-modal-template",
+	data:function(){
+		return {
+			form:{
+				add:{
+
+				}
+			}
+		};
+	},
 	props:{
 		id:{
 			type:String,
@@ -124,12 +133,7 @@ Vue.component('add-modal',{
 			twoWay:true,
 			default:false
 		},
-		form:{
-			type:Object,
-			required:true,
-			twoWay:true
-		},
-		addContact:{
+		getAllContacts:{
 			type:Function,
 			required:true
 		}
@@ -142,7 +146,79 @@ Vue.component('add-modal',{
 	},
 	methods:{
 		addContact:function(){
-			this.addContact();
+			var p = API.saveContact(this.form.add);
+
+			p.then(function(data){
+				$('#'+this.id).modal('hide');
+				this.form= {}
+				this.getAllContacts();
+			}.bind(this));
+
+			p.fail(function(err){
+				console.log(err);
+			}.bind(this));
+		}
+	}
+});
+
+Vue.component('edit-modal',{
+	template:"#edit-modal-template",
+	data:function(){
+		return{
+			form:{
+				edit:{
+
+				}
+			}
+		}
+	},
+	props:{
+		id:{
+			type:String,
+			required:true
+		},
+		name:{
+			type:String,
+			required:true
+		},
+		show:{
+			type:Boolean,
+			required:true,
+			twoWay:true,
+			default:false
+		},
+		getAllContacts:{
+			type:Function,
+			required:true
+		},
+		form:{
+			type:Object,
+			reqired:true
+		}
+	},
+
+	watch:{
+
+	},
+	computed:{
+
+	},
+	methods:{
+		saveEdit:function(){
+			var p = API.editContact(this.form.edit);
+
+			p.then(function(data){
+				if(data){
+					$('#'+this.id).modal('hide');
+					this.getAllContacts();
+				}
+				
+				//this.getAllContacts();
+			}.bind(this));
+
+			p.fail(function(err){
+				console.log(err);
+			}.bind(this));
 		}
 	}
 });

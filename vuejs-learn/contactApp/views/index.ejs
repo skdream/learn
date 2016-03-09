@@ -65,170 +65,18 @@
 			</table>
 		</div>
 
-	<confirm-modal :id="confirmId" :show.sync="isConfirmModal" :delete-Contact="deleteContact" :cur-Contact.sync="curContact">
-	</confirm-modal>
+		<confirm-modal :id="confirmId" :show.sync="isConfirmModal" :delete-Contact="deleteContact" :cur-Contact.sync="curContact">
+		</confirm-modal>
 
-	<view-modal :id="viewId" :show.sync="false" :cur-contact.sync="curContact" :headers="allheaders">
-	</view-modal>
+		<view-modal :id="viewId" :show.sync="false" :cur-contact.sync="curContact" :headers="allheaders">
+		</view-modal>
 
-	<add-modal :id="addId" :form.sync="form" :show.sync="false" :add-contact="addContact">
-	</add-modal>
+		<add-modal :id="addId" :show.sync="false" :get-all-contacts="getAllContacts">
+		</add-modal>
 
+		<edit-modal :id="editId" :show.sync="false" :form="form" :get-all-contacts="getAllContacts" :name="name">
+		</edit-modal>
 
-
-
-
-
-
-		<!-- <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a> -->
-		<!-- 新增对话框 -->
-<!-- 		<div class="modal fade" id="modal-id">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title">新增联系人</h4>
-					</div>
-					<div class="modal-body">
-						<form action="" method="POST" class="form-horizontal" role="form">
-							<div class="form-group">
-					            <label class="control-label col-sm-2" for="inputName">姓名</label>
-					            <div class="col-sm-6">
-					              <input type="text" class="form-control" id="inputName" name="name" v-model="form.add.name" placeholder="姓名">
-					            </div>
-							</div>
-							<div class="form-group">
-					            <label class="control-label col-sm-2" for="inputPhone">手机号码</label>
-					            <div class="col-sm-6">
-					              <input maxlength="11" type="text" class="form-control" id="inputPhone" name="phone" v-model="form.add.phone" placeholder="手机号码">
-					            </div>
-							</div>
-							<div class="form-group">
-					            <label class="control-label col-sm-2" for="inputEmail">邮箱</label>
-					            <div class="col-sm-6">
-					              <input type="text" class="form-control" id="inputEmail" name="email" v-model="form.add.email" placeholder="邮箱">
-					            </div>
-							</div>
-							<div class="form-group">
-					            <label class="control-label col-sm-2" for="inputQQ">QQ</label>
-					            <div class="col-sm-6">
-					              <input type="text" class="form-control" id="inputQQ" name="qq" v-model="form.add.qq" placeholder="QQ">
-					            </div>
-							</div>
-							<div class="form-group">
-					            <label class="control-label col-sm-2" for="inputRemarks">备注</label>
-					            <div class="col-sm-6">
-					              <textarea type="text" class="form-control" id="inputRemarks" name="remarks" v-model="form.add.remark" placeholder="备注">
-					              	
-					              </textarea>
-					            </div>
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-						<button type="button" class="btn btn-primary" @click="addContact('modal-id')">保存</button>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
-		<!-- 查看对话框 -->
-<!-- 		<div class="modal fade" id="modal-view">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div modal="contactView">
-					  <div class="modal-header">
-					      <h3>{{  curContact.name}}</h3>
-					  </div>
-					  <div class="modal-body">
-					    <dl class="dl-horizontal">
-							<dt v-for="header in allheaders ">{{ header}}:</dt>
-							<dd>{{ curContact.name }}</dd>
-							<dd>{{ curContact.phone || " - " }}</dd>
-							<dd><a href="mailto:{{ curContact.email }}">{{ curContact.email || " - " }}</a></dd>
-							<dd>{{curContact.qq}}</dd>
-							<dd>{{curContact.remark}}</dd>
-					    </dl>
-					  </div>
-					  <div class="modal-footer">
-					      <button class="btn btn-warning cancel"  data-dismiss="modal">关闭</button>
-					  </div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<!-- 编辑 -->
-		<div class="modal fade" id="modal-edit">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					 <div modal="contactEdit">
-					      <div class="modal-header">
-					          <h3>编辑 - {{ form.edit.name }}</h3>
-					      </div>
-					      <div class="modal-body">
-    						<form action="" method="POST" class="form-horizontal" role="form">
-								<div class="form-group">
-						            <label class="control-label col-sm-2" for="inputName">姓名</label>
-						            <div class="col-sm-6">
-						              <input type="text" class="form-control" id="inputName" name="name" v-model="form.edit.name" placeholder="姓名">
-						            </div>
-								</div>
-								<div class="form-group">
-						            <label class="control-label col-sm-2" for="inputPhone">手机号码</label>
-						            <div class="col-sm-6">
-						              <input maxlength="11" type="text" class="form-control" id="inputPhone" name="phone" v-model="form.edit.phone" placeholder="手机号码">
-						            </div>
-								</div>
-								<div class="form-group">
-						            <label class="control-label col-sm-2" for="inputEmail">邮箱</label>
-						            <div class="col-sm-6">
-						              <input type="text" class="form-control" id="inputEmail" name="email" v-model="form.edit.email" placeholder="邮箱">
-						            </div>
-								</div>
-								<div class="form-group">
-						            <label class="control-label col-sm-2" for="inputQQ">QQ</label>
-						            <div class="col-sm-6">
-						              <input type="text" class="form-control" id="inputQQ" name="qq" v-model="form.edit.qq" placeholder="QQ">
-						            </div>
-								</div>
-								<div class="form-group">
-						            <label class="control-label col-sm-2" for="inputRemarks">备注</label>
-						            <div class="col-sm-6">
-						              <input type="text" class="form-control" id="inputRemarks" name="remarks" v-model="form.edit.remark" placeholder="备注">
-						            </div>
-								</div>
-							</form>
-					      </div>
-					      <div class="modal-footer">
-					          <button @click="editContact('modal-edit')" class="btn btn-info"><i class="icon-plus icon-white"></i>保存</button>
-					          <button class="btn btn-warning cancel" data-dismiss="modal">取消</button>
-					      </div>
-				      </div>
-				</div>
-			</div>
-		</div>
-
-				<!-- 删除对话框 -->
-
-<!-- 		<div class="modal  fade" id="modal-contactDelete">
-			<div class="modal-dialog modal-sm">
-				<div class="modal-content">
-					<div modal="contactDelete">
-						<div class="modal-header">
-						<h4>提示</h4>
-						</div>
-						<div class="modal-body">
-							你确定要删除“ {{ curContact.name }} ”吗?
-						</div>
-						<div class="modal-footer">
-							<button class="btn btn-danger ok" @click="deleteContact()">确定</button>
-							<button class="btn btn-warning cancel" data-dismiss="modal">取消</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
 	</div>
 	<!-- 模态框 -->
 	<script type="x/template" id="modal-template">
@@ -282,39 +130,38 @@
 	</script>
 
 	<script type="x/template" id="add-modal-template">
-		<modal :id="id"  :closable="true" :form.sync="form" :show.sync="show" :addContact:"addContact">
+		<modal :id="id"  :closable="true"  :show.sync="show" :getAllContacts="getAllContacts">
 			<h4 slot="header" class="modal-title">新增联系人</h4>
 			<div slot="body">
 				<form  action="" method="POST" class="form-horizontal" role="form">
 					<div class="form-group">
-			            <label class="control-label col-sm-2" for="inputName">姓名</label>
+			            <label class="control-label col-sm-2" for="form.add.name">姓名</label>
 			            <div class="col-sm-6">
-			              <input type="text" class="form-control" id="inputName" name="name" v-model="form.add.name" placeholder="姓名">
+			              <input type="text" class="form-control" id="form.add.name" name="form.add.name" v-model="form.add.name" placeholder="姓名">
 			            </div>
 					</div>
 					<div class="form-group">
-			            <label class="control-label col-sm-2" for="inputPhone">手机号码</label>
+			            <label class="control-label col-sm-2" for="form.add.phone">手机号码</label>
 			            <div class="col-sm-6">
-			              <input maxlength="11" type="text" class="form-control" id="inputPhone" name="phone" v-model="form.add.phone" placeholder="手机号码">
+			              <input maxlength="11" type="text" class="form-control" id="form.add.phone" name="form.add.phone" v-model="form.add.phone" placeholder="手机号码">
 			            </div>
 					</div>
 					<div class="form-group">
-			            <label class="control-label col-sm-2" for="inputEmail">邮箱</label>
+			            <label class="control-label col-sm-2" for="form.add.email">邮箱</label>
 			            <div class="col-sm-6">
-			              <input type="text" class="form-control" id="inputEmail" name="email" v-model="form.add.email" placeholder="邮箱">
+			              <input type="text" class="form-control" id="form.add.email" name="form.add.email" v-model="form.add.email" placeholder="邮箱">
 			            </div>
 					</div>
 					<div class="form-group">
-			            <label class="control-label col-sm-2" for="inputQQ">QQ</label>
+			            <label class="control-label col-sm-2" for="form.add.qq">QQ</label>
 			            <div class="col-sm-6">
-			              <input type="text" class="form-control" id="inputQQ" name="qq" v-model="form.add.qq" placeholder="QQ">
+			              <input type="text" class="form-control" id="form.add.qq" name="form.add.qq" v-model="form.add.qq" placeholder="QQ">
 			            </div>
 					</div>
 					<div class="form-group">
-			            <label class="control-label col-sm-2" for="inputRemarks">备注</label>
+			            <label class="control-label col-sm-2" for="form.add.remark">备注</label>
 			            <div class="col-sm-6">
-			              <textarea type="text" class="form-control" id="inputRemarks" name="remarks" v-model="form.add.remark" placeholder="备注">
-			              	
+			              <textarea type="text" class="form-control" id="form.add.remark" name="form.add.remark" v-model="form.add.remark" placeholder="备注">
 			              </textarea>
 			            </div>
 					</div>
@@ -322,10 +169,54 @@
 			</div>
 			<div slot="footer" class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-				<button type="button" class="btn btn-primary" @click="addContact('modal-add')">保存</button>
+				<button type="button" class="btn btn-primary" @click="addContact">保存</button>
 			</div>
 		</modal>
 	</script>
+	
+	<script type="x/template" id="edit-modal-template">
+		<modal :id="id"  :closable="true" :form="form" :show.sync="show" :getAllContacts="getAllContacts" :name="name">
+	        <h3 slot="header">编辑 - {{name }}</h3>
+			<form slot="body" action="" method="POST" class="form-horizontal" role="form">
+				<div class="form-group">
+		            <label class="control-label col-sm-2" for="form.edit.name">姓名</label>
+		            <div class="col-sm-6">
+		              <input type="text" class="form-control" id="form.edit.name" name="form.edit.name" v-model="form.edit.name" placeholder="姓名">
+		            </div>
+				</div>
+				<div class="form-group">
+		            <label class="control-label col-sm-2" for="form.edit.phone">手机号码</label>
+		            <div class="col-sm-6">
+		              <input maxlength="11" type="text" class="form-control" id="form.edit.phone" name="form.edit.phone" v-model="form.edit.phone" placeholder="手机号码">
+		            </div>
+				</div>
+				<div class="form-group">
+		            <label class="control-label col-sm-2" for="form.edit.email">邮箱</label>
+		            <div class="col-sm-6">
+		              <input type="text" class="form-control" id="form.edit.email" name="form.edit.email" v-model="form.edit.email" placeholder="邮箱">
+		            </div>
+				</div>
+				<div class="form-group">
+		            <label class="control-label col-sm-2" for="form.edit.qq">QQ</label>
+		            <div class="col-sm-6">
+		              <input type="text" class="form-control" id="form.edit.qq" name="form.edit.qq" v-model="form.edit.qq" placeholder="QQ">
+		            </div>
+				</div>
+				<div class="form-group">
+		            <label class="control-label col-sm-2" for="form.edit.remark">备注</label>
+		            <div class="col-sm-6">
+		              <input type="text" class="form-control" id="form.edit.remark" name="form.edit.remark" v-model="form.edit.remark" placeholder="备注">
+		            </div>
+				</div>
+			</form>
+			<div slot="footer">
+			  <button @click="saveEdit" class="btn btn-info"><i class="icon-plus icon-white"></i>保存</button>
+			  <button class="btn btn-warning cancel" data-dismiss="modal">取消</button>
+			</div>
+		</modal>
+	</script>
+
+
 
 
 

@@ -5,6 +5,7 @@ var app = new Vue({
 		confirmId:"modal-contactDelete",
 		viewId:"modal-view",
 		addId:"modal-add",
+		editId:'modal-edit',
 		name:'',
 		phone:'',
 		email:'',
@@ -13,9 +14,6 @@ var app = new Vue({
 		contacts:[],
 		form:{
 			edit:{
-			},
-			add:{
-
 			}
 		},
 		curContact:{name:'44'},
@@ -33,25 +31,11 @@ var app = new Vue({
 			show:false
 		});
 
-		$('#'+this.addId).on('show.bs.modal', function () {
-			this.clearHistory();
-		}.bind(this));
 	},
 	beforeCompile:function(){
 		this.getAllContacts();
 	},
 	methods:{
-		clearHistory:function(){
-
-			for (key in this.form.add){
-				this.form.add[key] = '';
-			}
-			// this.name='';
-			// this.phone='';
-			// this.email='';
-			// this.qq='';
-			// this.remark='';
-		},
 		getAllContacts:function(){
 			var p = API.getAllContacts();
 
@@ -74,9 +58,14 @@ var app = new Vue({
 			this.contacts.forEach(function(contact){
 				if(contact._id == id){
 
-					this.curContact = contact;
-					// this.curContact['name'] = contact.name;
+					//this.curContact = contact;
+					 this.curContact['name'] = contact.name;
+					 this.curContact['email'] = contact.email;
+					 this.curContact['qq'] = contact.qq;
+					 this.curContact['phone'] = contact.phone;
+					 this.curContact['remark'] = contact.remark;
 					this.curContact['id'] = contact._id;
+					this.name = contact.name;
 				}
 			}.bind(this))
 		},
@@ -107,31 +96,40 @@ var app = new Vue({
 		edit:function(id){
 
 			this.resetCurContact(id);
+			console.log(id);
+			// var contact = this.curContact;
+			// for(key in contact){
+			// 	this.form.edit[key] = contact[key];
+			// }
 
 			this.form.edit = this.curContact;
 
 
-			$('#modal-edit').modal('show');
+			$('#'+this.editId).modal('show');
 		},
-		addContact:function(el){
+/*		addContact:function(el){
 
 			var p = API.saveContact(this.form.add);
 
 			p.then(function(data){
-				$('#'+el).modal('hide');
+				$('#'+this.addId).modal('hide');
 				this.getAllContacts();
 			}.bind(this));
 
 			p.fail(function(err){
 				console.log(err);
 			}.bind(this));
-		},
-		editContact:function(el){
+		},*/
+/*		editContact:function(el){
 
 			var p = API.editContact(this.form.edit);
 
 			p.then(function(data){
-				$('#'+el).modal('hide');
+				if(data){
+					$('#'+this.editId).modal('hide');
+					this.getAllContacts();
+				}
+				
 				//this.getAllContacts();
 			}.bind(this));
 
@@ -139,6 +137,6 @@ var app = new Vue({
 				console.log(err);
 			}.bind(this));
 
-		}
+		}*/
 	}
 })
