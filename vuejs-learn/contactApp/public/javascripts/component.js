@@ -90,8 +90,7 @@ Vue.component('view-modal',{
 		},
 		curContact:{
 			type:Object,
-			required:true,
-			twoWay:true
+			required:true
 		},
 		headers:{
 			type:Array,
@@ -164,13 +163,7 @@ Vue.component('add-modal',{
 Vue.component('edit-modal',{
 	template:"#edit-modal-template",
 	data:function(){
-		return{
-			form:{
-				edit:{
 
-				}
-			}
-		}
 	},
 	props:{
 		id:{

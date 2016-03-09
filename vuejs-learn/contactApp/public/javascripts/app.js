@@ -6,17 +6,23 @@ var app = new Vue({
 		viewId:"modal-view",
 		addId:"modal-add",
 		editId:'modal-edit',
-		name:'',
-		phone:'',
-		email:'',
-		qq:'',
-		remark:'',
+		// name:'',
+		// phone:'',
+		// email:'',
+		// qq:'',
+		// remark:'',
 		contacts:[],
 		form:{
 			edit:{
 			}
 		},
-		curContact:{name:'44'},
+		curContact:{
+			name:'',
+			phone:'',
+			email:'',
+			qq:'',
+			remark:''
+		},
 		searchKey:'',
 		sortKey:'_id',
 		order:-1,
@@ -27,9 +33,9 @@ var app = new Vue({
 	compiled:function(){
 		//this.getAllContacts();
 
-		$('#'+this.addId).modal({
-			show:false
-		});
+		// $('#'+this.addId).modal({
+		// 	show:false
+		// });
 
 	},
 	beforeCompile:function(){

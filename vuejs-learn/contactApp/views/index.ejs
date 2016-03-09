@@ -68,7 +68,7 @@
 		<confirm-modal :id="confirmId" :show.sync="isConfirmModal" :delete-Contact="deleteContact" :cur-Contact.sync="curContact">
 		</confirm-modal>
 
-		<view-modal :id="viewId" :show.sync="false" :cur-contact.sync="curContact" :headers="allheaders">
+		<view-modal :id="viewId" :show.sync="false" :cur-contact="curContact" :headers="allheaders">
 		</view-modal>
 
 		<add-modal :id="addId" :show.sync="false" :get-all-contacts="getAllContacts">
@@ -115,7 +115,7 @@
 	</script>
 	<!-- 查看 -->
 	<script type="x/template" id="view-modal-template">
-		<modal :id="id" :show.sync="show" :closable="false" :cur-Contact.sycn="curContact" :header="header">
+		<modal :id="id" :show.sync="show" :closable="false" :cur-Contact="curContact" :header="header">
 			<h3 slot="header">{{  curContact.name}}</h3>
 			<dl slot="body" class="dl-horizontal">
 				<dt v-for="header in headers ">{{ header}}:</dt>
