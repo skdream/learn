@@ -1,5 +1,6 @@
 var path = require('path')
-
+var vue = require("vue-loader");
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
   entry: {
     app: './src/main.js'
@@ -20,18 +21,18 @@ module.exports = {
     fallback: [path.join(__dirname, '../node_modules')]
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.vue$/,
-        loader: 'eslint',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.js$/,
-        loader: 'eslint',
-        exclude: /node_modules/
-      }
-    ],
+    // preLoaders: [
+    //   {
+    //     test: /\.vue$/,
+    //     loader: 'eslint',
+    //     exclude: /node_modules/
+    //   },
+    //   {
+    //     test: /\.js$/,
+    //     loader: 'eslint',
+    //     exclude: /node_modules/
+    //   }
+    // ],
     loaders: [
       {
         test: /\.vue$/,
@@ -60,7 +61,15 @@ module.exports = {
       }
     ]
   },
-  eslint: {
-    formatter: require('eslint-friendly-formatter')
-  }
+  vue: {
+    css: ExtractTextPlugin.extract("css"),
+    sass: ExtractTextPlugin.extract("css!sass-loader")
+  },
+  babel: {
+    presets: ['es2015', 'stage-2'],
+    plugins: ['transform-runtime']
+  },
+  // eslint: {
+  //   formatter: require('eslint-friendly-formatter')
+  // }
 }

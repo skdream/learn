@@ -17,18 +17,38 @@
       <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
       <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
     </p>
+ddd
+    <confirm :id="confirmId" :show.sync="show" :delete-Contact="deleteContact" :cur-Contact.sync="curContact"></confirm>
   </div>
+
 </template>
 
 <script>
 import Hello from './components/Hello'
+import confirm from './components/confirm'
 
 export default {
+
+  data () {
+    return {
+      confirmId:'cID',
+      show: true,
+      curContact: {
+        name: 'ss'
+      }
+    }
+  },
+  methods:{
+     deleteContact () {
+      console.log('delected!');
+    }
+  },
   components: {
-    Hello
+    Hello, confirm
   }
 }
 </script>
+
 
 <style>
 html {
