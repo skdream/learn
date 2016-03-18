@@ -1,13 +1,12 @@
 
 // import $ from 'jquery'
 
-var $= require('jquery');
+
 var APIURL = "https://www.v2ex.com/api/";
 
 var API = {
 
 	getHot:function(){
-
 		var deffer = $.Deferred();
 		$.ajax({
 			url: APIURL+ 'topics/hot.json',
