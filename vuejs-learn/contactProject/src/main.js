@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import App from './App'
+import vueResource from 'vue-resource'
+import routerMap from './routes'
+
+// import App from './App.vue'
 import hotTopic from './views/hotTopic.vue'
 /* eslint-disable no-new */
 
@@ -12,28 +15,48 @@ new Vue({
 
 */
 
-Vue.use(VueRouter);
+// Vue.use(VueRouter);
 
-// let app = Vue.extend({});
+// // let app = Vue.extend({});
+
+// /*
+
+// {
+//     hashbang: true,
+//     history: false,
+//     saveScrollPosition: true,
+//     transitionOnLoad: true
+// }
+
+// */
+
+// var router = new VueRouter();
 
 
-var router = new VueRouter({
-    hashbang: true,
-    history: false,
-    saveScrollPosition: true,
-    transitionOnLoad: true
-});
+
+// router.map({
+// 	'/index':{
+// 		//name:'index',
+// 		component:App
+// 	},
+//     '/hot':{     //热门话题
+//         name:'hot',
+//         component:hotTopic
+//     }
+// })
+
+// router.start(App, "#app");
 
 
-router.map({
-	'/':{
-		name:'index',
-		component:App
-	},
-    '/hot':{     //热门话题
-        name:'hot',
-        component:hotTopic
-    }
-})
+var App = Vue.extend({})
 
-router.start(hotTopic, "#app");
+// install router
+Vue.use(VueRouter)
+
+Vue.use(vueResource);
+
+// routing
+var router = new VueRouter()
+
+routerMap(router);
+router.start(App, '#app')

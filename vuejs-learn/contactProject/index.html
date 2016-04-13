@@ -6,9 +6,20 @@
   </head>
   <body>
   <div id="app">
-  	<router-view ></router-view>
+   <p>
+      <!-- 使用指令 v-link 进行导航。 -->
+      <a v-link="{ path: '/index' }">Go to Foo</a>
+      <a v-link="{ path: '/hot' }">Go to Bar</a>
+    </p>
+
+    <!-- 路由外链 -->
+    <!-- main view -->
+    <router-view
+      class="view"
+      keep-alive
+      transition
+      transition-mode="out-in">
+    </router-view>
   </div>
-<!--     <app></app> -->
-    <!-- built files will be auto injected -->
   </body>
 </html>

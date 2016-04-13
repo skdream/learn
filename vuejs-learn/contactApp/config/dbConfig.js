@@ -6,3 +6,4 @@ var config = {
   db_name: 'contact'
  }
  module.exports = config;
+

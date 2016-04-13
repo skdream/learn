@@ -146,3 +146,4 @@ var app = new Vue({
 		}*/
 	}
 })
+

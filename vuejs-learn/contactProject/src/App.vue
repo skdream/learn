@@ -56,15 +56,16 @@ html {
 }
 
 body {
-  display: flex;
+/*  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
   height: 100%;
 }
 
 #app {
-  margin-top: -100px;
+/*  margin-top: -100px;*/
   max-width: 600px;
+  margin:0 auto;
   font-family: Helvetica, sans-serif;
   text-align: center;
 }
