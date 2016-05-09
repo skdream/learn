@@ -1,0 +1,3 @@
+[submodule "vuejs-learn/vux"]
+	path = vuejs-learn/vux
+	url =  git@github.com:vuejs/vue-devtools.git
