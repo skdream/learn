@@ -1,0 +1,9 @@
+<template>
+
+  <a v-link="{ path: '/hello' }">Go to hello</a>
+  <a v-link="{ path: '/add' }">Go to add</a>
+
+  <router-view
+    transition
+    transition-mode="out-in"></router-view>
+</template>
