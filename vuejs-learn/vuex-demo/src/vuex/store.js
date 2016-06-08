@@ -1,6 +1,7 @@
+//http://vuex.vuejs.org/zh-cn/tutorial.html
+
 import Vue from 'vue'
 import Vuex from 'vuex'
-
 Vue.use(Vuex)
 
 const state = {
@@ -13,7 +14,7 @@ const state = {
 const mutations = {
 
 	// 放置状态变更函数
-	
+
 	INCREMENT (state, amount) {
 		state.count = state.count + amount
 	}

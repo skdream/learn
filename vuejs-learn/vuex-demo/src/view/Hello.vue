@@ -1,16 +1,14 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    {{ counterRoute }}
   </div>
+  <route></route>
 </template>
 
 <script>
 
-import { getRoute } from '../vuex/getters'
+import route from './route'
 
-
-import store from '../vuex/store'
 export default {
   data () {
     return {
@@ -21,16 +19,10 @@ export default {
       msg: 'Hello World!'
     }
   },
-      vuex: {
-      getters: {
-        counterRoute: getRoute
-      }
-    },
-  store:store
+  components:{
+    route:route
+  }
 }
-
-
-
 
 </script>
 
