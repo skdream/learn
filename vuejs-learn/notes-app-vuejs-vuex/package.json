@@ -1,0 +1,37 @@
+{
+  "name": "notes-app-vuejs-vuex",
+  "version": "1.0.0",
+  "description": "A notes application build using VueJs and Vuex",
+  "main": "index.js",
+  "scripts": {
+    "dev":"webpack-dev-server --inline --hot",
+    "build":"webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:skdream/learn.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vuex",
+    "notes"
+  ],
+  "author": "jiyongjia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skdream/learn/issues"
+  },
+  "homepage": "https://github.com/skdream/learn",
+  "dependencies": {
+    "vue": "^1.0.26",
+    "vuex": "^1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-runtime": "^6.9.2",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
