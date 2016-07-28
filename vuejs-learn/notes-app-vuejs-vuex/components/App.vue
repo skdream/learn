@@ -7,15 +7,18 @@
 </template>
 
 <script>
-	import Toobar from './Toobar.vue'
+	import Toolbar from './Toolbar.vue'
 	import NotesList from './NotesList.vue'
-	import Editor from './Editor.vue'
+	import editor from './Editor.vue'
+
+
+
 
 	export default {
 		components: {
 			Toolbar,
 			NotesList,
-			Editor
+			editor
 		}
 	}
 </script>

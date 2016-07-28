@@ -4,8 +4,8 @@
   "description": "A notes application build using VueJs and Vuex",
   "main": "index.js",
   "scripts": {
-    "dev":"webpack-dev-server --inline --hot",
-    "build":"webpack -p",
+    "dev": "webpack-dev-server --inline --hot",
+    "build": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,8 +29,13 @@
   },
   "devDependencies": {
     "babel": "^6.5.2",
+    "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-runtime": "^6.9.2",
+    "css-loader": "^0.23.1",
+    "vue-hot-reload-api": "^1.3.3",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^8.5.3",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }

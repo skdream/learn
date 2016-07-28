@@ -31,7 +31,7 @@
 
 
 <script>
-	import { updateActiveNote } from '../vuex/actions'
+	import {initStore, updateActiveNote } from '../vuex/actions'
 
 	export default {
 		data () {
@@ -46,6 +46,7 @@
 			},
 			actions: {
 				updateActiveNote
+				,initStore
 			}
 		},
 		computed:{
@@ -56,6 +57,10 @@
 					return this.notes.filter(note => note.favorite)
 				}
 			}
+		}
+		,
+		created(){
+		this.initStore();
 		}
 	}
 </script>

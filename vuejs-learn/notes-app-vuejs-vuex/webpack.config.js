@@ -20,5 +20,18 @@ module.exports = {
 	babel:{
 		presets:['es2015'],
 		plugins:['transform-runtime']
-	}
+	},
+	devServer:{
+		historyApiFallback: true,
+		contentBase:'./'
+	},
+	devtool:'#source-map'
+
+
+	// 	module.exports.devServer = {
+	// 	inline:true,
+	// 	hot:true,
+	// 	historyApiFallback: true,
+	// 	contentBase:'./'
+	// }
 }
